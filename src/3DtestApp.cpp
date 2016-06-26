@@ -56,7 +56,7 @@ void C3DtestApp::onStart() {
 	terrain2.EXTfreeChunkModel.Set(&Engine,&CEngine::freeModel);
 	terrain2.EXTcreateChunkData.Set(this,&C3DtestApp::createChunkData);
 
-	//load chunkCheck shader
+/*	//load chunkCheck shader
 	Engine.loadShader(vertex,dataPath + "chunkCheck.vert");
 	Engine.loadShader(frag,dataPath + "chunkCheck.frag");
 	hChunkCheckProg =  Engine.linkShaders();
@@ -66,6 +66,23 @@ void C3DtestApp::onStart() {
 	hCCworldPosVec = Engine.getShaderDataHandle("worldPos");
 	hCCfaceInt = Engine.getShaderDataHandle("face");
 	hCCnoCubesInt = Engine.getShaderDataHandle("noCubes");
+*/
+
+	
+	initChunkShell();
+	//load chunkCheck shader
+	Engine.loadShader(vertex,dataPath + "chunkCheck2.vert");
+	Engine.loadShader(geometry,dataPath + "chunkCheck2.geom");
+	hChunkCheckProg = Engine.attachShaders();
+
+	const GLchar* feedbackVaryings2[1];
+	feedbackVaryings2[0] = "feedBack"; 
+	//glTransformFeedbackVaryings(hChunkCheckProg, 1, feedbackVaryings2, GL_INTERLEAVED_ATTRIBS);
+	Engine.linkShaders(hChunkCheckProg);
+
+	//get chunkCheck shader data handles
+	Engine.setCurrentShader(hChunkCheckProg);
+	hCCsamplePosVec = Engine.getShaderDataHandle("nwSamplePos");
 
 
 	double t = Engine.Time.milliseconds();
@@ -95,7 +112,7 @@ void C3DtestApp::onStart() {
 	//load chunk shader
 	Engine.loadShader(vertex,dataPath + "chunk.vert");
 	Engine.loadShader(geometry,dataPath + "chunk.geom");
-	Engine.loadShader(frag,dataPath + "chunk.frag");
+//	Engine.loadShader(frag,dataPath + "chunk.frag");
 	hChunkProg = Engine.attachShaders();
 	const GLchar* feedbackVaryings[3];
 	feedbackVaryings[0] = "gl_Position"; 
@@ -113,14 +130,14 @@ void C3DtestApp::onStart() {
 	hChunkHfactor = Engine.getShaderDataHandle("hFactor");
 
 		//load tmp shader
-	Engine.loadShader(vertex,dataPath + "tmp.vert");
+/*	Engine.loadShader(vertex,dataPath + "tmp.vert");
 	Engine.loadShader(frag,dataPath + "tmp.frag");
 	hTmpProg =  Engine.linkShaders();
 
 	//get tmp shader data handles
 	Engine.setCurrentShader(hTmpProg);
 	hTmpMatrix  = Engine.getShaderDataHandle("mvpMatrix");
-
+*/
 
 
 
@@ -189,11 +206,12 @@ void C3DtestApp::createChunkData(Chunk& chunk, vec3& samplePos) {
 	Engine.setShaderValue(hChunkSamplePos,samplePos);
 	Engine.setShaderValue(hChunkHfactor,hFactor);
 
-	Engine.getGeometryFeedback(terrain2.shaderChunkGrid,sizeof(vec4)*nVertOut*chunk.nAttribs ,(char*)chunkDataTmp);
+	unsigned int result = Engine.getGeometryFeedback(terrain2.shaderChunkGrid,sizeof(vec4)*nVertOut*chunk.nAttribs ,(char*)chunkDataTmp);
 
-
+	if (result == 0)
+		return;
 	//register buffer data in the name of our model
-	chunk.noVerts = nVertOut; //sizeof(data);
+	chunk.noVerts = result*3;// nVertOut; //sizeof(data);
 	chunk.drawMode = GL_TRIANGLES;
 	Engine.storeModel((CModel*)&chunk,chunkDataTmp);
 
@@ -201,6 +219,7 @@ void C3DtestApp::createChunkData(Chunk& chunk, vec3& samplePos) {
 }
 
 /** Return false if no side of this potential chunk is penetratedby the isosurface.*/
+/*
 bool C3DtestApp::chunkExists(vec3& corner) {
 	//return true;
 	//switch to chunk check shader
@@ -222,13 +241,37 @@ bool C3DtestApp::chunkExists(vec3& corner) {
 		Engine.renderTo2DTexture(terrainDataSize,chunkCheckBuf);
 		for (int c=0;c < sliceSize; c++ ) 
 			chk += chunkCheckBuf[c];
-		if ((chk != 0))// && (chk < sliceSize))
+		if ((chk != 0) &&(chk < sliceSize))
 			return true;
 
 	}
-	//Engine.setCurrentShader(Engine.defaultProgram); //TO DO: scrap!
-	
+	//Engine.setCurrentShader(0); //TO DO: scrap!
+	//return true;
 	return false;
+}
+*/
+bool C3DtestApp::chunkExists(vec3& sampleCorner) {
+	//change to chunk test shader
+	Engine.setCurrentShader(hChunkCheckProg);
+
+	//load shader values
+	Engine.setShaderValue(hCCsamplePosVec,sampleCorner);
+
+	GLuint query;
+	glGenQueries(1, &query);
+	glBeginQuery(GL_PRIMITIVES_GENERATED, query);
+
+	//Draw check grid 
+	Engine.drawModel(chunkShell);
+
+	glEndQuery(GL_PRIMITIVES_GENERATED);
+	GLuint primitives;
+	glGetQueryObjectuiv(query, GL_QUERY_RESULT, &primitives);
+
+	if ((primitives == 0) || (primitives == shellTotalVerts*3))
+		return false; //outside surface
+	return true;
+
 }
 
 
@@ -419,10 +462,11 @@ void C3DtestApp::onResize(int width, int height) {
 
 
 void C3DtestApp::draw() {
+
+	//draw chunk
 	Engine.setStandard3dShader();
 	glm::mat3 normMatrix(terrain2.worldMatrix); 
 	Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,normMatrix);
-
 	mat4 relativePos, mvp; 
 	ChunkNode* node;
 	for (int s=0;s<terrain2.superChunk.size();s++) {
@@ -433,12 +477,13 @@ void C3DtestApp::draw() {
 				mvp = Engine.currentCamera->clipMatrix * relativePos; 
 				Engine.setShaderValue(Engine.rMVPmatrix,mvp);
 				Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(relativePos));
+				if (node->pChunk->hBuffer > 0)
 				Engine.drawModel(*node->pChunk);
 			}
 		}
 	}
 
-
+/*
 	//chunk shader drawing
 	//load shader
 	Engine.setCurrentShader(hTmpProg);
@@ -461,7 +506,7 @@ void C3DtestApp::draw() {
 			}
 		}
 	}
-
+*/
 
 
 
@@ -478,8 +523,6 @@ void C3DtestApp::draw() {
 	vec3 layerStartPos;
 
 	
-	ChunkNode* zNode;
-	ChunkNode* yNode;
 
 	
 	//draw bounding boxes
@@ -490,7 +533,7 @@ void C3DtestApp::draw() {
 				chunkBB.setPos(node->pChunk->getPos());
 				Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
 				if (node->boundary & 64)
-						Engine.setShaderValue(hWireColour,vec4(1,0,0,1));
+						Engine.setShaderValue(hWireColour,vec4(1,1,0,1));
 				else if (node->boundary & 128)
 						Engine.setShaderValue(hWireColour,vec4(0,0,1,1));
 				else if (node == terrain2.superChunk[s].nwRoot)
@@ -600,6 +643,41 @@ void C3DtestApp::Update() {
 	
 		
 	}
+}
+
+void C3DtestApp::initChunkShell() {
+	float vertsPerEdge = nChunkCubes+1;
+	shellTotalVerts = std::pow(vertsPerEdge,3) - std::pow(vertsPerEdge-2,3);
+	vec4* shell = new vec4[shellTotalVerts];
+	int v=0;
+	for(int y=0;y<vertsPerEdge;y++) {
+		for(int x=0;x<vertsPerEdge;x++) {
+			shell[v++] = vec4(x,y,0,1);
+			shell[v++] = vec4(x,y,nChunkCubes,1);
+		}
+		for(int z=1;z<nChunkCubes;z++) {
+			shell[v++] = vec4(0,z,y,1);
+			shell[v++] = vec4(nChunkCubes,z,y,1);
+		}
+	}
+		
+	for(int x=1;x<nChunkCubes;x++) {
+		for(int z=1;z<nChunkCubes;z++) {
+			shell[v++] = vec4(x,z,0,1);
+			shell[v++] = vec4(x,z,nChunkCubes,1);
+		}
+	}
+
+//	for (int p=0;p<shellTotalVerts;p++)
+	//	cerr << "\n" << shell[p].x << " " << shell[p].y << " " << shell[p].z;
+	
+	chunkShell.noVerts = shellTotalVerts;
+	chunkShell.nAttribs = 1;
+	chunkShell.indexSize = 0; 
+	chunkShell.drawMode = GL_POINTS;
+	Engine.storeModel(&chunkShell,shell);
+	delete[] shell;
+
 }
 
 

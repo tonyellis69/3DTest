@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="3Dtest">
+</Property><Property Name="Solution File" Value="D:\projects\3Dtest\3Dtest.sln">
+</Property><Property Name="Date" Value="24 June 2016">
+</Property><Property Name="Time" Value="19:48">
+</Property></Properties><Event ErrorLevel="0" Project="3Dtest" Source="3Dtest\3Dtest.vcproj" Description="Converting project file 'D:\projects\3Dtest\3Dtest\3Dtest.vcproj'.">
+</Event><Event ErrorLevel="1" Project="3Dtest" Source="3Dtest\3Dtest.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="3Dtest" Source="3Dtest\3Dtest.vcproj" Description="Done converting to new project file 'D:\projects\3Dtest\3Dtest\3Dtest.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="3Dtest" Source="3Dtest\3Dtest.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="3DEngine" Source="..\3DEngine\3DEngine\3DEngine.vcproj" Description="Converting project file 'D:\projects\3DEngine\3DEngine\3DEngine.vcproj'.">
+</Event><Event ErrorLevel="1" Project="3DEngine" Source="..\3DEngine\3DEngine\3DEngine.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="3DEngine" Source="..\3DEngine\3DEngine\3DEngine.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="3DEngine" Source="..\3DEngine\3DEngine\3DEngine.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="3DEngine" Source="..\3DEngine\3DEngine\3DEngine.vcproj" Description="MSB8012: $(TargetPath) ('D:\projects\3Dtest\Debug\3DEngine.lib') does not match the Librarian's OutputFile property value 'D:\projects\3Dtest\Debug\..\lib\3DEngine.lib' ('D:\projects\3Dtest\lib\3DEngine.lib') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).">
+</Event><Event ErrorLevel="0" Project="3DEngine" Source="..\3DEngine\3DEngine\3DEngine.vcproj" Description="Done converting to new project file 'D:\projects\3DEngine\3DEngine\3DEngine.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="3DEngine" Source="..\3DEngine\3DEngine\3DEngine.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="3Dtest.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="3Dtest.sln" Description="Converted">
+</Event></UpgradeLog>

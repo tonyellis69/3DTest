@@ -1,12 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3Dtest", "3Dtest\3Dtest.vcproj", "{2B31DB01-ED5E-4B91-A4AF-D44F88390A8D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{ABEE2174-E439-41DC-B78D-BB09B70D7E20} = {ABEE2174-E439-41DC-B78D-BB09B70D7E20}
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3Dtest", "3Dtest\3Dtest.vcxproj", "{2B31DB01-ED5E-4B91-A4AF-D44F88390A8D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3DEngine", "..\3DEngine\3DEngine\3DEngine.vcproj", "{ABEE2174-E439-41DC-B78D-BB09B70D7E20}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3DEngine", "..\3DEngine\3DEngine\3DEngine.vcxproj", "{ABEE2174-E439-41DC-B78D-BB09B70D7E20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

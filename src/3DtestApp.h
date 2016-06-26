@@ -29,7 +29,8 @@ public:
 	
 	float* getTerrainData(glm::vec3& corner);
 	void createChunkData(Chunk& chunk, glm::vec3& samplePos);
-	bool chunkExists(glm::vec3& corner);
+	bool chunkExists(glm::vec3& sampleCorner);
+	void initChunkShell();
 
 	string dataPath; ///<Filepath to the Data folder
 	
@@ -47,6 +48,8 @@ public:
 	int hCCfaceInt;
 	int hCCnoCubesInt;
 	int hTerrainNoCubesInt;
+	
+	int hCCsamplePosVec;
 
 	int hChunkProg;
 	int hChunkCubeScale;
@@ -79,6 +82,8 @@ public:
 	glm::i32vec3 selectChk; ///<Index of the chunk we're selecting
 
 	glm::vec4* chunkDataTmp; ///<Reusable tmp store for genenerated chunk data.
+	CModel chunkShell; ///<An array of verts to represent the outer layer of a chunk.
+	int shellTotalVerts; ///<Total vertices that make up the shell.
 };
 
 const float yawAng = 0.22f;

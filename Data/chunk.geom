@@ -18,9 +18,34 @@ out	vec4 normal;
  void main()
 {   	
 		outColour = vColour[0]; 
-		//if (vert[0].cornerSample[0] > 0.5)
-		//	return;
-
+	
+		float iVertTest = 0.5;
+		int iFlagIndex = 0;
+		/*for(int iVertexTest = 0; iVertexTest < 8; iVertexTest++){
+			if(vert[0].cornerSample[iVertexTest] <= iVertexTest) 
+				iFlagIndex++;//|= 1<<iVertexTest;
+		}*/
+		
+		
+		
+	//Determine the index into the edge table which 
+	//tells us which vertices are inside of the surface 
+	iFlagIndex = int(vert[0].cornerSample[0] < iVertTest); 
+	iFlagIndex += int(vert[0].cornerSample[1] < iVertTest)*2; 
+	iFlagIndex += int(vert[0].cornerSample[2] < iVertTest)*4; 
+	iFlagIndex += int(vert[0].cornerSample[3] < iVertTest)*8; 
+	iFlagIndex += int(vert[0].cornerSample[4] < iVertTest)*16; 
+	iFlagIndex += int(vert[0].cornerSample[5] < iVertTest)*32; 
+	iFlagIndex += int(vert[0].cornerSample[6] < iVertTest)*64; 
+	iFlagIndex += int(vert[0].cornerSample[7] < iVertTest)*128; 
+	 
+	 
+	//Cube is entirely in/out of the surface 
+	if (iFlagIndex ==0 || iFlagIndex == 255) 
+		return; 
+		
+	
+		
 		
 		normal = vec4(normalize(cross(vec3(vert[0].corner[3] - vert[0].corner[2] ),
 								vec3(vert[0].corner[3] - vert[0].corner[7] ))),0);
