@@ -20,7 +20,7 @@ void main () {
 	//find the position in sample space of this vertex
 	vec4 vertSamplePos = vec4(nwSamplePos,1) + vertPos;
 	//outData.passSamplePos = nwSamplePos;
-	vertSamplePos.y += 32;
+	vertSamplePos.y += 31; //31
 	
 	//get a height value at this point
 	float surfaceHeight = octave_noise_2d(6,0.2,0.02,vertSamplePos.x,vertSamplePos.z);
@@ -34,7 +34,7 @@ void main () {
 	//vertSample = 1;
 	
 	vertSample = abs(vertSample);
-	//vertSample = clamp(vertSample,0,1);
+	vertSample = clamp(vertSample,0,1);
 	outData.vertSample = vertSample;
 
 	

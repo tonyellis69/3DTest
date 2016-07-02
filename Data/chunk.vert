@@ -1,4 +1,4 @@
-#version 420
+#version 330
 
 layout(location = 0) in vec4 position;
 
@@ -34,7 +34,7 @@ float getSample(vec4 cornerOffset) {
 	float sampleVal = sampleCorner.y - surfaceHeight;
 	
 	//4. we now have a sample value for this corner.
-	sampleVal = clamp(sampleVal,0,1);
+//	sampleVal = clamp(sampleVal,0,1);
 	return sampleVal;
 }
 
@@ -45,25 +45,25 @@ void main()
 	//gl_Position = mvpMatrix  * (position * cubeScale) ;
 	vColour = inColour;
 	
-	outData.corner[0] =  ((position + vec4(-0.3,-0.3,-0.3,0)) * cubeScale) ;
-	outData.corner[1] =  ((position + vec4(0.3,-0.3,-0.3,0)) * cubeScale) ;
-	outData.corner[2] =  ((position + vec4(0.3,-0.3,0.3,0)) * cubeScale) ;
-	outData.corner[3] =  ((position + vec4(-0.3,-0.3,0.3,0)) * cubeScale) ;
+	outData.corner[0] =  ((position + vec4(-0.5,-0.5,-0.5,0)) * cubeScale) ;
+	outData.corner[1] =  ((position + vec4(0.5,-0.5,-0.5,0)) * cubeScale) ;
+	outData.corner[5] =  ((position + vec4(0.5,-0.5,0.5,0)) * cubeScale) ;
+	outData.corner[4] =  ((position + vec4(-0.5,-0.5,0.5,0)) * cubeScale) ;
 	
 	
-	outData.corner[4] =  ((position + vec4(-0.3,0.3,-0.3,0)) * cubeScale) ;
-	outData.corner[5] =  ((position + vec4(0.3,0.3,-0.3,0)) * cubeScale) ;
-	outData.corner[6] =  ((position + vec4(0.3,0.3,0.3,0)) * cubeScale) ;
-	outData.corner[7] = ((position + vec4(-0.3,0.3,0.3,0)) * cubeScale) ;
+	outData.corner[3] =  ((position + vec4(-0.5,0.5,-0.5,0)) * cubeScale) ;
+	outData.corner[2] =  ((position + vec4(0.5,0.5,-0.5,0)) * cubeScale) ;
+	outData.corner[6] =  ((position + vec4(0.5,0.5,0.5,0)) * cubeScale) ;
+	outData.corner[7] = ((position + vec4(-0.5,0.5,0.5,0)) * cubeScale) ;
 	
 	outData.cornerSample[0] =  getSample(vec4(-0.5,-0.5,-0.5,0));
 	outData.cornerSample[1] =  getSample(vec4(0.5,-0.5,-0.5,0));
-	outData.cornerSample[2] =  getSample(vec4(0.5,-0.5,0.5,0));
-	outData.cornerSample[3] =  getSample(vec4(-0.5,-0.5,0.5,0));
+	outData.cornerSample[5] =  getSample(vec4(0.5,-0.5,0.5,0));
+	outData.cornerSample[4] =  getSample(vec4(-0.5,-0.5,0.5,0));
 	
 	
-	outData.cornerSample[4] =  getSample(vec4(-0.5,0.5,-0.5,0));
-	outData.cornerSample[5] =  getSample(vec4(0.5,0.5,-0.5,0));
+	outData.cornerSample[3] =  getSample(vec4(-0.5,0.5,-0.5,0));
+	outData.cornerSample[2] =  getSample(vec4(0.5,0.5,-0.5,0));
 	outData.cornerSample[6] =  getSample(vec4(0.5,0.5,0.5,0));
 	outData.cornerSample[7] =  getSample(vec4(-0.5,0.5,0.5,0));
 	

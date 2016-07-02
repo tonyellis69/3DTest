@@ -5,4 +5,1951 @@ Status: Using GLEW 1.12.0
 OpenGL version: 4.5.0 NVIDIA 353.30.
 Has NPOT
 
- time 407.825
+ time 445.525
+first:
+Chunk took: 20.0535
+Chunk took: 2.35858
+Chunk took: 1.63963
+Chunk took: 1.62912
+Chunk took: 1.63873
+Chunk took: 1.78012
+Chunk took: 1.64233
+Chunk took: 1.85877
+Chunk took: 1.77682
+Chunk took: 1.61621
+Chunk took: 1.69727
+Chunk took: 1.80053
+Chunk took: 1.73119
+Chunk took: 1.80443
+Chunk took: 1.63032
+Chunk took: 1.67025
+first:
+Chunk took: 26.0981
+Chunk took: 1.85156
+Chunk took: 1.70537
+Chunk took: 1.60451
+Chunk took: 1.64954
+Chunk took: 1.63363
+Chunk took: 1.85186
+Chunk took: 2.30185
+Chunk took: 1.67865
+Chunk took: 1.93351
+Chunk took: 2.02237
+Chunk took: 1.73599
+Chunk took: 1.64563
+Chunk took: 1.67925
+Chunk took: 1.87588
+Chunk took: 1.96593
+first:
+Chunk took: 3.68031
+Chunk took: 1.65464
+Chunk took: 1.63873
+Chunk took: 1.63092
+Chunk took: 1.71888
+Chunk took: 2.0734
+Chunk took: 1.7576
+Chunk took: 1.63273
+Chunk took: 1.62552
+Chunk took: 1.62612
+Chunk took: 1.62942
+Chunk took: 1.65074
+Chunk took: 1.63843
+Chunk took: 1.62732
+Chunk took: 1.88849
+Chunk took: 2.09862
+first:
+Chunk took: 2.66147
+Chunk took: 1.66965
+Chunk took: 1.63212
+Chunk took: 1.61802
+Chunk took: 1.88578
+Chunk took: 1.67595
+Chunk took: 1.64984
+Chunk took: 1.62012
+Chunk took: 1.62522
+Chunk took: 1.60511
+Chunk took: 1.61832
+Chunk took: 1.65314
+Chunk took: 1.62642
+Chunk took: 1.73209
+Chunk took: 1.85036
+Chunk took: 1.62942
+first:
+Chunk took: 2.84909
+Chunk took: 1.63062
+Chunk took: 1.63152
+Chunk took: 1.69216
+Chunk took: 1.89689
+Chunk took: 0.183415
+Chunk took: 1.69396
+Chunk took: 1.67385
+Chunk took: 1.67595
+Chunk took: 1.62072
+Chunk took: 1.67145
+Chunk took: 1.81884
+Chunk took: 18.256
+Chunk took: 0.249457
+Chunk took: 1.74289
+Chunk took: 1.72999
+first:
+Chunk took: 4.75679
+Chunk took: 1.56458
+Chunk took: 1.55708
+Chunk took: 1.86567
+Chunk took: 1.54297
+Chunk took: 1.54267
+Chunk took: 1.55618
+Chunk took: 1.52766
+Chunk took: 1.61111
+Chunk took: 1.55167
+Chunk took: 1.51895
+Chunk took: 1.54027
+Chunk took: 1.50935
+Chunk took: 1.66905
+Chunk took: 1.56248
+Chunk took: 1.54357
+first:
+Chunk took: 3.23213
+Chunk took: 1.58079
+Chunk took: 1.55828
+Chunk took: 0.633398
+Chunk took: 1.54327
+Chunk took: 1.54657
+Chunk took: 1.5955
+Chunk took: 1.54327
+Chunk took: 1.76661
+Chunk took: 2.27033
+Chunk took: 1.69426
+Chunk took: 1.62762
+Chunk took: 1.63603
+Chunk took: 1.80203
+Chunk took: 1.61501
+Chunk took: 1.63062
+first:
+Chunk took: 3.6644
+Chunk took: 1.68946
+Chunk took: 1.70357
+Chunk took: 1.61802
+Chunk took: 1.61111
+Chunk took: 1.64924
+Chunk took: 1.61621
+Chunk took: 1.62852
+Chunk took: 1.65314
+Chunk took: 1.61862
+Chunk took: 1.62342
+Chunk took: 1.61982
+Chunk took: 1.67295
+Chunk took: 1.61982
+Chunk took: 1.61742
+Chunk took: 1.67385
+first:
+Chunk took: 3.85832
+Chunk took: 1.96023
+Chunk took: 2.34627
+Chunk took: 1.64593
+Chunk took: 1.65554
+Chunk took: 1.62582
+Chunk took: 1.63573
+Chunk took: 1.62882
+Chunk took: 1.63032
+Chunk took: 1.62732
+Chunk took: 1.66575
+Chunk took: 1.63393
+Chunk took: 1.65044
+Chunk took: 1.63393
+Chunk took: 1.62912
+Chunk took: 1.62282
+first:
+Chunk took: 3.89915
+Chunk took: 1.63693
+Chunk took: 1.61922
+Chunk took: 1.62732
+Chunk took: 1.64143
+Chunk took: 1.60811
+Chunk took: 1.63062
+Chunk took: 1.61591
+Chunk took: 1.62312
+Chunk took: 2.0641
+Chunk took: 1.65374
+Chunk took: 1.62882
+Chunk took: 1.61982
+Chunk took: 1.61591
+Chunk took: 0.193321
+Chunk took: 1.70717
+first:
+Chunk took: 4.10928
+Chunk took: 2.02057
+Chunk took: 1.63182
+Chunk took: 1.63603
+Chunk took: 1.64533
+Chunk took: 1.61712
+Chunk took: 1.62522
+Chunk took: 1.66124
+Chunk took: 1.67625
+Chunk took: 1.78972
+Chunk took: 1.63573
+Chunk took: 1.63843
+Chunk took: 1.65044
+Chunk took: 1.63783
+Chunk took: 1.63182
+Chunk took: 1.62762
+first:
+Chunk took: 8.96333
+Chunk took: 1.53697
+Chunk took: 1.52676
+Chunk took: 1.51535
+Chunk took: 1.60301
+Chunk took: 1.50545
+Chunk took: 1.52766
+Chunk took: 1.50244
+Chunk took: 1.54417
+Chunk took: 0.166605
+Chunk took: 1.71198
+Chunk took: 1.80683
+Chunk took: 1.50094
+Chunk took: 0.176211
+Chunk took: 1.51145
+Chunk took: 1.50575
+first:
+Chunk took: 5.99537
+Chunk took: 0.181014
+Chunk took: 1.51865
+Chunk took: 1.49224
+Chunk took: 1.49554
+Chunk took: 1.65854
+Chunk took: 1.62732
+Chunk took: 1.64203
+Chunk took: 1.64563
+Chunk took: 1.63693
+Chunk took: 1.81674
+Chunk took: 1.62402
+Chunk took: 1.63513
+Chunk took: 1.62372
+Chunk took: 1.63333
+Chunk took: 1.63933
+first:
+Chunk took: 5.26501
+Chunk took: 1.63963
+Chunk took: 1.7582
+Chunk took: 1.64743
+Chunk took: 1.73899
+Chunk took: 1.9092
+Chunk took: 1.63243
+Chunk took: 1.68196
+Chunk took: 1.61441
+Chunk took: 1.63933
+Chunk took: 1.63363
+Chunk took: 1.62102
+Chunk took: 1.65944
+Chunk took: 1.62882
+Chunk took: 1.81194
+Chunk took: 1.66455
+first:
+Chunk took: 5.76992
+Chunk took: 1.63693
+Chunk took: 1.62972
+Chunk took: 1.62942
+Chunk took: 1.62192
+Chunk took: 1.61772
+Chunk took: 1.62432
+Chunk took: 1.62102
+Chunk took: 1.62072
+Chunk took: 1.72458
+Chunk took: 1.67925
+Chunk took: 1.62732
+Chunk took: 1.64713
+Chunk took: 1.67175
+Chunk took: 1.71167
+Chunk took: 0.449983
+first:
+Chunk took: 6.16257
+Chunk took: 1.67475
+Chunk took: 1.60811
+Chunk took: 1.65074
+Chunk took: 1.61141
+Chunk took: 1.62312
+Chunk took: 1.61471
+Chunk took: 1.73209
+Chunk took: 1.71107
+Chunk took: 1.64954
+Chunk took: 1.61531
+Chunk took: 1.62552
+Chunk took: 1.62222
+Chunk took: 1.63513
+Chunk took: 1.61471
+Chunk took: 1.64023
+first:
+Chunk took: 7.84903
+Chunk took: 1.64713
+Chunk took: 1.65464
+Chunk took: 1.7522
+Chunk took: 1.63393
+Chunk took: 0.198425
+Chunk took: 1.71408
+Chunk took: 1.62792
+Chunk took: 1.62852
+Chunk took: 1.72939
+Chunk took: 1.99025
+Chunk took: 1.62042
+Chunk took: 1.61141
+Chunk took: 1.63423
+Chunk took: 1.66725
+Chunk took: 1.62762
+first:
+Chunk took: 6.72452
+Chunk took: 1.65764
+Chunk took: 1.60331
+Chunk took: 1.61712
+Chunk took: 1.62462
+Chunk took: 1.62642
+Chunk took: 1.64984
+Chunk took: 1.67475
+Chunk took: 1.63873
+Chunk took: 1.64683
+Chunk took: 1.69336
+Chunk took: 1.63723
+Chunk took: 1.60721
+Chunk took: 1.62822
+Chunk took: 1.61081
+Chunk took: 1.61772
+first:
+Chunk took: 6.93616
+Chunk took: 1.69907
+Chunk took: 1.94882
+Chunk took: 1.66845
+Chunk took: 1.65404
+Chunk took: 1.60721
+Chunk took: 1.67985
+Chunk took: 1.71978
+Chunk took: 1.62522
+Chunk took: 1.65374
+Chunk took: 1.61862
+Chunk took: 1.62042
+Chunk took: 1.9029
+Chunk took: 1.64263
+Chunk took: 1.63663
+Chunk took: 1.62522
+first:
+Chunk took: 7.11207
+Chunk took: 1.62672
+Chunk took: 1.70477
+Chunk took: 0.271971
+Chunk took: 1.72578
+Chunk took: 1.63723
+Chunk took: 1.62282
+Chunk took: 1.72428
+Chunk took: 1.62702
+Chunk took: 1.63363
+Chunk took: 1.62462
+Chunk took: 1.61892
+Chunk took: 1.71858
+Chunk took: 1.96623
+Chunk took: 1.60931
+Chunk took: 1.64263
+first:
+Chunk took: 7.1628
+Chunk took: 1.70417
+Chunk took: 0.608182
+Chunk took: 0.431671
+Chunk took: 2.24031
+Chunk took: 1.92901
+Chunk took: 2.15265
+Chunk took: 2.19318
+Chunk took: 2.13734
+Chunk took: 2.50087
+Chunk took: 2.0719
+Chunk took: 2.12804
+Chunk took: 1.82695
+Chunk took: 1.73329
+Chunk took: 1.7594
+Chunk took: 1.70057
+first:
+Chunk took: 6.10944
+Chunk took: 1.77261
+Chunk took: 1.55738
+Chunk took: 1.52526
+Chunk took: 1.93321
+Chunk took: 1.79783
+Chunk took: 1.73209
+Chunk took: 1.88338
+Chunk took: 2.04458
+Chunk took: 1.73209
+Chunk took: 1.68556
+Chunk took: 1.70567
+Chunk took: 1.65974
+Chunk took: 1.78702
+Chunk took: 1.66695
+Chunk took: 1.65704
+first:
+Chunk took: 7.90276
+Chunk took: 1.7579
+Chunk took: 1.69366
+Chunk took: 1.66034
+Chunk took: 1.65824
+Chunk took: 1.70747
+Chunk took: 1.70927
+Chunk took: 1.87648
+Chunk took: 1.84346
+Chunk took: 1.70567
+Chunk took: 1.69426
+Chunk took: 1.66755
+Chunk took: 1.68676
+Chunk took: 1.64353
+Chunk took: 0.193922
+Chunk took: 1.72698
+first:
+Chunk took: 8.10629
+Chunk took: 1.82184
+Chunk took: 1.70057
+Chunk took: 1.67955
+Chunk took: 1.81374
+Chunk took: 1.99595
+Chunk took: 1.68496
+Chunk took: 1.70627
+Chunk took: 1.67355
+Chunk took: 1.76991
+Chunk took: 1.745
+Chunk took: 1.70117
+Chunk took: 1.70207
+Chunk took: 1.88548
+Chunk took: 1.71258
+Chunk took: 1.71017
+first:
+Chunk took: 8.65774
+Chunk took: 1.75971
+Chunk took: 1.67895
+Chunk took: 1.66304
+Chunk took: 1.73029
+Chunk took: 1.71047
+Chunk took: 1.7462
+Chunk took: 1.67775
+Chunk took: 1.71468
+Chunk took: 1.7531
+Chunk took: 1.73689
+Chunk took: 1.66695
+Chunk took: 1.80503
+Chunk took: 1.97764
+Chunk took: 1.70237
+Chunk took: 1.68466
+first:
+Chunk took: 8.84926
+Chunk took: 1.80503
+Chunk took: 1.66334
+Chunk took: 1.65434
+Chunk took: 1.72909
+Chunk took: 1.66124
+Chunk took: 1.68646
+Chunk took: 1.67895
+Chunk took: 1.65224
+Chunk took: 1.66154
+Chunk took: 1.73719
+Chunk took: 1.748
+Chunk took: 1.63543
+Chunk took: 1.79062
+Chunk took: 1.64353
+Chunk took: 1.72608
+first:
+Chunk took: 10.9143
+Chunk took: 1.7588
+Chunk took: 1.64834
+Chunk took: 1.9074
+Chunk took: 2.05779
+Chunk took: 1.69757
+Chunk took: 1.66364
+Chunk took: 1.57179
+Chunk took: 1.52826
+Chunk took: 1.72128
+Chunk took: 1.7471
+Chunk took: 1.73149
+Chunk took: 1.73959
+Chunk took: 1.70747
+Chunk took: 1.70207
+Chunk took: 1.69697
+first:
+Chunk took: 9.46254
+Chunk took: 1.63903
+Chunk took: 1.62882
+Chunk took: 1.73419
+Chunk took: 1.66364
+Chunk took: 1.64113
+Chunk took: 1.79092
+Chunk took: 1.81914
+Chunk took: 1.914
+Chunk took: 1.82725
+Chunk took: 1.60151
+Chunk took: 0.200526
+Chunk took: 1.69727
+Chunk took: 1.88008
+Chunk took: 1.97434
+Chunk took: 1.67775
+first:
+Chunk took: 10.1146
+Chunk took: 1.9062
+Chunk took: 1.69126
+Chunk took: 1.66665
+Chunk took: 1.63092
+Chunk took: 1.63573
+Chunk took: 1.73719
+Chunk took: 0.192421
+Chunk took: 1.85847
+Chunk took: 1.69066
+Chunk took: 1.72218
+Chunk took: 1.62612
+Chunk took: 1.73059
+Chunk took: 0.19032
+Chunk took: 0.271971
+Chunk took: 1.72608
+first:
+Chunk took: 8.44911
+Chunk took: 0.33411
+Chunk took: 1.87198
+Chunk took: 1.7513
+Chunk took: 1.66935
+Chunk took: 1.70957
+Chunk took: 1.64593
+Chunk took: 1.85997
+Chunk took: 0.201426
+Chunk took: 1.78222
+Chunk took: 1.7477
+Chunk took: 1.68586
+Chunk took: 1.68466
+Chunk took: 1.76181
+Chunk took: 1.71438
+Chunk took: 1.77802
+first:
+Chunk took: 10.1818
+Chunk took: 1.54147
+Chunk took: 1.53096
+Chunk took: 1.66515
+Chunk took: 1.57569
+Chunk took: 1.5865
+Chunk took: 1.54717
+Chunk took: 1.54837
+Chunk took: 1.55227
+Chunk took: 1.54927
+Chunk took: 1.54147
+Chunk took: 1.60211
+Chunk took: 1.53757
+Chunk took: 1.53817
+Chunk took: 1.72518
+Chunk took: 1.71918
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.78282
+Chunk took: 1.66815
+Chunk took: 1.80503
+Chunk took: 1.78252
+Chunk took: 1.68076
+Chunk took: 1.7564
+Chunk took: 1.74139
+Chunk took: 1.74259
+Chunk took: 1.72999
+Chunk took: 1.754
+Chunk took: 1.74259
+Chunk took: 1.72969
+Chunk took: 0.242853
+Chunk took: 1.7525
+Chunk took: 1.69396
+Chunk took: 0.247956
+first:
+Chunk took: 8.16693
+Chunk took: 1.77982
+Chunk took: 1.7465
+Chunk took: 1.77081
+Chunk took: 0.252459
+Chunk took: 1.69967
+Chunk took: 1.68646
+Chunk took: 1.72969
+Chunk took: 1.79092
+Chunk took: 1.68316
+Chunk took: 0.232646
+Chunk took: 1.68706
+Chunk took: 1.67295
+Chunk took: 1.69667
+Chunk took: 1.68016
+Chunk took: 1.67985
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.73449
+Chunk took: 1.63273
+Chunk took: 1.72518
+Chunk took: 1.77201
+Chunk took: 1.81614
+Chunk took: 2.04879
+Chunk took: 1.7552
+Chunk took: 1.7549
+Chunk took: 1.74049
+Chunk took: 1.7444
+Chunk took: 0.289982
+Chunk took: 1.79333
+Chunk took: 1.68916
+Chunk took: 1.67655
+Chunk took: 1.73089
+Chunk took: 0.264466
+first:
+Chunk took: 6.65668
+Chunk took: 1.92121
+Chunk took: 1.63453
+Chunk took: 1.64353
+Chunk took: 1.63092
+Chunk took: 1.65134
+Chunk took: 1.63873
+Chunk took: 1.64533
+Chunk took: 1.68196
+Chunk took: 0.20683
+Chunk took: 1.7504
+Chunk took: 1.68916
+Chunk took: 1.65044
+Chunk took: 1.63513
+Chunk took: 1.62582
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 0.205329
+Chunk took: 1.7555
+Chunk took: 1.62492
+Chunk took: 1.78192
+Chunk took: 1.77682
+Chunk took: 1.7546
+Chunk took: 1.76331
+Chunk took: 1.81404
+Chunk took: 1.72939
+Chunk took: 1.66575
+Chunk took: 0.247355
+Chunk took: 1.74259
+Chunk took: 1.68616
+Chunk took: 1.69126
+Chunk took: 1.71978
+Chunk took: 1.73299
+first:
+Chunk took: 7.94479
+Chunk took: 1.9179
+Chunk took: 1.79813
+Chunk took: 1.67115
+Chunk took: 1.65254
+Chunk took: 1.65914
+Chunk took: 1.65674
+Chunk took: 1.64743
+Chunk took: 1.64083
+Chunk took: 1.63122
+Chunk took: 2.16766
+Chunk took: 1.74349
+Chunk took: 1.72398
+Chunk took: 0.19092
+Chunk took: 1.68586
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.76151
+Chunk took: 1.69877
+Chunk took: 1.68886
+Chunk took: 1.69366
+Chunk took: 1.71918
+Chunk took: 1.65434
+Chunk took: 1.70987
+Chunk took: 1.69697
+Chunk took: 1.93862
+Chunk took: 1.68256
+Chunk took: 0.23835
+Chunk took: 1.7441
+Chunk took: 1.68316
+Chunk took: 1.69967
+Chunk took: 1.69276
+Chunk took: 1.69757
+first:
+Chunk took: 10.0887
+Chunk took: 1.56068
+Chunk took: 1.54477
+Chunk took: 1.55798
+Chunk took: 1.56158
+Chunk took: 1.56608
+Chunk took: 1.56818
+Chunk took: 1.53847
+Chunk took: 1.53967
+Chunk took: 1.79363
+Chunk took: 1.77682
+Chunk took: 1.66274
+Chunk took: 1.66334
+Chunk took: 1.63573
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.81764
+Chunk took: 1.68376
+Chunk took: 1.67475
+Chunk took: 1.68616
+Chunk took: 1.72668
+Chunk took: 1.7495
+Chunk took: 1.68556
+Chunk took: 1.68316
+Chunk took: 1.67925
+Chunk took: 1.74169
+Chunk took: 1.76631
+Chunk took: 1.74319
+Chunk took: 1.74319
+Chunk took: 1.78372
+Chunk took: 1.81674
+Chunk took: 1.69727
+first:
+Chunk took: 10.0563
+Chunk took: 1.65704
+Chunk took: 1.66425
+Chunk took: 1.64834
+Chunk took: 1.64803
+Chunk took: 1.64473
+Chunk took: 1.63723
+Chunk took: 1.72248
+Chunk took: 1.73839
+Chunk took: 1.66304
+Chunk took: 1.64233
+Chunk took: 1.65134
+Chunk took: 1.66004
+Chunk took: 1.65914
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.84316
+Chunk took: 1.68736
+Chunk took: 1.77381
+Chunk took: 1.7522
+Chunk took: 1.82605
+Chunk took: 1.754
+Chunk took: 1.76391
+Chunk took: 1.77592
+Chunk took: 1.80083
+Chunk took: 0.253059
+Chunk took: 1.748
+Chunk took: 1.68226
+Chunk took: 1.68796
+Chunk took: 1.72939
+Chunk took: 1.7453
+Chunk took: 1.64443
+first:
+Chunk took: 9.92934
+Chunk took: 1.65494
+Chunk took: 1.64413
+Chunk took: 1.65404
+Chunk took: 0.208631
+Chunk took: 1.70597
+Chunk took: 1.64773
+Chunk took: 1.64473
+Chunk took: 1.7549
+Chunk took: 1.68046
+Chunk took: 1.65254
+Chunk took: 1.72308
+Chunk took: 1.65974
+Chunk took: 1.64924
+Chunk took: 1.64683
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.71918
+Chunk took: 1.63963
+Chunk took: 1.66785
+Chunk took: 1.67115
+Chunk took: 1.65104
+Chunk took: 1.70447
+Chunk took: 1.65734
+Chunk took: 1.70327
+Chunk took: 1.66545
+Chunk took: 1.68886
+Chunk took: 0.23955
+Chunk took: 1.757
+Chunk took: 1.64023
+Chunk took: 1.68016
+Chunk took: 0.23955
+Chunk took: 1.68676
+first:
+Chunk took: 10.0482
+Chunk took: 1.76631
+Chunk took: 1.68346
+Chunk took: 1.69516
+Chunk took: 1.7516
+Chunk took: 1.66845
+Chunk took: 1.67085
+Chunk took: 1.68466
+Chunk took: 1.67205
+Chunk took: 0.237749
+Chunk took: 0.274072
+Chunk took: 1.73209
+Chunk took: 1.70057
+Chunk took: 1.67955
+Chunk took: 1.70837
+Chunk took: 1.68616
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.60931
+Chunk took: 1.49494
+Chunk took: 1.51625
+Chunk took: 1.50665
+Chunk took: 1.52766
+Chunk took: 1.56128
+Chunk took: 1.54627
+Chunk took: 1.60211
+Chunk took: 0.178912
+Chunk took: 1.51385
+Chunk took: 1.49074
+Chunk took: 1.48833
+Chunk took: 1.49674
+Chunk took: 1.49704
+Chunk took: 0.171408
+Chunk took: 1.52286
+first:
+Chunk took: 10.0473
+Chunk took: 1.69306
+Chunk took: 1.78972
+Chunk took: 1.68676
+Chunk took: 1.70147
+Chunk took: 1.69156
+Chunk took: 1.69396
+Chunk took: 1.69847
+Chunk took: 1.79002
+Chunk took: 1.69216
+Chunk took: 1.68586
+Chunk took: 1.69997
+Chunk took: 1.69997
+Chunk took: 1.67865
+Chunk took: 1.68106
+Chunk took: 1.65134
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.78132
+Chunk took: 1.67385
+Chunk took: 1.85577
+Chunk took: 1.77111
+Chunk took: 1.79873
+Chunk took: 1.70777
+Chunk took: 1.66515
+Chunk took: 1.68046
+Chunk took: 1.67865
+Chunk took: 1.67235
+Chunk took: 1.64473
+Chunk took: 1.67535
+Chunk took: 1.66875
+Chunk took: 1.67925
+Chunk took: 1.62042
+Chunk took: 1.67595
+first:
+Chunk took: 8.50584
+Chunk took: 1.81524
+Chunk took: 1.68466
+Chunk took: 1.64023
+Chunk took: 1.65134
+Chunk took: 1.64203
+Chunk took: 1.63873
+Chunk took: 1.73179
+Chunk took: 1.64203
+Chunk took: 1.63963
+Chunk took: 1.61111
+Chunk took: 0.204729
+Chunk took: 1.68166
+Chunk took: 1.65434
+Chunk took: 1.66845
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.73989
+Chunk took: 1.62462
+Chunk took: 1.69997
+Chunk took: 1.67835
+Chunk took: 1.67505
+Chunk took: 1.68706
+Chunk took: 1.53697
+Chunk took: 1.51895
+Chunk took: 1.53606
+Chunk took: 1.51985
+Chunk took: 1.51205
+Chunk took: 0.225742
+Chunk took: 1.53576
+Chunk took: 1.54507
+Chunk took: 1.53787
+Chunk took: 1.55167
+first:
+Chunk took: 9.80266
+Chunk took: 1.82004
+Chunk took: 1.53546
+Chunk took: 1.54057
+Chunk took: 1.54447
+Chunk took: 1.53847
+Chunk took: 1.56368
+Chunk took: 1.54927
+Chunk took: 1.56939
+Chunk took: 1.52976
+Chunk took: 1.53426
+Chunk took: 1.52346
+Chunk took: 1.53156
+Chunk took: 0.200226
+Chunk took: 1.53216
+Chunk took: 1.52436
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.7585
+Chunk took: 1.63363
+Chunk took: 1.79813
+Chunk took: 1.76151
+Chunk took: 1.76811
+Chunk took: 1.78372
+Chunk took: 1.78432
+Chunk took: 1.78072
+Chunk took: 1.7591
+Chunk took: 1.7588
+Chunk took: 1.74049
+Chunk took: 1.7525
+Chunk took: 1.72098
+Chunk took: 1.68886
+Chunk took: 1.72188
+Chunk took: 1.69156
+first:
+Chunk took: 9.97136
+Chunk took: 1.63122
+Chunk took: 1.65584
+Chunk took: 1.64894
+Chunk took: 1.68856
+Chunk took: 1.66124
+Chunk took: 1.66725
+Chunk took: 1.69787
+Chunk took: 1.72218
+Chunk took: 1.62312
+Chunk took: 1.67505
+Chunk took: 1.64023
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.61802
+Chunk took: 1.48533
+Chunk took: 1.53787
+Chunk took: 1.51325
+Chunk took: 1.51505
+Chunk took: 1.53787
+Chunk took: 1.52136
+Chunk took: 1.52736
+Chunk took: 1.53997
+Chunk took: 1.56548
+Chunk took: 1.52316
+Chunk took: 1.53126
+Chunk took: 1.56128
+Chunk took: 1.54357
+Chunk took: 1.56338
+Chunk took: 1.57749
+first:
+Chunk took: 10.0428
+Chunk took: 1.64834
+Chunk took: 1.58019
+Chunk took: 1.65854
+Chunk took: 1.60871
+Chunk took: 1.60721
+Chunk took: 1.58109
+Chunk took: 1.5859
+Chunk took: 1.58109
+Chunk took: 1.57869
+Chunk took: 1.5979
+Chunk took: 1.67985
+Chunk took: 1.57959
+Chunk took: 1.57749
+Chunk took: 1.62762
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 1.61652
+Chunk took: 1.50575
+Chunk took: 1.56488
+Chunk took: 1.5892
+Chunk took: 1.5934
+Chunk took: 1.5925
+Chunk took: 1.5961
+Chunk took: 1.60241
+Chunk took: 1.60151
+Chunk took: 1.54867
+Chunk took: 1.51595
+Chunk took: 1.56098
+Chunk took: 0.196323
+Chunk took: 0.247656
+Chunk took: 0.245854
+Chunk took: 1.53096
+first:
+Chunk took: 9.97617
+Chunk took: 1.52376
+Chunk took: 1.50605
+Chunk took: 1.50665
+Chunk took: 1.55348
+Chunk took: 1.61081
+Chunk took: 1.52586
+Chunk took: 1.51865
+Chunk took: 0.180113
+Chunk took: 1.54207
+Chunk took: 1.51115
+Chunk took: 1.50485
+Chunk took: 1.49884
+Chunk took: 1.53997
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
