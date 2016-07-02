@@ -56,6 +56,7 @@ public:
 	int hChunkColour;
 	int hChunkSamplePos;
 	int hChunkHfactor;
+	int hChunkTriTable;
 
 	int hTmpProg,hTmpMatrix;
 

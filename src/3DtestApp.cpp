@@ -116,10 +116,10 @@ void C3DtestApp::onStart() {
 	hChunkColour = Engine.getShaderDataHandle("inColour");
 	hChunkSamplePos = Engine.getShaderDataHandle("samplePos");
 	hChunkHfactor = Engine.getShaderDataHandle("hFactor");
+	hChunkTriTable = Engine.getShaderDataHandle("triTableTex");
 
 	triTableTex = Engine.createDataTexture(intTex,16,256,&triTable);
-
-	glUniform1i(Engine.getShaderDataHandle("triTableTex"),0); 
+	Engine.uploadDataTexture(hChunkTriTable,triTableTex);
 
 		oldTime = Engine.Time.milliseconds();
 		lastPress = 0;
