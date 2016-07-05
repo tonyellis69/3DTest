@@ -15,8 +15,10 @@ out VertexData {
 	vec4 vert;
 	float sample;
 	
-	vec4 opVert;
-	float opSample;
+	vec4 sampleCorner;
+	
+	//vec4 opVert;
+	//float opSample;
 } outData;
 
 out vec4 vColour;
@@ -27,6 +29,7 @@ float getSample(vec4 cornerOffset) {
 	vec4 sampleCorner = vec4(samplePos,1) + position + cornerOffset ;
 	sampleCorner.y += 16;
 	
+	outData.sampleCorner = sampleCorner;
 	//1. get the surface height at the 2D position of this corner.
 	float surfaceHeight = octave_noise_2d(6,0.2,0.02,sampleCorner.x,sampleCorner.z);
 	surfaceHeight = (surfaceHeight * 0.5) + 0.5;  //convert to 0 - 1.
@@ -52,10 +55,10 @@ void main()
 	vColour = inColour;
 	
 	outData.vert = position * cubeScale;
-	outData.opVert = outData.vert + vec4(0,0,cubeScale.z,0);
+	//outData.opVert = outData.vert + vec4(0,0,cubeScale.z,0);
 	
 	outData.sample = getSample(vec4(0,0,0,0));
-	outData.opSample = getSample(vec4(0,0,1,0));
+	//outData.opSample = getSample(vec4(0,0,1,0));
 	
 	
 	/*

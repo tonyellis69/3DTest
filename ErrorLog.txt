@@ -5,2466 +5,1030 @@ Status: Using GLEW 1.12.0
 OpenGL version: 4.5.0 NVIDIA 353.30.
 Has NPOT
 
- time 426.085
+ time 377.404
 first:
-Chunk took: 52192 by query timer
-Chunk took: 26.0621
-Chunk took: 49120 by query timer
-Chunk took: 2.00466
-Chunk took: 37920 by query timer
-Chunk took: 1.53757
-Chunk took: 47136 by query timer
-Chunk took: 1.55708
-Chunk took: 44000 by query timer
-Chunk took: 1.5865
-Chunk took: 44064 by query timer
-Chunk took: 1.57029
-Chunk took: 38880 by query timer
-Chunk took: 1.55018
-Chunk took: 48128 by query timer
-Chunk took: 1.96744
-Chunk took: 50176 by query timer
-Chunk took: 1.57359
-Chunk took: 47136 by query timer
-Chunk took: 1.55168
-Chunk took: 42976 by query timer
-Chunk took: 1.55348
-Chunk took: 49184 by query timer
-Chunk took: 1.55468
-Chunk took: 49184 by query timer
-Chunk took: 1.62943
-Chunk took: 47136 by query timer
-Chunk took: 1.62192
-Chunk took: 49184 by query timer
-Chunk took: 1.59731
-Chunk took: 48128 by query timer
-Chunk took: 1.5865
+Chunk took: 76800 by query timer
+Chunk took: 35.2961
+Chunk took: 66528 by query timer
+Chunk took: 2.11604
+Chunk took: 67584 by query timer
+Chunk took: 1.74831
+Chunk took: 69632 by query timer
+Chunk took: 1.66095
+Chunk took: 67584 by query timer
+Chunk took: 1.64594
+Chunk took: 65536 by query timer
+Chunk took: 1.65795
+Chunk took: 62464 by query timer
+Chunk took: 1.83536
+Chunk took: 74752 by query timer
+Chunk took: 1.7384
+Chunk took: 75776 by query timer
+Chunk took: 1.64654
+Chunk took: 67584 by query timer
+Chunk took: 1.61502
+Chunk took: 65536 by query timer
+Chunk took: 1.62013
+Chunk took: 70656 by query timer
+Chunk took: 1.573
+Chunk took: 75808 by query timer
+Chunk took: 1.68947
+Chunk took: 71712 by query timer
+Chunk took: 1.69878
+Chunk took: 71648 by query timer
+Chunk took: 1.5748
+Chunk took: 72672 by query timer
+Chunk took: 1.54148
 first:
-Chunk took: 45056 by query timer
-Chunk took: 37.7626
-Chunk took: 52256 by query timer
-Chunk took: 1.71588
-Chunk took: 53248 by query timer
-Chunk took: 1.59281
-Chunk took: 36896 by query timer
-Chunk took: 1.54267
-Chunk took: 45056 by query timer
-Chunk took: 1.54838
-Chunk took: 47104 by query timer
-Chunk took: 1.54868
-Chunk took: 49120 by query timer
-Chunk took: 2.08391
-Chunk took: 45056 by query timer
-Chunk took: 1.92541
-Chunk took: 44064 by query timer
-Chunk took: 1.70718
-Chunk took: 52192 by query timer
-Chunk took: 1.85457
-Chunk took: 53216 by query timer
-Chunk took: 1.69307
-Chunk took: 37888 by query timer
-Chunk took: 2.51018
-Chunk took: 49184 by query timer
-Chunk took: 1.62192
-Chunk took: 50176 by query timer
-Chunk took: 1.60721
-Chunk took: 41952 by query timer
-Chunk took: 1.60391
-Chunk took: 48096 by query timer
-Chunk took: 1.76301
-first:
-Chunk took: 48128 by query timer
-Chunk took: 3.72535
-Chunk took: 39936 by query timer
-Chunk took: 1.61172
-Chunk took: 39968 by query timer
-Chunk took: 1.60481
-Chunk took: 46048 by query timer
-Chunk took: 1.60601
-Chunk took: 44000 by query timer
-Chunk took: 1.61082
-Chunk took: 46080 by query timer
-Chunk took: 1.92632
-Chunk took: 46112 by query timer
-Chunk took: 1.70057
-Chunk took: 43008 by query timer
-Chunk took: 1.93532
-Chunk took: 43008 by query timer
-Chunk took: 1.61862
-Chunk took: 44000 by query timer
-Chunk took: 1.63033
-Chunk took: 45056 by query timer
-Chunk took: 1.61292
-Chunk took: 43008 by query timer
-Chunk took: 1.66785
-Chunk took: 49152 by query timer
-Chunk took: 1.7405
-Chunk took: 43040 by query timer
-Chunk took: 1.68586
-Chunk took: 48128 by query timer
-Chunk took: 1.92932
-Chunk took: 48128 by query timer
-Chunk took: 1.89059
-first:
-Chunk took: 50176 by query timer
-Chunk took: 2.68429
-Chunk took: 36864 by query timer
-Chunk took: 1.61352
-Chunk took: 37888 by query timer
-Chunk took: 1.62463
-Chunk took: 36864 by query timer
-Chunk took: 2.17277
-Chunk took: 40992 by query timer
-Chunk took: 1.79663
-Chunk took: 51232 by query timer
-Chunk took: 17.1252
-Chunk took: 48128 by query timer
-Chunk took: 1.66305
-Chunk took: 48128 by query timer
-Chunk took: 1.60751
-Chunk took: 46080 by query timer
-Chunk took: 1.65735
-Chunk took: 36896 by query timer
-Chunk took: 1.63843
-Chunk took: 37920 by query timer
-Chunk took: 1.63723
-Chunk took: 46080 by query timer
-Chunk took: 1.86207
-Chunk took: 47072 by query timer
-Chunk took: 1.79513
-Chunk took: 49184 by query timer
-Chunk took: 2.40542
-Chunk took: 51168 by query timer
-Chunk took: 1.83356
-Chunk took: 42016 by query timer
-Chunk took: 1.62523
-first:
-Chunk took: 48160 by query timer
-Chunk took: 2.88362
-Chunk took: 60384 by query timer
-Chunk took: 1.72969
-Chunk took: 51168 by query timer
-Chunk took: 1.7372
-Chunk took: 44032 by query timer
-Chunk took: 2.2214
-Chunk took: 40960 by query timer
-Chunk took: 1.71408
-Chunk took: 36832 by query timer
-Chunk took: 0.236849
-Chunk took: 49120 by query timer
-Chunk took: 1.77232
-Chunk took: 50176 by query timer
-Chunk took: 1.67296
-Chunk took: 47072 by query timer
-Chunk took: 1.63873
-Chunk took: 46080 by query timer
-Chunk took: 1.65675
-Chunk took: 49120 by query timer
-Chunk took: 1.79573
-Chunk took: 47072 by query timer
-Chunk took: 1.95994
-Chunk took: 46112 by query timer
-Chunk took: 2.09142
-Chunk took: 36896 by query timer
-Chunk took: 0.44338
-Chunk took: 51168 by query timer
-Chunk took: 2.2169
-Chunk took: 49152 by query timer
+Chunk took: 67584 by query timer
+Chunk took: 37.229
+Chunk took: 72704 by query timer
+Chunk took: 1.79784
+Chunk took: 75744 by query timer
+Chunk took: 1.70958
+Chunk took: 61408 by query timer
+Chunk took: 1.7279
+Chunk took: 69664 by query timer
+Chunk took: 1.62013
+Chunk took: 70656 by query timer
+Chunk took: 1.63364
+Chunk took: 75776 by query timer
+Chunk took: 1.70928
+Chunk took: 68576 by query timer
+Chunk took: 1.93413
+Chunk took: 68640 by query timer
+Chunk took: 1.579
+Chunk took: 76832 by query timer
+Chunk took: 1.76392
+Chunk took: 76768 by query timer
+Chunk took: 1.65405
+Chunk took: 61472 by query timer
+Chunk took: 1.56759
+Chunk took: 73728 by query timer
+Chunk took: 1.5832
+Chunk took: 73760 by query timer
+Chunk took: 1.58561
+Chunk took: 64544 by query timer
+Chunk took: 1.58711
+Chunk took: 72704 by query timer
 Chunk took: 1.77412
 first:
-Chunk took: 44064 by query timer
-Chunk took: 3.23634
-Chunk took: 48160 by query timer
-Chunk took: 1.85427
-Chunk took: 48128 by query timer
-Chunk took: 2.01757
-Chunk took: 50176 by query timer
-Chunk took: 2.07521
-Chunk took: 40928 by query timer
-Chunk took: 1.85337
-Chunk took: 39968 by query timer
-Chunk took: 2.01397
-Chunk took: 43008 by query timer
-Chunk took: 1.85307
-Chunk took: 40928 by query timer
-Chunk took: 1.71078
-Chunk took: 41984 by query timer
-Chunk took: 1.71258
-Chunk took: 48128 by query timer
-Chunk took: 1.67836
-Chunk took: 49120 by query timer
-Chunk took: 1.68436
-Chunk took: 45088 by query timer
-Chunk took: 1.69697
-Chunk took: 51232 by query timer
-Chunk took: 1.66935
-Chunk took: 48160 by query timer
-Chunk took: 1.67626
-Chunk took: 41952 by query timer
-Chunk took: 1.70117
-Chunk took: 52224 by query timer
-Chunk took: 1.63753
-first:
-Chunk took: 53248 by query timer
-Chunk took: 3.34561
-Chunk took: 45056 by query timer
-Chunk took: 1.86298
-Chunk took: 48128 by query timer
-Chunk took: 1.65434
-Chunk took: 36896 by query timer
-Chunk took: 0.193022
-Chunk took: 51232 by query timer
-Chunk took: 1.66275
-Chunk took: 52192 by query timer
-Chunk took: 1.62162
-Chunk took: 41952 by query timer
-Chunk took: 1.67085
-Chunk took: 53248 by query timer
-Chunk took: 1.62673
-Chunk took: 54240 by query timer
-Chunk took: 1.8957
-Chunk took: 42976 by query timer
-Chunk took: 1.97405
-Chunk took: 47104 by query timer
-Chunk took: 1.62523
-Chunk took: 43008 by query timer
-Chunk took: 1.62853
-Chunk took: 49152 by query timer
-Chunk took: 1.63753
-Chunk took: 37888 by query timer
-Chunk took: 1.64294
-Chunk took: 40960 by query timer
-Chunk took: 1.63243
-Chunk took: 51168 by query timer
-Chunk took: 1.68016
-first:
-Chunk took: 46112 by query timer
-Chunk took: 3.62539
-Chunk took: 48096 by query timer
-Chunk took: 1.65404
-Chunk took: 47072 by query timer
-Chunk took: 1.64684
-Chunk took: 50176 by query timer
-Chunk took: 1.64054
-Chunk took: 51232 by query timer
-Chunk took: 1.64504
-Chunk took: 43008 by query timer
-Chunk took: 1.68436
-Chunk took: 48128 by query timer
-Chunk took: 1.63393
-Chunk took: 47136 by query timer
-Chunk took: 1.64804
-Chunk took: 45056 by query timer
-Chunk took: 1.63423
-Chunk took: 51232 by query timer
-Chunk took: 1.64654
-Chunk took: 50176 by query timer
-Chunk took: 1.63933
-Chunk took: 51168 by query timer
-Chunk took: 1.64804
-Chunk took: 45056 by query timer
-Chunk took: 1.63123
-Chunk took: 46080 by query timer
-Chunk took: 1.63693
-Chunk took: 45056 by query timer
-Chunk took: 1.65494
-Chunk took: 48128 by query timer
-Chunk took: 1.65284
-first:
-Chunk took: 47072 by query timer
-Chunk took: 3.72535
-Chunk took: 52224 by query timer
-Chunk took: 1.78012
-Chunk took: 52224 by query timer
-Chunk took: 1.92331
-Chunk took: 46048 by query timer
-Chunk took: 1.73479
-Chunk took: 46112 by query timer
-Chunk took: 2.47596
-Chunk took: 48128 by query timer
-Chunk took: 4.72798
-Chunk took: 47104 by query timer
-Chunk took: 11.065
-Chunk took: 50176 by query timer
-Chunk took: 5.61684
-Chunk took: 38912 by query timer
-Chunk took: 1.91491
-Chunk took: 42976 by query timer
-Chunk took: 2.60564
-Chunk took: 38880 by query timer
-Chunk took: 1.95814
-Chunk took: 50176 by query timer
-Chunk took: 1.72219
-Chunk took: 41984 by query timer
-Chunk took: 1.71798
-Chunk took: 50176 by query timer
-Chunk took: 1.69907
-Chunk took: 50176 by query timer
-Chunk took: 1.69907
-Chunk took: 37888 by query timer
-Chunk took: 1.68827
-first:
-Chunk took: 49152 by query timer
-Chunk took: 8.00275
-Chunk took: 46048 by query timer
-Chunk took: 1.69847
-Chunk took: 37888 by query timer
-Chunk took: 1.68466
-Chunk took: 41984 by query timer
-Chunk took: 1.71168
-Chunk took: 38944 by query timer
-Chunk took: 2.13585
-Chunk took: 38944 by query timer
-Chunk took: 1.66005
-Chunk took: 36832 by query timer
-Chunk took: 1.63993
-Chunk took: 48128 by query timer
-Chunk took: 1.65164
-Chunk took: 48128 by query timer
-Chunk took: 1.64714
-Chunk took: 44000 by query timer
-Chunk took: 1.66845
-Chunk took: 45056 by query timer
-Chunk took: 1.65494
-Chunk took: 40928 by query timer
-Chunk took: 1.66785
-Chunk took: 47136 by query timer
-Chunk took: 1.64144
-Chunk took: 45056 by query timer
-Chunk took: 1.7456
-Chunk took: 38880 by query timer
-Chunk took: 0.272572
-Chunk took: 39968 by query timer
-Chunk took: 1.70958
-first:
-Chunk took: 49184 by query timer
-Chunk took: 3.95259
-Chunk took: 46080 by query timer
-Chunk took: 1.99686
-Chunk took: 50176 by query timer
-Chunk took: 1.7483
-Chunk took: 49120 by query timer
-Chunk took: 1.80414
-Chunk took: 40960 by query timer
-Chunk took: 1.70327
-Chunk took: 37888 by query timer
-Chunk took: 1.70808
-Chunk took: 41952 by query timer
-Chunk took: 1.7354
-Chunk took: 49120 by query timer
-Chunk took: 1.72159
-Chunk took: 47104 by query timer
-Chunk took: 1.71438
-Chunk took: 37888 by query timer
-Chunk took: 1.70658
-Chunk took: 48128 by query timer
-Chunk took: 1.72339
-Chunk took: 47104 by query timer
-Chunk took: 1.87949
-Chunk took: 47072 by query timer
-Chunk took: 1.81525
-Chunk took: 50176 by query timer
-Chunk took: 1.72759
-Chunk took: 43008 by query timer
-Chunk took: 1.72639
-Chunk took: 49152 by query timer
-Chunk took: 1.71498
-first:
-Chunk took: 49120 by query timer
-Chunk took: 4.99965
-Chunk took: 39936 by query timer
-Chunk took: 1.81074
-Chunk took: 48128 by query timer
-Chunk took: 1.70448
-Chunk took: 47104 by query timer
-Chunk took: 1.73479
-Chunk took: 47104 by query timer
-Chunk took: 1.72549
-Chunk took: 49152 by query timer
+Chunk took: 71712 by query timer
+Chunk took: 4.61963
+Chunk took: 62496 by query timer
+Chunk took: 1.67566
+Chunk took: 62464 by query timer
+Chunk took: 1.5712
+Chunk took: 67584 by query timer
+Chunk took: 1.5733
+Chunk took: 66592 by query timer
 Chunk took: 1.72009
-Chunk took: 48160 by query timer
-Chunk took: 1.73389
-Chunk took: 46080 by query timer
-Chunk took: 1.76872
-Chunk took: 48128 by query timer
-Chunk took: 1.7468
-Chunk took: 36832 by query timer
-Chunk took: 0.248257
-Chunk took: 49152 by query timer
-Chunk took: 1.94163
-Chunk took: 51232 by query timer
-Chunk took: 2.10133
-Chunk took: 40992 by query timer
-Chunk took: 1.72939
-Chunk took: 35840 by query timer
-Chunk took: 0.223041
-Chunk took: 39936 by query timer
-Chunk took: 1.7405
-Chunk took: 44000 by query timer
-Chunk took: 1.73329
-first:
-Chunk took: 40960 by query timer
-Chunk took: 5.17797
-Chunk took: 42016 by query timer
-Chunk took: 0.259664
-Chunk took: 50176 by query timer
-Chunk took: 1.82005
-Chunk took: 47104 by query timer
-Chunk took: 1.69727
-Chunk took: 51232 by query timer
-Chunk took: 1.70868
-Chunk took: 52224 by query timer
+Chunk took: 67552 by query timer
+Chunk took: 1.76302
+Chunk took: 70624 by query timer
+Chunk took: 1.58621
+Chunk took: 62464 by query timer
+Chunk took: 1.65915
+Chunk took: 65536 by query timer
+Chunk took: 1.62433
+Chunk took: 68608 by query timer
+Chunk took: 1.76752
+Chunk took: 68576 by query timer
+Chunk took: 1.7285
+Chunk took: 66528 by query timer
 Chunk took: 1.7399
-Chunk took: 47104 by query timer
-Chunk took: 1.69217
-Chunk took: 51168 by query timer
-Chunk took: 1.72159
-Chunk took: 44000 by query timer
-Chunk took: 1.70658
-Chunk took: 51232 by query timer
-Chunk took: 1.79063
-Chunk took: 51232 by query timer
-Chunk took: 1.72129
-Chunk took: 49184 by query timer
-Chunk took: 1.69337
-Chunk took: 48128 by query timer
-Chunk took: 1.68857
-Chunk took: 51232 by query timer
-Chunk took: 1.68797
-Chunk took: 48128 by query timer
-Chunk took: 1.69427
-Chunk took: 46048 by query timer
-Chunk took: 1.69757
-first:
-Chunk took: 48128 by query timer
-Chunk took: 11.2691
-Chunk took: 51232 by query timer
-Chunk took: 1.72069
-Chunk took: 50176 by query timer
-Chunk took: 1.70057
-Chunk took: 44000 by query timer
-Chunk took: 1.69517
-Chunk took: 50176 by query timer
-Chunk took: 1.84346
-Chunk took: 46112 by query timer
-Chunk took: 1.91671
-Chunk took: 46112 by query timer
-Chunk took: 1.70237
-Chunk took: 50176 by query timer
-Chunk took: 1.69037
-Chunk took: 46080 by query timer
-Chunk took: 1.67926
-Chunk took: 40992 by query timer
-Chunk took: 1.71768
-Chunk took: 44064 by query timer
-Chunk took: 1.71408
-Chunk took: 51232 by query timer
-Chunk took: 1.69787
-Chunk took: 46112 by query timer
-Chunk took: 1.69007
-Chunk took: 47104 by query timer
-Chunk took: 1.68797
-Chunk took: 48128 by query timer
-Chunk took: 1.68947
-Chunk took: 47072 by query timer
-Chunk took: 1.71438
-first:
-Chunk took: 47136 by query timer
-Chunk took: 5.8705
-Chunk took: 50176 by query timer
-Chunk took: 1.75311
-Chunk took: 47136 by query timer
-Chunk took: 1.7441
-Chunk took: 50176 by query timer
-Chunk took: 1.78493
-Chunk took: 48128 by query timer
-Chunk took: 1.7393
-Chunk took: 48128 by query timer
-Chunk took: 1.71918
-Chunk took: 45056 by query timer
-Chunk took: 1.7384
-Chunk took: 39936 by query timer
-Chunk took: 1.70508
-Chunk took: 48160 by query timer
-Chunk took: 1.68616
-Chunk took: 45056 by query timer
-Chunk took: 1.79723
-Chunk took: 39936 by query timer
-Chunk took: 1.69547
-Chunk took: 39936 by query timer
-Chunk took: 1.78313
-Chunk took: 40928 by query timer
-Chunk took: 1.68166
-Chunk took: 44032 by query timer
-Chunk took: 1.68766
-Chunk took: 48096 by query timer
-Chunk took: 1.83476
-Chunk took: 36864 by query timer
-Chunk took: 0.471598
-first:
-Chunk took: 46112 by query timer
-Chunk took: 10.3655
-Chunk took: 40992 by query timer
-Chunk took: 1.70388
-Chunk took: 39936 by query timer
-Chunk took: 1.65074
-Chunk took: 48128 by query timer
+Chunk took: 73760 by query timer
 Chunk took: 1.72249
-Chunk took: 42016 by query timer
-Chunk took: 1.66965
-Chunk took: 51232 by query timer
-Chunk took: 1.70988
-Chunk took: 46048 by query timer
-Chunk took: 1.68106
-Chunk took: 45056 by query timer
-Chunk took: 1.68376
-Chunk took: 45056 by query timer
-Chunk took: 1.66905
-Chunk took: 48160 by query timer
-Chunk took: 1.69967
-Chunk took: 41984 by query timer
-Chunk took: 1.67416
-Chunk took: 46080 by query timer
-Chunk took: 1.66845
-Chunk took: 47104 by query timer
-Chunk took: 1.66695
-Chunk took: 39936 by query timer
-Chunk took: 1.67986
-Chunk took: 50176 by query timer
-Chunk took: 1.68046
-Chunk took: 44064 by query timer
-Chunk took: 1.70057
+Chunk took: 67584 by query timer
+Chunk took: 1.71979
+Chunk took: 69632 by query timer
+Chunk took: 2.03739
+Chunk took: 68640 by query timer
+Chunk took: 1.83656
 first:
-Chunk took: 48128 by query timer
-Chunk took: 6.35651
-Chunk took: 44064 by query timer
-Chunk took: 1.70057
-Chunk took: 45024 by query timer
-Chunk took: 1.72219
-Chunk took: 48096 by query timer
-Chunk took: 1.70538
-Chunk took: 47104 by query timer
-Chunk took: 1.68526
-Chunk took: 35872 by query timer
-Chunk took: 0.249157
-Chunk took: 46112 by query timer
-Chunk took: 1.72099
-Chunk took: 48128 by query timer
-Chunk took: 1.72729
-Chunk took: 47104 by query timer
-Chunk took: 1.70508
-Chunk took: 48160 by query timer
-Chunk took: 1.85127
-Chunk took: 46112 by query timer
-Chunk took: 2.0599
-Chunk took: 50176 by query timer
-Chunk took: 1.71888
-Chunk took: 47072 by query timer
-Chunk took: 1.68827
-Chunk took: 49152 by query timer
-Chunk took: 1.77922
-Chunk took: 49184 by query timer
-Chunk took: 1.70628
-Chunk took: 45056 by query timer
-Chunk took: 1.70087
-first:
-Chunk took: 44064 by query timer
-Chunk took: 11.6479
-Chunk took: 47072 by query timer
-Chunk took: 1.76872
-Chunk took: 36896 by query timer
-Chunk took: 1.64804
-Chunk took: 39904 by query timer
-Chunk took: 1.81855
-Chunk took: 48128 by query timer
-Chunk took: 1.65855
-Chunk took: 51232 by query timer
-Chunk took: 1.64894
-Chunk took: 50176 by query timer
-Chunk took: 1.67926
-Chunk took: 46112 by query timer
-Chunk took: 1.66695
-Chunk took: 40960 by query timer
-Chunk took: 1.65044
-Chunk took: 48128 by query timer
-Chunk took: 1.66605
-Chunk took: 46112 by query timer
-Chunk took: 1.66665
-Chunk took: 44000 by query timer
-Chunk took: 1.67806
-Chunk took: 45056 by query timer
-Chunk took: 1.63033
-Chunk took: 41984 by query timer
-Chunk took: 1.64264
-Chunk took: 49120 by query timer
-Chunk took: 1.63123
-Chunk took: 45056 by query timer
-Chunk took: 1.63903
-first:
-Chunk took: 51168 by query timer
-Chunk took: 6.77047
-Chunk took: 49120 by query timer
-Chunk took: 1.78282
-Chunk took: 45056 by query timer
-Chunk took: 1.94283
-Chunk took: 47136 by query timer
-Chunk took: 1.64564
-Chunk took: 44000 by query timer
-Chunk took: 1.65735
-Chunk took: 36832 by query timer
-Chunk took: 1.7483
-Chunk took: 48128 by query timer
-Chunk took: 1.73389
-Chunk took: 47104 by query timer
-Chunk took: 1.65464
-Chunk took: 47072 by query timer
-Chunk took: 1.64984
-Chunk took: 42016 by query timer
-Chunk took: 1.82935
-Chunk took: 47136 by query timer
-Chunk took: 1.64114
-Chunk took: 47104 by query timer
-Chunk took: 1.64624
-Chunk took: 45056 by query timer
-Chunk took: 1.65975
-Chunk took: 49120 by query timer
-Chunk took: 1.64054
-Chunk took: 47104 by query timer
-Chunk took: 1.67085
-Chunk took: 47136 by query timer
+Chunk took: 79904 by query timer
+Chunk took: 2.70832
+Chunk took: 58336 by query timer
+Chunk took: 1.62913
+Chunk took: 60416 by query timer
+Chunk took: 1.55949
+Chunk took: 59424 by query timer
+Chunk took: 1.5787
+Chunk took: 62496 by query timer
+Chunk took: 1.98606
+Chunk took: 73696 by query timer
+Chunk took: 1.71409
+Chunk took: 71712 by query timer
+Chunk took: 1.63694
+Chunk took: 72704 by query timer
+Chunk took: 1.58561
+Chunk took: 69600 by query timer
+Chunk took: 1.59701
+Chunk took: 60416 by query timer
+Chunk took: 1.59281
+Chunk took: 62464 by query timer
+Chunk took: 1.60152
+Chunk took: 69664 by query timer
 Chunk took: 1.66365
-first:
-Chunk took: 39936 by query timer
-Chunk took: 9.87863
-Chunk took: 45056 by query timer
-Chunk took: 1.66215
-Chunk took: 51232 by query timer
-Chunk took: 1.66545
-Chunk took: 37888 by query timer
-Chunk took: 0.18942
-Chunk took: 47104 by query timer
-Chunk took: 1.73479
-Chunk took: 49184 by query timer
-Chunk took: 1.67115
-Chunk took: 49184 by query timer
-Chunk took: 1.64984
-Chunk took: 40992 by query timer
-Chunk took: 1.65194
-Chunk took: 48160 by query timer
-Chunk took: 1.68766
-Chunk took: 48160 by query timer
-Chunk took: 1.66335
-Chunk took: 53280 by query timer
-Chunk took: 1.65164
-Chunk took: 43008 by query timer
-Chunk took: 1.64744
-Chunk took: 52224 by query timer
-Chunk took: 1.77442
-Chunk took: 51232 by query timer
-Chunk took: 1.93922
-Chunk took: 39936 by query timer
-Chunk took: 1.63423
-Chunk took: 45056 by query timer
-Chunk took: 1.65705
-first:
-Chunk took: 51232 by query timer
-Chunk took: 7.05865
-Chunk took: 50176 by query timer
-Chunk took: 1.68616
-Chunk took: 36832 by query timer
-Chunk took: 0.193022
-Chunk took: 34816 by query timer
-Chunk took: 0.227544
-Chunk took: 42976 by query timer
-Chunk took: 1.70418
-Chunk took: 49184 by query timer
-Chunk took: 1.71078
-Chunk took: 45056 by query timer
-Chunk took: 3.81211
-Chunk took: 40960 by query timer
-Chunk took: 1.68316
-Chunk took: 44064 by query timer
-Chunk took: 1.67626
-Chunk took: 45088 by query timer
-Chunk took: 1.64954
-Chunk took: 50176 by query timer
-Chunk took: 1.69907
-Chunk took: 49184 by query timer
-Chunk took: 1.64534
-Chunk took: 48128 by query timer
-Chunk took: 1.64774
-Chunk took: 50176 by query timer
-Chunk took: 1.69457
-Chunk took: 51200 by query timer
-Chunk took: 1.64834
-Chunk took: 41984 by query timer
-Chunk took: 1.63183
-first:
-Chunk took: 35840 by query timer
-Chunk took: 9.95218
-Chunk took: 51168 by query timer
-Chunk took: 1.70388
-Chunk took: 52224 by query timer
-Chunk took: 1.68286
-Chunk took: 49120 by query timer
-Chunk took: 1.64774
-Chunk took: 49120 by query timer
-Chunk took: 1.79934
-Chunk took: 51168 by query timer
-Chunk took: 1.64504
-Chunk took: 46112 by query timer
-Chunk took: 1.67085
-Chunk took: 52224 by query timer
-Chunk took: 1.83866
-Chunk took: 41984 by query timer
-Chunk took: 1.91641
-Chunk took: 51168 by query timer
-Chunk took: 1.64954
-Chunk took: 42016 by query timer
-Chunk took: 1.65224
-Chunk took: 49120 by query timer
-Chunk took: 1.63573
-Chunk took: 41984 by query timer
-Chunk took: 1.62372
-Chunk took: 49120 by query timer
-Chunk took: 1.63183
-Chunk took: 47104 by query timer
-Chunk took: 1.63333
-Chunk took: 48128 by query timer
-Chunk took: 1.64354
-first:
-Chunk took: 49120 by query timer
-Chunk took: 7.95772
-Chunk took: 43008 by query timer
-Chunk took: 1.68887
-Chunk took: 50176 by query timer
-Chunk took: 1.63873
-Chunk took: 52192 by query timer
-Chunk took: 1.64084
-Chunk took: 51168 by query timer
-Chunk took: 1.64504
-Chunk took: 45056 by query timer
-Chunk took: 1.65314
-Chunk took: 47104 by query timer
-Chunk took: 1.64714
-Chunk took: 49120 by query timer
-Chunk took: 1.63123
-Chunk took: 48128 by query timer
-Chunk took: 1.63933
-Chunk took: 44064 by query timer
-Chunk took: 1.84436
-Chunk took: 46048 by query timer
-Chunk took: 1.62613
-Chunk took: 46080 by query timer
-Chunk took: 1.63963
-Chunk took: 54240 by query timer
-Chunk took: 1.64204
-Chunk took: 38912 by query timer
-Chunk took: 1.62402
-Chunk took: 36864 by query timer
-Chunk took: 0.18972
-Chunk took: 47104 by query timer
-Chunk took: 1.67115
-first:
-Chunk took: 48128 by query timer
-Chunk took: 11.2031
-Chunk took: 46080 by query timer
-Chunk took: 1.68827
-Chunk took: 39936 by query timer
-Chunk took: 1.64474
-Chunk took: 46112 by query timer
-Chunk took: 1.83716
-Chunk took: 46112 by query timer
-Chunk took: 1.76872
-Chunk took: 47072 by query timer
-Chunk took: 1.93472
-Chunk took: 53280 by query timer
-Chunk took: 1.62883
-Chunk took: 41984 by query timer
-Chunk took: 1.62282
-Chunk took: 45056 by query timer
-Chunk took: 1.62342
-Chunk took: 51232 by query timer
-Chunk took: 1.65074
-Chunk took: 50176 by query timer
-Chunk took: 1.75971
-Chunk took: 47104 by query timer
-Chunk took: 1.63213
-Chunk took: 44064 by query timer
-Chunk took: 1.62072
-Chunk took: 43008 by query timer
-Chunk took: 1.67055
-Chunk took: 42016 by query timer
-Chunk took: 1.62553
-Chunk took: 46080 by query timer
-Chunk took: 1.61532
-first:
-Chunk took: 56352 by query timer
-Chunk took: 8.58242
-Chunk took: 48128 by query timer
-Chunk took: 1.65735
-Chunk took: 50176 by query timer
-Chunk took: 1.61802
-Chunk took: 37888 by query timer
-Chunk took: 1.62072
-Chunk took: 48128 by query timer
-Chunk took: 1.64684
-Chunk took: 47104 by query timer
-Chunk took: 1.62132
-Chunk took: 44064 by query timer
-Chunk took: 1.61232
-Chunk took: 47104 by query timer
-Chunk took: 1.61112
-Chunk took: 49120 by query timer
-Chunk took: 1.78643
-Chunk took: 47136 by query timer
-Chunk took: 1.65404
-Chunk took: 48128 by query timer
-Chunk took: 1.61292
-Chunk took: 39936 by query timer
-Chunk took: 1.61412
-Chunk took: 50176 by query timer
-Chunk took: 1.75551
-Chunk took: 47104 by query timer
-Chunk took: 1.88369
-Chunk took: 46112 by query timer
-Chunk took: 1.61052
-Chunk took: 42016 by query timer
-Chunk took: 1.63633
-first:
-Chunk took: 52256 by query timer
-Chunk took: 8.95585
-Chunk took: 46048 by query timer
-Chunk took: 1.64624
-Chunk took: 47072 by query timer
-Chunk took: 1.84406
-Chunk took: 44000 by query timer
-Chunk took: 1.60241
-Chunk took: 49184 by query timer
-Chunk took: 1.61112
-Chunk took: 45088 by query timer
-Chunk took: 1.60511
-Chunk took: 52192 by query timer
-Chunk took: 1.64444
-Chunk took: 44000 by query timer
-Chunk took: 1.62853
-Chunk took: 47104 by query timer
-Chunk took: 1.59911
-Chunk took: 48096 by query timer
-Chunk took: 1.59731
-Chunk took: 48128 by query timer
-Chunk took: 1.62973
-Chunk took: 41952 by query timer
-Chunk took: 1.59341
-Chunk took: 41984 by query timer
-Chunk took: 1.60962
-Chunk took: 43008 by query timer
-Chunk took: 1.63303
-Chunk took: 44064 by query timer
-Chunk took: 1.60001
-Chunk took: 44000 by query timer
-Chunk took: 1.60691
-first:
-Chunk took: 51232 by query timer
-Chunk took: 9.21972
-Chunk took: 47104 by query timer
-Chunk took: 2.12504
-Chunk took: 37888 by query timer
-Chunk took: 1.84436
-Chunk took: 49120 by query timer
-Chunk took: 1.78553
-Chunk took: 46112 by query timer
-Chunk took: 1.89209
-Chunk took: 48096 by query timer
-Chunk took: 1.60331
-Chunk took: 48128 by query timer
-Chunk took: 21.3477
-Chunk took: 38880 by query timer
-Chunk took: 1.62222
-Chunk took: 40928 by query timer
-Chunk took: 1.61532
-Chunk took: 44000 by query timer
-Chunk took: 1.61892
-Chunk took: 45056 by query timer
-Chunk took: 1.59791
-Chunk took: 40928 by query timer
-Chunk took: 1.61442
-Chunk took: 44000 by query timer
-Chunk took: 1.62252
-Chunk took: 50176 by query timer
-Chunk took: 1.60841
-Chunk took: 49120 by query timer
-Chunk took: 1.60271
-Chunk took: 38912 by query timer
+Chunk took: 66592 by query timer
+Chunk took: 1.60752
+Chunk took: 70624 by query timer
 Chunk took: 1.61352
-first:
-Chunk took: 56352 by query timer
-Chunk took: 9.47008
-Chunk took: 45056 by query timer
-Chunk took: 1.62132
-Chunk took: 47136 by query timer
-Chunk took: 1.60211
-Chunk took: 49184 by query timer
-Chunk took: 1.61982
-Chunk took: 48128 by query timer
-Chunk took: 1.60151
-Chunk took: 45056 by query timer
-Chunk took: 1.61022
-Chunk took: 50176 by query timer
-Chunk took: 1.61382
-Chunk took: 53280 by query timer
-Chunk took: 1.61112
-Chunk took: 45056 by query timer
-Chunk took: 1.88579
-Chunk took: 46112 by query timer
-Chunk took: 1.61952
-Chunk took: 44000 by query timer
-Chunk took: 1.60181
-Chunk took: 36832 by query timer
-Chunk took: 0.191521
-Chunk took: 46112 by query timer
-Chunk took: 1.63543
-Chunk took: 48128 by query timer
-Chunk took: 1.76902
-Chunk took: 48160 by query timer
-Chunk took: 1.84827
-Chunk took: 51168 by query timer
-Chunk took: 1.60091
-first:
-Chunk took: 53216 by query timer
-Chunk took: 9.75135
-Chunk took: 49120 by query timer
-Chunk took: 1.67446
-Chunk took: 38912 by query timer
-Chunk took: 1.60571
-Chunk took: 49184 by query timer
-Chunk took: 1.92481
-Chunk took: 48128 by query timer
-Chunk took: 1.60421
-Chunk took: 47072 by query timer
-Chunk took: 1.60781
-Chunk took: 48128 by query timer
-Chunk took: 1.62823
-Chunk took: 37888 by query timer
-Chunk took: 0.192121
-Chunk took: 48160 by query timer
-Chunk took: 1.63783
-Chunk took: 49120 by query timer
-Chunk took: 1.62282
-Chunk took: 41952 by query timer
-Chunk took: 1.60451
-Chunk took: 49184 by query timer
-Chunk took: 1.61022
-Chunk took: 48128 by query timer
-Chunk took: 1.60932
-Chunk took: 37888 by query timer
-Chunk took: 0.192121
-Chunk took: 35808 by query timer
-Chunk took: 0.223341
-Chunk took: 49152 by query timer
-Chunk took: 1.61802
-first:
-Chunk took: 41984 by query timer
-Chunk took: 8.42512
-Chunk took: 40960 by query timer
-Chunk took: 0.326306
-Chunk took: 45056 by query timer
-Chunk took: 1.70297
-Chunk took: 44064 by query timer
-Chunk took: 1.63273
-Chunk took: 47104 by query timer
-Chunk took: 1.60781
-Chunk took: 48128 by query timer
-Chunk took: 1.60721
-Chunk took: 38880 by query timer
-Chunk took: 1.591
-Chunk took: 51168 by query timer
-Chunk took: 1.61682
-Chunk took: 36832 by query timer
-Chunk took: 0.194823
-Chunk took: 40992 by query timer
-Chunk took: 1.63903
-Chunk took: 52224 by query timer
-Chunk took: 1.60031
-Chunk took: 50176 by query timer
-Chunk took: 1.60031
-Chunk took: 49184 by query timer
-Chunk took: 1.7501
-Chunk took: 47136 by query timer
-Chunk took: 1.63633
-Chunk took: 51200 by query timer
-Chunk took: 1.68676
-Chunk took: 53248 by query timer
-Chunk took: 1.84076
-first:
-Chunk took: 47136 by query timer
-Chunk took: 12.6086
-Chunk took: 48128 by query timer
-Chunk took: 1.65735
-Chunk took: 48096 by query timer
-Chunk took: 1.61382
-Chunk took: 48160 by query timer
-Chunk took: 1.88129
-Chunk took: 40992 by query timer
-Chunk took: 1.60391
-Chunk took: 41952 by query timer
-Chunk took: 1.60061
-Chunk took: 48096 by query timer
-Chunk took: 1.61262
-Chunk took: 51232 by query timer
-Chunk took: 1.60902
-Chunk took: 51168 by query timer
-Chunk took: 1.72729
-Chunk took: 51232 by query timer
-Chunk took: 1.62823
-Chunk took: 47136 by query timer
-Chunk took: 1.68676
-Chunk took: 55296 by query timer
-Chunk took: 1.69457
-Chunk took: 55296 by query timer
-Chunk took: 1.69307
-Chunk took: 50176 by query timer
-Chunk took: 1.70478
-Chunk took: 53280 by query timer
-Chunk took: 1.69037
-Chunk took: 59392 by query timer
-Chunk took: 1.69217
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 40960 by query timer
-Chunk took: 1.69337
-Chunk took: 36864 by query timer
-Chunk took: 1.60571
-Chunk took: 35840 by query timer
-Chunk took: 1.65224
-Chunk took: 36864 by query timer
-Chunk took: 1.63633
-Chunk took: 40960 by query timer
-Chunk took: 1.62733
-Chunk took: 40960 by query timer
-Chunk took: 1.64984
-Chunk took: 47104 by query timer
-Chunk took: 1.61532
-Chunk took: 41984 by query timer
-Chunk took: 1.63963
-Chunk took: 39936 by query timer
-Chunk took: 1.61772
-Chunk took: 46080 by query timer
-Chunk took: 1.63933
-Chunk took: 41984 by query timer
-Chunk took: 1.69967
-Chunk took: 46080 by query timer
-Chunk took: 1.65524
-Chunk took: 32768 by query timer
-Chunk took: 0.227243
-Chunk took: 44032 by query timer
-Chunk took: 1.63003
-Chunk took: 46080 by query timer
-Chunk took: 1.62192
-Chunk took: 32768 by query timer
-Chunk took: 0.230545
-first:
-Chunk took: 37888 by query timer
-Chunk took: 12.6608
-Chunk took: 38912 by query timer
-Chunk took: 1.61562
-Chunk took: 43008 by query timer
-Chunk took: 1.60721
-Chunk took: 45056 by query timer
-Chunk took: 1.82035
-Chunk took: 31744 by query timer
-Chunk took: 0.185517
-Chunk took: 41984 by query timer
-Chunk took: 1.61922
-Chunk took: 41984 by query timer
-Chunk took: 1.5838
-Chunk took: 44032 by query timer
-Chunk took: 1.5865
-Chunk took: 43008 by query timer
-Chunk took: 1.5841
-Chunk took: 43008 by query timer
-Chunk took: 1.5814
-Chunk took: 32768 by query timer
-Chunk took: 0.19002
-Chunk took: 34816 by query timer
-Chunk took: 1.59731
-Chunk took: 45056 by query timer
-Chunk took: 1.5808
-Chunk took: 41984 by query timer
-Chunk took: 1.5925
-Chunk took: 43008 by query timer
-Chunk took: 1.5904
-Chunk took: 43008 by query timer
-Chunk took: 1.59881
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 40960 by query timer
-Chunk took: 1.9095
-Chunk took: 41984 by query timer
-Chunk took: 1.69607
-Chunk took: 48128 by query timer
-Chunk took: 1.66335
-Chunk took: 46080 by query timer
-Chunk took: 1.81855
-Chunk took: 52224 by query timer
-Chunk took: 1.70508
-Chunk took: 38912 by query timer
-Chunk took: 1.68827
-Chunk took: 41984 by query timer
-Chunk took: 1.63993
-Chunk took: 43008 by query timer
-Chunk took: 1.63093
-Chunk took: 43008 by query timer
-Chunk took: 1.63243
-Chunk took: 45056 by query timer
-Chunk took: 1.83536
-Chunk took: 31744 by query timer
-Chunk took: 0.227844
-Chunk took: 41984 by query timer
-Chunk took: 1.68256
-Chunk took: 45056 by query timer
-Chunk took: 1.63123
-Chunk took: 41984 by query timer
-Chunk took: 1.62282
-Chunk took: 37888 by query timer
-Chunk took: 1.63933
-Chunk took: 31744 by query timer
-Chunk took: 0.227544
-first:
-Chunk took: 31744 by query timer
-Chunk took: 8.13303
-Chunk took: 40960 by query timer
-Chunk took: 1.80654
-Chunk took: 39936 by query timer
-Chunk took: 1.64924
-Chunk took: 38912 by query timer
-Chunk took: 1.64654
-Chunk took: 35840 by query timer
-Chunk took: 1.65464
-Chunk took: 40960 by query timer
-Chunk took: 1.63573
-Chunk took: 43008 by query timer
-Chunk took: 1.63903
-Chunk took: 41984 by query timer
-Chunk took: 1.62252
-Chunk took: 41984 by query timer
-Chunk took: 1.62613
-Chunk took: 32768 by query timer
-Chunk took: 0.239851
-Chunk took: 36864 by query timer
-Chunk took: 1.66185
-Chunk took: 44032 by query timer
-Chunk took: 1.62703
-Chunk took: 44032 by query timer
-Chunk took: 1.63333
-Chunk took: 34816 by query timer
-Chunk took: 1.61382
-Chunk took: 36864 by query timer
-Chunk took: 1.61202
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 31744 by query timer
-Chunk took: 0.220939
-Chunk took: 36864 by query timer
-Chunk took: 1.72099
-Chunk took: 39936 by query timer
-Chunk took: 1.62162
-Chunk took: 52224 by query timer
-Chunk took: 1.71648
-Chunk took: 40960 by query timer
-Chunk took: 16.8971
-Chunk took: 33792 by query timer
-Chunk took: 1.68226
-Chunk took: 35840 by query timer
-Chunk took: 1.57659
-Chunk took: 37888 by query timer
-Chunk took: 1.5826
-Chunk took: 44032 by query timer
-Chunk took: 1.57239
-Chunk took: 47104 by query timer
-Chunk took: 1.579
-Chunk took: 32768 by query timer
-Chunk took: 0.183716
-Chunk took: 39936 by query timer
-Chunk took: 1.61592
-Chunk took: 44032 by query timer
-Chunk took: 1.56969
-Chunk took: 41984 by query timer
-Chunk took: 1.56969
-Chunk took: 45056 by query timer
-Chunk took: 1.64414
-Chunk took: 43008 by query timer
-Chunk took: 1.5832
-first:
-Chunk took: 36864 by query timer
-Chunk took: 12.0409
-Chunk took: 44032 by query timer
-Chunk took: 1.60451
-Chunk took: 45056 by query timer
-Chunk took: 1.5907
-Chunk took: 36864 by query timer
-Chunk took: 1.81434
-Chunk took: 38912 by query timer
-Chunk took: 1.60902
-Chunk took: 40960 by query timer
-Chunk took: 1.60811
-Chunk took: 38912 by query timer
-Chunk took: 1.5793
-Chunk took: 41984 by query timer
-Chunk took: 1.5811
-Chunk took: 45056 by query timer
-Chunk took: 1.579
-Chunk took: 36864 by query timer
-Chunk took: 1.5853
-Chunk took: 45056 by query timer
-Chunk took: 1.59701
-Chunk took: 41984 by query timer
-Chunk took: 1.5883
-Chunk took: 44032 by query timer
-Chunk took: 1.57659
-Chunk took: 32768 by query timer
-Chunk took: 0.196324
-Chunk took: 40960 by query timer
-Chunk took: 1.61772
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 33792 by query timer
-Chunk took: 1.68196
-Chunk took: 44032 by query timer
-Chunk took: 1.61142
-Chunk took: 41984 by query timer
-Chunk took: 1.62072
-Chunk took: 40960 by query timer
-Chunk took: 1.65104
-Chunk took: 43008 by query timer
-Chunk took: 1.65705
-Chunk took: 34816 by query timer
-Chunk took: 1.63363
-Chunk took: 37888 by query timer
-Chunk took: 1.65915
-Chunk took: 47104 by query timer
-Chunk took: 1.64234
-Chunk took: 35840 by query timer
-Chunk took: 1.62973
-Chunk took: 35840 by query timer
-Chunk took: 1.61952
-Chunk took: 31744 by query timer
-Chunk took: 0.22184
-Chunk took: 37888 by query timer
-Chunk took: 1.65224
-Chunk took: 45056 by query timer
-Chunk took: 1.62943
-Chunk took: 39936 by query timer
-Chunk took: 1.65615
-Chunk took: 44032 by query timer
-Chunk took: 1.64504
-Chunk took: 35840 by query timer
-Chunk took: 1.63183
-first:
-Chunk took: 41984 by query timer
-Chunk took: 9.94377
-Chunk took: 45056 by query timer
-Chunk took: 1.69007
-Chunk took: 38912 by query timer
-Chunk took: 8.8823
-Chunk took: 37888 by query timer
-Chunk took: 1.60571
-Chunk took: 45056 by query timer
-Chunk took: 1.5898
-Chunk took: 41984 by query timer
-Chunk took: 1.59881
-Chunk took: 43008 by query timer
-Chunk took: 1.60661
-Chunk took: 41984 by query timer
-Chunk took: 1.5799
-Chunk took: 38912 by query timer
-Chunk took: 1.76361
-Chunk took: 45056 by query timer
-Chunk took: 1.61982
-Chunk took: 44032 by query timer
-Chunk took: 1.5769
-Chunk took: 39936 by query timer
-Chunk took: 1.60511
-Chunk took: 35840 by query timer
-Chunk took: 1.59521
-Chunk took: 43008 by query timer
-Chunk took: 1.5922
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 36864 by query timer
-Chunk took: 1.71408
-Chunk took: 41984 by query timer
-Chunk took: 1.65374
-Chunk took: 43008 by query timer
-Chunk took: 1.63843
-Chunk took: 40960 by query timer
-Chunk took: 1.64804
-Chunk took: 44032 by query timer
-Chunk took: 1.65224
-Chunk took: 37888 by query timer
-Chunk took: 1.64834
-Chunk took: 37888 by query timer
-Chunk took: 1.65885
-Chunk took: 41984 by query timer
-Chunk took: 1.62132
-Chunk took: 43008 by query timer
-Chunk took: 1.62132
-Chunk took: 36864 by query timer
-Chunk took: 1.62402
-Chunk took: 39936 by query timer
-Chunk took: 1.64384
-Chunk took: 41984 by query timer
-Chunk took: 1.62222
-Chunk took: 35840 by query timer
-Chunk took: 1.64654
-Chunk took: 44032 by query timer
-Chunk took: 1.62883
-Chunk took: 44032 by query timer
-Chunk took: 18.2746
-Chunk took: 49152 by query timer
-Chunk took: 1.68526
-first:
-Chunk took: 37888 by query timer
-Chunk took: 9.96359
-Chunk took: 40960 by query timer
-Chunk took: 1.9035
-Chunk took: 43008 by query timer
-Chunk took: 1.68436
-Chunk took: 36864 by query timer
-Chunk took: 1.59701
-Chunk took: 45056 by query timer
-Chunk took: 1.60181
-Chunk took: 45056 by query timer
-Chunk took: 1.60061
-Chunk took: 34816 by query timer
-Chunk took: 1.5793
-Chunk took: 45056 by query timer
-Chunk took: 1.63873
-Chunk took: 40960 by query timer
-Chunk took: 1.59701
-Chunk took: 47104 by query timer
-Chunk took: 1.65404
-Chunk took: 41984 by query timer
-Chunk took: 1.65615
-Chunk took: 48128 by query timer
-Chunk took: 1.67926
-Chunk took: 48128 by query timer
-Chunk took: 1.70838
-Chunk took: 44032 by query timer
-Chunk took: 1.68496
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 43008 by query timer
-Chunk took: 1.68797
-Chunk took: 41984 by query timer
-Chunk took: 1.61292
-Chunk took: 43008 by query timer
-Chunk took: 1.61562
-Chunk took: 33792 by query timer
-Chunk took: 1.63453
-Chunk took: 41984 by query timer
-Chunk took: 1.62763
-Chunk took: 38912 by query timer
-Chunk took: 1.65524
-Chunk took: 45056 by query timer
-Chunk took: 1.64684
-Chunk took: 40960 by query timer
-Chunk took: 1.63753
-Chunk took: 40960 by query timer
-Chunk took: 1.62673
-Chunk took: 32768 by query timer
-Chunk took: 0.215536
-Chunk took: 34816 by query timer
-Chunk took: 1.66245
-Chunk took: 41984 by query timer
-Chunk took: 1.63483
-Chunk took: 39936 by query timer
-Chunk took: 1.62222
-Chunk took: 39936 by query timer
-Chunk took: 1.63483
-Chunk took: 39936 by query timer
-Chunk took: 1.62763
-Chunk took: 45056 by query timer
-Chunk took: 1.62102
-first:
-Chunk took: 45056 by query timer
-Chunk took: 10.1731
-Chunk took: 40960 by query timer
-Chunk took: 1.61232
-Chunk took: 43008 by query timer
-Chunk took: 1.84076
-Chunk took: 45056 by query timer
-Chunk took: 1.61532
-Chunk took: 32768 by query timer
-Chunk took: 0.188219
-Chunk took: 32768 by query timer
-Chunk took: 1.61652
-Chunk took: 37888 by query timer
-Chunk took: 1.57659
-Chunk took: 37888 by query timer
-Chunk took: 1.5853
-Chunk took: 44032 by query timer
-Chunk took: 1.57569
-Chunk took: 41984 by query timer
-Chunk took: 18.2068
-Chunk took: 38912 by query timer
-Chunk took: 1.60781
-Chunk took: 39936 by query timer
-Chunk took: 1.60271
-Chunk took: 44032 by query timer
-Chunk took: 1.59341
-Chunk took: 47104 by query timer
-Chunk took: 1.745
-Chunk took: 45056 by query timer
-Chunk took: 1.75311
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 36864 by query timer
-Chunk took: 1.68827
-Chunk took: 41984 by query timer
-Chunk took: 1.60391
-Chunk took: 40960 by query timer
-Chunk took: 1.65795
-Chunk took: 43008 by query timer
-Chunk took: 1.64114
-Chunk took: 34816 by query timer
-Chunk took: 1.60481
-Chunk took: 41984 by query timer
-Chunk took: 1.63183
-Chunk took: 39936 by query timer
-Chunk took: 1.61022
-Chunk took: 41984 by query timer
-Chunk took: 1.65074
-Chunk took: 41984 by query timer
-Chunk took: 1.62583
-Chunk took: 39936 by query timer
-Chunk took: 1.61532
-Chunk took: 31744 by query timer
-Chunk took: 0.20623
-Chunk took: 33792 by query timer
-Chunk took: 1.64264
-Chunk took: 44032 by query timer
-Chunk took: 1.63483
-Chunk took: 46080 by query timer
-Chunk took: 1.61592
-Chunk took: 33792 by query timer
-Chunk took: 0.200226
-Chunk took: 39936 by query timer
-Chunk took: 1.66905
-first:
-Chunk took: 48128 by query timer
-Chunk took: 10.9815
-Chunk took: 41984 by query timer
-Chunk took: 1.64924
-Chunk took: 40960 by query timer
-Chunk took: 1.63513
-Chunk took: 46080 by query timer
-Chunk took: 1.72519
-Chunk took: 35840 by query timer
-Chunk took: 1.63183
-Chunk took: 43008 by query timer
-Chunk took: 1.71318
-Chunk took: 41984 by query timer
-Chunk took: 1.70267
-Chunk took: 38912 by query timer
-Chunk took: 1.70207
-Chunk took: 38912 by query timer
-Chunk took: 1.67956
-Chunk took: 32768 by query timer
-Chunk took: 0.258163
-Chunk took: 30720 by query timer
-Chunk took: 0.241953
-Chunk took: 44032 by query timer
-Chunk took: 1.70267
-Chunk took: 44032 by query timer
-Chunk took: 1.61412
-Chunk took: 43008 by query timer
-Chunk took: 1.63393
-Chunk took: 44032 by query timer
-Chunk took: 1.60241
-Chunk took: 44032 by query timer
-Chunk took: 1.63063
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 40960 by query timer
-Chunk took: 1.70628
-Chunk took: 38912 by query timer
-Chunk took: 1.62432
-Chunk took: 43008 by query timer
-Chunk took: 1.72969
-Chunk took: 41984 by query timer
-Chunk took: 1.70357
-Chunk took: 33792 by query timer
-Chunk took: 1.69277
-Chunk took: 40960 by query timer
-Chunk took: 1.71108
-Chunk took: 39936 by query timer
-Chunk took: 1.69607
-Chunk took: 39936 by query timer
-Chunk took: 1.68736
-Chunk took: 31744 by query timer
-Chunk took: 0.240752
-Chunk took: 36864 by query timer
-Chunk took: 1.7441
-Chunk took: 36864 by query timer
-Chunk took: 1.68046
-Chunk took: 41984 by query timer
-Chunk took: 1.66785
-Chunk took: 45056 by query timer
-Chunk took: 1.65915
-Chunk took: 44032 by query timer
-Chunk took: 1.66425
-Chunk took: 31744 by query timer
-Chunk took: 0.220939
-Chunk took: 39936 by query timer
-Chunk took: 1.68736
-first:
-Chunk took: 50176 by query timer
-Chunk took: 10.1212
-Chunk took: 46080 by query timer
-Chunk took: 1.66005
-Chunk took: 46080 by query timer
-Chunk took: 1.93292
-Chunk took: 41984 by query timer
-Chunk took: 1.63723
-Chunk took: 43008 by query timer
-Chunk took: 1.64744
-Chunk took: 43008 by query timer
-Chunk took: 1.61682
-Chunk took: 43008 by query timer
-Chunk took: 1.63693
-Chunk took: 43008 by query timer
-Chunk took: 1.66155
-Chunk took: 43008 by query timer
-Chunk took: 1.65074
-Chunk took: 38912 by query timer
-Chunk took: 1.65945
-Chunk took: 38912 by query timer
-Chunk took: 1.64234
-Chunk took: 41984 by query timer
-Chunk took: 1.7363
-Chunk took: 41984 by query timer
-Chunk took: 1.65765
-Chunk took: 35840 by query timer
-Chunk took: 1.72399
-Chunk took: 37888 by query timer
-Chunk took: 1.65404
-Chunk took: 36864 by query timer
-Chunk took: 1.64594
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 39936 by query timer
-Chunk took: 1.79333
-Chunk took: 39936 by query timer
-Chunk took: 1.77112
-Chunk took: 36864 by query timer
-Chunk took: 1.73179
-Chunk took: 38912 by query timer
-Chunk took: 1.70177
-Chunk took: 40960 by query timer
-Chunk took: 1.68857
-Chunk took: 36864 by query timer
-Chunk took: 1.68736
-Chunk took: 41984 by query timer
-Chunk took: 1.69727
-Chunk took: 43008 by query timer
-Chunk took: 1.68196
-Chunk took: 43008 by query timer
-Chunk took: 1.66995
-Chunk took: 44032 by query timer
-Chunk took: 1.66485
-Chunk took: 44032 by query timer
-Chunk took: 1.65795
-Chunk took: 41984 by query timer
-Chunk took: 1.66155
-Chunk took: 41984 by query timer
-Chunk took: 1.66455
-Chunk took: 38912 by query timer
-Chunk took: 1.63363
-Chunk took: 34816 by query timer
-Chunk took: 1.60902
-Chunk took: 45056 by query timer
+Chunk took: 72704 by query timer
+Chunk took: 1.70868
+Chunk took: 61408 by query timer
 Chunk took: 1.66035
 first:
-Chunk took: 32768 by query timer
-Chunk took: 8.48575
-Chunk took: 33792 by query timer
-Chunk took: 1.78222
-Chunk took: 48128 by query timer
-Chunk took: 1.65434
-Chunk took: 39936 by query timer
-Chunk took: 1.62973
-Chunk took: 43008 by query timer
-Chunk took: 1.63543
-Chunk took: 36864 by query timer
-Chunk took: 1.65584
-Chunk took: 40960 by query timer
-Chunk took: 1.61262
-Chunk took: 43008 by query timer
-Chunk took: 1.61682
-Chunk took: 44032 by query timer
-Chunk took: 1.61592
-Chunk took: 45056 by query timer
-Chunk took: 1.63843
-Chunk took: 35840 by query timer
-Chunk took: 1.63543
-Chunk took: 32768 by query timer
-Chunk took: 0.219438
-Chunk took: 33792 by query timer
-Chunk took: 1.65945
-Chunk took: 45056 by query timer
-Chunk took: 1.62192
-Chunk took: 46080 by query timer
-Chunk took: 1.62493
+Chunk took: 68640 by query timer
+Chunk took: 2.97639
+Chunk took: 68640 by query timer
+Chunk took: 1.7342
+Chunk took: 72704 by query timer
+Chunk took: 1.65645
+Chunk took: 62432 by query timer
+Chunk took: 1.85578
+Chunk took: 60384 by query timer
+Chunk took: 1.80835
+Chunk took: 57344 by query timer
+Chunk took: 0.324506
+Chunk took: 67616 by query timer
+Chunk took: 1.93563
+Chunk took: 71712 by query timer
+Chunk took: 1.60212
+Chunk took: 67584 by query timer
+Chunk took: 1.59071
+Chunk took: 63520 by query timer
+Chunk took: 1.60242
+Chunk took: 69632 by query timer
+Chunk took: 1.61232
+Chunk took: 67552 by query timer
+Chunk took: 1.72399
+Chunk took: 60416 by query timer
+Chunk took: 1.91221
+Chunk took: 57344 by query timer
+Chunk took: 0.358727
+Chunk took: 66592 by query timer
+Chunk took: 1.90321
+Chunk took: 70624 by query timer
+Chunk took: 1.59491
 first:
+Chunk took: 64480 by query timer
+Chunk took: 3.34772
+Chunk took: 66528 by query timer
+Chunk took: 1.61652
+Chunk took: 67584 by query timer
+Chunk took: 1.71919
+Chunk took: 69600 by query timer
+Chunk took: 1.61442
+Chunk took: 60416 by query timer
+Chunk took: 1.95724
+Chunk took: 59360 by query timer
+Chunk took: 1.59581
+Chunk took: 63520 by query timer
+Chunk took: 1.66666
+Chunk took: 60416 by query timer
+Chunk took: 1.5829
+Chunk took: 61440 by query timer
+Chunk took: 1.62913
+Chunk took: 69600 by query timer
+Chunk took: 1.52407
+Chunk took: 69632 by query timer
+Chunk took: 1.51926
+Chunk took: 64512 by query timer
+Chunk took: 1.5772
+Chunk took: 71680 by query timer
+Chunk took: 1.62223
+Chunk took: 67584 by query timer
+Chunk took: 1.70298
+Chunk took: 62464 by query timer
+Chunk took: 1.84527
+Chunk took: 75744 by query timer
+Chunk took: 1.56759
 first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 35840 by query timer
-Chunk took: 1.67085
-Chunk took: 35840 by query timer
-Chunk took: 1.585
-Chunk took: 44032 by query timer
-Chunk took: 1.60481
-Chunk took: 41984 by query timer
-Chunk took: 1.57329
-Chunk took: 44032 by query timer
-Chunk took: 1.57089
-Chunk took: 36864 by query timer
-Chunk took: 1.57149
-Chunk took: 38912 by query timer
-Chunk took: 1.5802
-Chunk took: 38912 by query timer
-Chunk took: 1.57419
-Chunk took: 40960 by query timer
-Chunk took: 1.56459
-Chunk took: 43008 by query timer
-Chunk took: 1.57209
-Chunk took: 35840 by query timer
-Chunk took: 1.56129
-Chunk took: 32768 by query timer
-Chunk took: 0.177412
-Chunk took: 37888 by query timer
-Chunk took: 1.64834
-Chunk took: 46080 by query timer
-Chunk took: 1.57449
-Chunk took: 46080 by query timer
-Chunk took: 1.56609
-Chunk took: 44032 by query timer
-Chunk took: 1.56609
-first:
-Chunk took: 36864 by query timer
-Chunk took: 11.2124
-Chunk took: 41984 by query timer
-Chunk took: 1.60781
-Chunk took: 40960 by query timer
-Chunk took: 1.57299
-Chunk took: 44032 by query timer
-Chunk took: 1.5874
-Chunk took: 44032 by query timer
-Chunk took: 1.63693
-Chunk took: 40960 by query timer
-Chunk took: 63.4748
-Chunk took: 37888 by query timer
-Chunk took: 1.7462
-Chunk took: 40960 by query timer
-Chunk took: 1.67656
-Chunk took: 41984 by query timer
-Chunk took: 1.66425
-Chunk took: 38912 by query timer
-Chunk took: 1.66335
-Chunk took: 40960 by query timer
-Chunk took: 1.68496
-Chunk took: 43008 by query timer
-Chunk took: 1.67956
-Chunk took: 40960 by query timer
-Chunk took: 1.69067
-Chunk took: 32768 by query timer
-Chunk took: 0.240752
-Chunk took: 44032 by query timer
-Chunk took: 1.76752
-Chunk took: 47104 by query timer
-Chunk took: 1.70087
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 38912 by query timer
-Chunk took: 1.68406
-Chunk took: 36864 by query timer
-Chunk took: 1.63633
-Chunk took: 41984 by query timer
+Chunk took: 74752 by query timer
+Chunk took: 3.41917
+Chunk took: 70688 by query timer
 Chunk took: 1.72129
-Chunk took: 39936 by query timer
-Chunk took: 1.73389
-Chunk took: 37888 by query timer
-Chunk took: 1.7438
-Chunk took: 45056 by query timer
-Chunk took: 1.69637
-Chunk took: 40960 by query timer
-Chunk took: 1.65344
-Chunk took: 40960 by query timer
-Chunk took: 1.65795
-Chunk took: 35840 by query timer
-Chunk took: 1.67296
-Chunk took: 37888 by query timer
-Chunk took: 1.69397
-Chunk took: 45056 by query timer
-Chunk took: 1.71558
-Chunk took: 41984 by query timer
-Chunk took: 1.67986
-Chunk took: 45056 by query timer
-Chunk took: 1.62042
-Chunk took: 34816 by query timer
-Chunk took: 1.60451
-Chunk took: 40960 by query timer
-Chunk took: 1.63153
-Chunk took: 39936 by query timer
-Chunk took: 1.64534
-first:
-Chunk took: 48128 by query timer
-Chunk took: 10.1269
-Chunk took: 44032 by query timer
-Chunk took: 1.66125
-Chunk took: 44032 by query timer
-Chunk took: 1.92331
-Chunk took: 44032 by query timer
-Chunk took: 1.63363
-Chunk took: 45056 by query timer
-Chunk took: 1.64023
-Chunk took: 40960 by query timer
-Chunk took: 1.66065
-Chunk took: 41984 by query timer
-Chunk took: 1.63903
-Chunk took: 41984 by query timer
-Chunk took: 1.63273
-Chunk took: 43008 by query timer
-Chunk took: 1.63573
-Chunk took: 34816 by query timer
-Chunk took: 1.60271
-Chunk took: 36864 by query timer
-Chunk took: 1.65494
-Chunk took: 36864 by query timer
-Chunk took: 1.64894
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 39936 by query timer
-Chunk took: 1.71318
-Chunk took: 39936 by query timer
-Chunk took: 1.60481
-Chunk took: 35840 by query timer
-Chunk took: 1.64174
-Chunk took: 44032 by query timer
-Chunk took: 1.63723
-Chunk took: 39936 by query timer
-Chunk took: 1.63243
-Chunk took: 43008 by query timer
-Chunk took: 1.60992
-Chunk took: 43008 by query timer
-Chunk took: 1.63423
-Chunk took: 43008 by query timer
-Chunk took: 1.63033
-Chunk took: 41984 by query timer
+Chunk took: 64480 by query timer
 Chunk took: 1.62493
-Chunk took: 38912 by query timer
-Chunk took: 1.62192
-Chunk took: 44032 by query timer
-Chunk took: 1.63123
-Chunk took: 41984 by query timer
-Chunk took: 1.62883
-Chunk took: 36864 by query timer
-Chunk took: 1.71168
-Chunk took: 43008 by query timer
-Chunk took: 2.17037
-Chunk took: 40960 by query timer
+Chunk took: 57344 by query timer
+Chunk took: 0.265668
+Chunk took: 66592 by query timer
+Chunk took: 1.87319
+Chunk took: 69632 by query timer
+Chunk took: 1.61773
+Chunk took: 60416 by query timer
 Chunk took: 1.62703
-Chunk took: 43008 by query timer
-Chunk took: 1.64654
+Chunk took: 69664 by query timer
+Chunk took: 1.52737
+Chunk took: 71648 by query timer
+Chunk took: 1.68797
+Chunk took: 61472 by query timer
+Chunk took: 1.79124
+Chunk took: 68608 by query timer
+Chunk took: 1.53127
+Chunk took: 61472 by query timer
+Chunk took: 1.56189
+Chunk took: 67584 by query timer
+Chunk took: 2.91095
+Chunk took: 59360 by query timer
+Chunk took: 1.74891
+Chunk took: 63488 by query timer
+Chunk took: 1.60812
+Chunk took: 70624 by query timer
+Chunk took: 1.53367
 first:
-Chunk took: 45056 by query timer
-Chunk took: 9.91946
-Chunk took: 43008 by query timer
-Chunk took: 1.63603
-Chunk took: 36864 by query timer
-Chunk took: 1.60391
-Chunk took: 40960 by query timer
-Chunk took: 1.63063
-Chunk took: 41984 by query timer
-Chunk took: 1.5916
-Chunk took: 39936 by query timer
-Chunk took: 1.61112
-Chunk took: 40960 by query timer
-Chunk took: 1.5835
-Chunk took: 44032 by query timer
-Chunk took: 1.60841
-Chunk took: 38912 by query timer
-Chunk took: 1.59431
-Chunk took: 39936 by query timer
-Chunk took: 1.5913
-Chunk took: 45056 by query timer
-Chunk took: 1.582
-Chunk took: 46080 by query timer
-Chunk took: 1.5877
-Chunk took: 45056 by query timer
-Chunk took: 1.5823
-Chunk took: 45056 by query timer
-Chunk took: 1.588
-Chunk took: 41984 by query timer
-Chunk took: 1.60061
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 41984 by query timer
-Chunk took: 1.73119
-Chunk took: 44032 by query timer
-Chunk took: 1.60962
-Chunk took: 34816 by query timer
-Chunk took: 1.65044
-Chunk took: 41984 by query timer
-Chunk took: 1.65615
-Chunk took: 37888 by query timer
-Chunk took: 1.63843
-Chunk took: 44032 by query timer
-Chunk took: 1.62583
-Chunk took: 43008 by query timer
-Chunk took: 1.64864
-Chunk took: 43008 by query timer
-Chunk took: 1.64414
-Chunk took: 46080 by query timer
-Chunk took: 1.62973
-Chunk took: 38912 by query timer
-Chunk took: 1.63813
-Chunk took: 44032 by query timer
-Chunk took: 1.63333
-Chunk took: 43008 by query timer
-Chunk took: 1.63363
-Chunk took: 32768 by query timer
-Chunk took: 0.230846
-Chunk took: 31744 by query timer
-Chunk took: 0.249758
-Chunk took: 30720 by query timer
-Chunk took: 0.242253
-Chunk took: 43008 by query timer
-Chunk took: 1.80684
-first:
-Chunk took: 46080 by query timer
-Chunk took: 11.9884
-Chunk took: 44032 by query timer
-Chunk took: 1.67025
-Chunk took: 36864 by query timer
-Chunk took: 1.57659
-Chunk took: 41984 by query timer
-Chunk took: 1.93832
-Chunk took: 40960 by query timer
-Chunk took: 1.61322
-Chunk took: 34816 by query timer
-Chunk took: 1.5805
-Chunk took: 40960 by query timer
-Chunk took: 32.9716
-Chunk took: 40960 by query timer
-Chunk took: 1.62102
-Chunk took: 31744 by query timer
-Chunk took: 0.195423
-Chunk took: 44032 by query timer
-Chunk took: 1.63093
-Chunk took: 45056 by query timer
-Chunk took: 1.5862
-Chunk took: 43008 by query timer
-Chunk took: 1.5781
-Chunk took: 45056 by query timer
-Chunk took: 1.5865
-Chunk took: 41984 by query timer
-Chunk took: 1.57569
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 40960 by query timer
-Chunk took: 1.67566
-Chunk took: 34816 by query timer
-Chunk took: 1.5904
-Chunk took: 40960 by query timer
-Chunk took: 1.66275
-Chunk took: 51200 by query timer
-Chunk took: 1.67206
-Chunk took: 46080 by query timer
-Chunk took: 1.63873
-Chunk took: 49152 by query timer
-Chunk took: 1.66995
-Chunk took: 39936 by query timer
-Chunk took: 1.7447
-Chunk took: 35840 by query timer
-Chunk took: 1.5883
-Chunk took: 40960 by query timer
-Chunk took: 1.56819
-Chunk took: 41984 by query timer
-Chunk took: 1.57599
-Chunk took: 40960 by query timer
+Chunk took: 67584 by query timer
+Chunk took: 3.6248
+Chunk took: 66592 by query timer
+Chunk took: 1.58531
+Chunk took: 66528 by query timer
+Chunk took: 1.5772
+Chunk took: 72704 by query timer
+Chunk took: 1.52947
+Chunk took: 73760 by query timer
+Chunk took: 1.54088
+Chunk took: 62464 by query timer
+Chunk took: 1.54658
+Chunk took: 68608 by query timer
+Chunk took: 1.54268
+Chunk took: 67584 by query timer
+Chunk took: 1.54058
+Chunk took: 64480 by query timer
+Chunk took: 1.53247
+Chunk took: 69632 by query timer
 Chunk took: 1.56939
-Chunk took: 41984 by query timer
-Chunk took: 1.59431
-Chunk took: 37888 by query timer
-Chunk took: 1.55948
-Chunk took: 37888 by query timer
-Chunk took: 1.55228
-Chunk took: 41984 by query timer
-Chunk took: 1.56639
-Chunk took: 41984 by query timer
-Chunk took: 1.60451
+Chunk took: 70656 by query timer
+Chunk took: 1.53487
+Chunk took: 68576 by query timer
+Chunk took: 1.52617
+Chunk took: 69632 by query timer
+Chunk took: 1.52977
+Chunk took: 70656 by query timer
+Chunk took: 1.55288
+Chunk took: 64480 by query timer
+Chunk took: 1.52827
+Chunk took: 73728 by query timer
+Chunk took: 1.53818
 first:
-Chunk took: 35840 by query timer
-Chunk took: 10.286
-Chunk took: 41984 by query timer
-Chunk took: 1.5913
-Chunk took: 38912 by query timer
-Chunk took: 1.56849
-Chunk took: 45056 by query timer
-Chunk took: 1.90981
-Chunk took: 43008 by query timer
-Chunk took: 1.5787
-Chunk took: 41984 by query timer
-Chunk took: 1.57269
-Chunk took: 41984 by query timer
-Chunk took: 1.57359
-Chunk took: 40960 by query timer
-Chunk took: 1.83926
-Chunk took: 44032 by query timer
+Chunk took: 68640 by query timer
+Chunk took: 5.37641
+Chunk took: 79904 by query timer
+Chunk took: 1.74441
+Chunk took: 74752 by query timer
+Chunk took: 1.95574
+Chunk took: 67584 by query timer
+Chunk took: 1.59641
+Chunk took: 69632 by query timer
+Chunk took: 1.61052
+Chunk took: 70656 by query timer
 Chunk took: 1.5841
-Chunk took: 36864 by query timer
-Chunk took: 1.5922
-Chunk took: 41984 by query timer
-Chunk took: 1.5913
-Chunk took: 43008 by query timer
-Chunk took: 1.57389
-Chunk took: 31744 by query timer
-Chunk took: 0.187318
-Chunk took: 36864 by query timer
+Chunk took: 70656 by query timer
+Chunk took: 1.53247
+Chunk took: 80896 by query timer
+Chunk took: 1.67656
+Chunk took: 60416 by query timer
+Chunk took: 1.54178
+Chunk took: 60416 by query timer
+Chunk took: 1.52977
+Chunk took: 61408 by query timer
+Chunk took: 1.52377
+Chunk took: 73760 by query timer
+Chunk took: 1.52707
+Chunk took: 66592 by query timer
+Chunk took: 1.56189
+Chunk took: 75776 by query timer
+Chunk took: 1.53878
+Chunk took: 74784 by query timer
+Chunk took: 1.53307
+Chunk took: 60384 by query timer
+Chunk took: 1.51266
+first:
+Chunk took: 73696 by query timer
+Chunk took: 3.88927
+Chunk took: 70688 by query timer
+Chunk took: 1.69247
+Chunk took: 60416 by query timer
+Chunk took: 1.62553
+Chunk took: 64544 by query timer
+Chunk took: 1.78703
+Chunk took: 62464 by query timer
+Chunk took: 1.54448
+Chunk took: 59360 by query timer
+Chunk took: 1.54028
+Chunk took: 60448 by query timer
+Chunk took: 1.54928
+Chunk took: 71648 by query timer
+Chunk took: 1.60362
+Chunk took: 71712 by query timer
+Chunk took: 1.55108
+Chunk took: 68608 by query timer
+Chunk took: 1.5742
+Chunk took: 69632 by query timer
+Chunk took: 1.56099
+Chunk took: 64512 by query timer
+Chunk took: 1.56849
+Chunk took: 68576 by query timer
+Chunk took: 1.56579
+Chunk took: 69600 by query timer
+Chunk took: 1.55318
+Chunk took: 57344 by query timer
+Chunk took: 0.215236
+Chunk took: 60384 by query timer
+Chunk took: 1.60512
+first:
+Chunk took: 73760 by query timer
+Chunk took: 3.96191
+Chunk took: 62432 by query timer
+Chunk took: 1.94643
+Chunk took: 76768 by query timer
 Chunk took: 1.59791
-Chunk took: 41984 by query timer
-Chunk took: 1.56969
+Chunk took: 72704 by query timer
+Chunk took: 1.69457
+Chunk took: 65536 by query timer
+Chunk took: 1.56819
+Chunk took: 62464 by query timer
+Chunk took: 1.7285
+Chunk took: 68640 by query timer
+Chunk took: 1.66035
+Chunk took: 72704 by query timer
+Chunk took: 1.69818
+Chunk took: 71648 by query timer
+Chunk took: 1.75431
+Chunk took: 62464 by query timer
+Chunk took: 3.58457
+Chunk took: 70656 by query timer
+Chunk took: 1.67266
+Chunk took: 70656 by query timer
+Chunk took: 1.5847
+Chunk took: 70688 by query timer
+Chunk took: 2.10614
+Chunk took: 73728 by query timer
+Chunk took: 2.17548
+Chunk took: 73696 by query timer
+Chunk took: 1.98666
+Chunk took: 74752 by query timer
+Chunk took: 1.79994
 first:
+Chunk took: 72704 by query timer
+Chunk took: 5.32958
+Chunk took: 63456 by query timer
+Chunk took: 1.7312
+Chunk took: 72736 by query timer
+Chunk took: 1.5706
+Chunk took: 72704 by query timer
+Chunk took: 1.55649
+Chunk took: 69632 by query timer
+Chunk took: 1.55649
+Chunk took: 72704 by query timer
+Chunk took: 1.55138
+Chunk took: 72704 by query timer
+Chunk took: 1.5844
+Chunk took: 65536 by query timer
+Chunk took: 1.55228
+Chunk took: 67584 by query timer
+Chunk took: 1.58861
+Chunk took: 56288 by query timer
+Chunk took: 0.308896
+Chunk took: 69600 by query timer
+Chunk took: 1.93172
+Chunk took: 70656 by query timer
+Chunk took: 1.8873
+Chunk took: 59392 by query timer
+Chunk took: 1.66876
+Chunk took: 57344 by query timer
+Chunk took: 0.257563
+Chunk took: 58368 by query timer
+Chunk took: 1.63003
+Chunk took: 63456 by query timer
+Chunk took: 1.56309
 first:
+Chunk took: 62464 by query timer
+Chunk took: 5.0501
+Chunk took: 57312 by query timer
+Chunk took: 0.243154
+Chunk took: 66592 by query timer
+Chunk took: 1.62703
+Chunk took: 67584 by query timer
+Chunk took: 1.58921
+Chunk took: 69632 by query timer
+Chunk took: 1.56549
+Chunk took: 73696 by query timer
+Chunk took: 1.53187
+Chunk took: 68576 by query timer
+Chunk took: 1.53878
+Chunk took: 72704 by query timer
+Chunk took: 1.53067
+Chunk took: 64512 by query timer
+Chunk took: 1.59971
+Chunk took: 70688 by query timer
+Chunk took: 1.5703
+Chunk took: 72704 by query timer
+Chunk took: 1.5775
+Chunk took: 68608 by query timer
+Chunk took: 1.52677
+Chunk took: 66592 by query timer
+Chunk took: 1.52257
+Chunk took: 71712 by query timer
+Chunk took: 1.53908
+Chunk took: 67552 by query timer
+Chunk took: 1.53037
+Chunk took: 67584 by query timer
+Chunk took: 1.52707
 first:
+Chunk took: 68576 by query timer
+Chunk took: 13.8484
+Chunk took: 70656 by query timer
+Chunk took: 1.58531
+Chunk took: 69600 by query timer
+Chunk took: 1.55589
+Chunk took: 65536 by query timer
+Chunk took: 1.55739
+Chunk took: 70688 by query timer
+Chunk took: 1.65855
+Chunk took: 67552 by query timer
+Chunk took: 1.82786
+Chunk took: 64544 by query timer
+Chunk took: 1.55018
+Chunk took: 69632 by query timer
+Chunk took: 1.55559
+Chunk took: 65536 by query timer
+Chunk took: 1.54748
+Chunk took: 61472 by query timer
+Chunk took: 1.64895
+Chunk took: 63520 by query timer
+Chunk took: 1.5739
+Chunk took: 69600 by query timer
+Chunk took: 1.56219
+Chunk took: 66528 by query timer
+Chunk took: 1.55859
+Chunk took: 66528 by query timer
+Chunk took: 1.55409
+Chunk took: 69600 by query timer
+Chunk took: 1.56189
+Chunk took: 66592 by query timer
+Chunk took: 1.58801
 first:
+Chunk took: 68608 by query timer
+Chunk took: 5.92155
+Chunk took: 70656 by query timer
+Chunk took: 1.60692
+Chunk took: 68640 by query timer
+Chunk took: 1.55228
+Chunk took: 70656 by query timer
+Chunk took: 1.54088
+Chunk took: 66528 by query timer
+Chunk took: 1.53097
+Chunk took: 67616 by query timer
+Chunk took: 1.54268
+Chunk took: 64512 by query timer
+Chunk took: 1.5793
+Chunk took: 60416 by query timer
+Chunk took: 1.5808
+Chunk took: 69600 by query timer
+Chunk took: 1.53457
+Chunk took: 64544 by query timer
+Chunk took: 1.56879
+Chunk took: 61408 by query timer
+Chunk took: 1.53577
+Chunk took: 61440 by query timer
+Chunk took: 1.52557
+Chunk took: 60416 by query timer
+Chunk took: 1.51656
+Chunk took: 63488 by query timer
+Chunk took: 1.52437
+Chunk took: 68608 by query timer
+Chunk took: 1.65495
+Chunk took: 57312 by query timer
+Chunk took: 0.442781
 first:
+Chunk took: 70656 by query timer
+Chunk took: 5.95908
+Chunk took: 66592 by query timer
+Chunk took: 1.62853
+Chunk took: 58368 by query timer
+Chunk took: 1.53217
+Chunk took: 65536 by query timer
+Chunk took: 1.59911
+Chunk took: 60416 by query timer
+Chunk took: 1.54898
+Chunk took: 70656 by query timer
+Chunk took: 1.52767
+Chunk took: 67552 by query timer
+Chunk took: 1.51986
+Chunk took: 69632 by query timer
+Chunk took: 1.52947
+Chunk took: 65536 by query timer
+Chunk took: 1.51086
+Chunk took: 74752 by query timer
+Chunk took: 1.62733
+Chunk took: 65536 by query timer
+Chunk took: 1.53487
+Chunk took: 70688 by query timer
+Chunk took: 1.53427
+Chunk took: 72704 by query timer
+Chunk took: 1.54898
+Chunk took: 64544 by query timer
+Chunk took: 1.54748
+Chunk took: 72704 by query timer
+Chunk took: 1.53697
+Chunk took: 69632 by query timer
+Chunk took: 1.55258
 first:
+Chunk took: 70688 by query timer
+Chunk took: 11.7227
+Chunk took: 66528 by query timer
+Chunk took: 1.65375
+Chunk took: 70656 by query timer
+Chunk took: 1.5832
+Chunk took: 71648 by query timer
+Chunk took: 1.64324
+Chunk took: 72704 by query timer
+Chunk took: 1.54238
+Chunk took: 57344 by query timer
+Chunk took: 0.212235
+Chunk took: 67616 by query timer
+Chunk took: 1.62553
+Chunk took: 67584 by query timer
+Chunk took: 1.52617
+Chunk took: 66592 by query timer
+Chunk took: 1.53187
+Chunk took: 71680 by query timer
+Chunk took: 1.66185
+Chunk took: 70656 by query timer
+Chunk took: 1.8972
+Chunk took: 74752 by query timer
+Chunk took: 1.53818
+Chunk took: 69600 by query timer
+Chunk took: 1.52887
+Chunk took: 71648 by query timer
+Chunk took: 1.53848
+Chunk took: 76800 by query timer
+Chunk took: 1.54838
+Chunk took: 67616 by query timer
+Chunk took: 1.56009
 first:
+Chunk took: 73728 by query timer
+Chunk took: 6.58888
+Chunk took: 74784 by query timer
+Chunk took: 1.742
+Chunk took: 60416 by query timer
+Chunk took: 1.59161
+Chunk took: 61472 by query timer
+Chunk took: 1.55078
+Chunk took: 72704 by query timer
+Chunk took: 1.59101
+Chunk took: 74720 by query timer
+Chunk took: 1.55348
+Chunk took: 73728 by query timer
+Chunk took: 1.5814
+Chunk took: 66528 by query timer
+Chunk took: 1.54928
+Chunk took: 64480 by query timer
+Chunk took: 1.53337
+Chunk took: 69600 by query timer
+Chunk took: 1.56129
+Chunk took: 69632 by query timer
+Chunk took: 1.55529
+Chunk took: 67584 by query timer
+Chunk took: 1.55318
+Chunk took: 69600 by query timer
+Chunk took: 1.54028
+Chunk took: 66592 by query timer
+Chunk took: 1.55138
+Chunk took: 71648 by query timer
+Chunk took: 1.52827
+Chunk took: 69632 by query timer
+Chunk took: 1.53968
 first:
-Chunk took: 41984 by query timer
-Chunk took: 1.69007
-Chunk took: 38912 by query timer
-Chunk took: 1.62523
-Chunk took: 41984 by query timer
-Chunk took: 1.64984
-Chunk took: 43008 by query timer
-Chunk took: 1.64744
-Chunk took: 40960 by query timer
-Chunk took: 1.63363
-Chunk took: 32768 by query timer
-Chunk took: 1.64023
-Chunk took: 32768 by query timer
-Chunk took: 0.212834
-Chunk took: 43008 by query timer
-Chunk took: 1.69517
-Chunk took: 40960 by query timer
-Chunk took: 1.62943
-Chunk took: 47104 by query timer
+Chunk took: 79904 by query timer
+Chunk took: 6.91518
+Chunk took: 71648 by query timer
+Chunk took: 1.74441
+Chunk took: 68640 by query timer
+Chunk took: 1.91642
+Chunk took: 69664 by query timer
+Chunk took: 1.576
+Chunk took: 66592 by query timer
+Chunk took: 1.55979
+Chunk took: 58368 by query timer
+Chunk took: 1.55769
+Chunk took: 70656 by query timer
+Chunk took: 1.53247
+Chunk took: 68640 by query timer
+Chunk took: 1.54598
+Chunk took: 68640 by query timer
+Chunk took: 1.66185
+Chunk took: 66528 by query timer
+Chunk took: 1.5802
+Chunk took: 71712 by query timer
+Chunk took: 1.52647
+Chunk took: 71648 by query timer
+Chunk took: 1.53337
+Chunk took: 69632 by query timer
+Chunk took: 1.56489
+Chunk took: 74752 by query timer
+Chunk took: 1.54868
+Chunk took: 66560 by query timer
+Chunk took: 1.53607
+Chunk took: 71712 by query timer
+Chunk took: 1.54268
+first:
+Chunk took: 64480 by query timer
+Chunk took: 9.74598
+Chunk took: 66528 by query timer
+Chunk took: 1.82666
+Chunk took: 74752 by query timer
+Chunk took: 1.5712
+Chunk took: 57344 by query timer
+Chunk took: 0.218539
+Chunk took: 64544 by query timer
+Chunk took: 1.70118
+Chunk took: 69632 by query timer
+Chunk took: 1.53247
+Chunk took: 69664 by query timer
+Chunk took: 1.53938
+Chunk took: 62432 by query timer
+Chunk took: 1.53908
+Chunk took: 65536 by query timer
+Chunk took: 1.54538
+Chunk took: 65536 by query timer
+Chunk took: 1.5781
+Chunk took: 71648 by query timer
+Chunk took: 1.54418
+Chunk took: 61408 by query timer
+Chunk took: 1.55739
+Chunk took: 71712 by query timer
+Chunk took: 1.65915
+Chunk took: 70688 by query timer
+Chunk took: 1.81465
+Chunk took: 59360 by query timer
+Chunk took: 1.54268
+Chunk took: 65536 by query timer
+Chunk took: 1.55108
+first:
+Chunk took: 70624 by query timer
+Chunk took: 7.19526
+Chunk took: 72704 by query timer
+Chunk took: 1.60872
+Chunk took: 56320 by query timer
+Chunk took: 0.230246
+Chunk took: 54272 by query timer
+Chunk took: 0.260565
+Chunk took: 61408 by query timer
+Chunk took: 1.60302
+Chunk took: 68640 by query timer
+Chunk took: 1.54388
+Chunk took: 64544 by query timer
+Chunk took: 1.54808
+Chunk took: 61408 by query timer
+Chunk took: 1.53818
+Chunk took: 62464 by query timer
+Chunk took: 1.70658
+Chunk took: 61472 by query timer
+Chunk took: 1.53848
+Chunk took: 70656 by query timer
+Chunk took: 1.56819
+Chunk took: 68640 by query timer
+Chunk took: 1.54358
+Chunk took: 68608 by query timer
+Chunk took: 1.54718
+Chunk took: 68608 by query timer
+Chunk took: 1.53938
+Chunk took: 72704 by query timer
+Chunk took: 1.53788
+Chunk took: 61408 by query timer
+Chunk took: 1.53697
+first:
+Chunk took: 58400 by query timer
+Chunk took: 6.10767
+Chunk took: 68640 by query timer
+Chunk took: 1.77983
+Chunk took: 68640 by query timer
+Chunk took: 1.55318
+Chunk took: 64512 by query timer
+Chunk took: 1.54568
+Chunk took: 68640 by query timer
+Chunk took: 1.5802
+Chunk took: 70656 by query timer
+Chunk took: 1.55138
+Chunk took: 66592 by query timer
+Chunk took: 1.52917
+Chunk took: 72704 by query timer
+Chunk took: 1.7276
+Chunk took: 62432 by query timer
+Chunk took: 1.83987
+Chunk took: 71712 by query timer
+Chunk took: 1.54958
+Chunk took: 62464 by query timer
+Chunk took: 1.53277
+Chunk took: 67584 by query timer
+Chunk took: 1.53547
+Chunk took: 62464 by query timer
+Chunk took: 1.53037
+Chunk took: 68608 by query timer
+Chunk took: 1.71649
+Chunk took: 65536 by query timer
+Chunk took: 1.55168
+Chunk took: 67616 by query timer
+Chunk took: 1.53127
+first:
+Chunk took: 68640 by query timer
+Chunk took: 11.3814
+Chunk took: 59360 by query timer
+Chunk took: 1.62733
+Chunk took: 75776 by query timer
+Chunk took: 1.56159
+Chunk took: 70656 by query timer
+Chunk took: 1.65495
+Chunk took: 73696 by query timer
+Chunk took: 1.53217
+Chunk took: 63488 by query timer
+Chunk took: 1.56939
+Chunk took: 64480 by query timer
+Chunk took: 1.5724
+Chunk took: 70656 by query timer
+Chunk took: 1.59701
+Chunk took: 67584 by query timer
+Chunk took: 1.54328
+Chunk took: 64512 by query timer
+Chunk took: 1.5766
+Chunk took: 65536 by query timer
+Chunk took: 1.52977
+Chunk took: 67552 by query timer
+Chunk took: 1.53878
+Chunk took: 77824 by query timer
+Chunk took: 1.53938
+Chunk took: 58368 by query timer
+Chunk took: 1.53097
+Chunk took: 56352 by query timer
+Chunk took: 0.215837
+Chunk took: 64512 by query timer
+Chunk took: 1.5703
+first:
+Chunk took: 67584 by query timer
+Chunk took: 8.18679
+Chunk took: 65536 by query timer
+Chunk took: 1.61382
+Chunk took: 63488 by query timer
+Chunk took: 1.64414
+Chunk took: 67584 by query timer
 Chunk took: 1.64234
-Chunk took: 32768 by query timer
-Chunk took: 0.215836
-Chunk took: 39936 by query timer
-Chunk took: 1.66905
-Chunk took: 45056 by query timer
-Chunk took: 1.67326
-Chunk took: 41984 by query timer
-Chunk took: 1.62943
-Chunk took: 40960 by query timer
-Chunk took: 1.63123
-Chunk took: 39936 by query timer
-Chunk took: 1.64684
+Chunk took: 69632 by query timer
+Chunk took: 1.7363
+Chunk took: 69632 by query timer
+Chunk took: 1.88429
+Chunk took: 76832 by query timer
+Chunk took: 1.5775
+Chunk took: 66560 by query timer
+Chunk took: 1.5727
+Chunk took: 68576 by query timer
+Chunk took: 1.59521
+Chunk took: 74784 by query timer
+Chunk took: 1.55709
+Chunk took: 71712 by query timer
+Chunk took: 1.55829
+Chunk took: 69664 by query timer
+Chunk took: 1.59041
+Chunk took: 70656 by query timer
+Chunk took: 1.56939
+Chunk took: 68576 by query timer
+Chunk took: 1.58681
+Chunk took: 66528 by query timer
+Chunk took: 1.5709
+Chunk took: 67584 by query timer
+Chunk took: 1.5823
 first:
-Chunk took: 35840 by query timer
-Chunk took: 11.5579
-Chunk took: 41984 by query timer
-Chunk took: 1.61142
-Chunk took: 41984 by query timer
-Chunk took: 1.61142
-Chunk took: 45056 by query timer
-Chunk took: 1.91161
-Chunk took: 45056 by query timer
+Chunk took: 72704 by query timer
+Chunk took: 11.5675
+Chunk took: 72704 by query timer
+Chunk took: 1.60692
+Chunk took: 74752 by query timer
+Chunk took: 1.53788
+Chunk took: 62464 by query timer
+Chunk took: 1.76902
+Chunk took: 72704 by query timer
+Chunk took: 1.56279
+Chunk took: 70656 by query timer
+Chunk took: 1.53547
+Chunk took: 66528 by query timer
+Chunk took: 1.54748
+Chunk took: 69632 by query timer
+Chunk took: 1.53757
+Chunk took: 67584 by query timer
+Chunk took: 1.54058
+Chunk took: 71648 by query timer
+Chunk took: 1.53818
+Chunk took: 71648 by query timer
+Chunk took: 1.53938
+Chunk took: 63488 by query timer
+Chunk took: 1.52527
+Chunk took: 73696 by query timer
+Chunk took: 1.66275
+Chunk took: 68640 by query timer
+Chunk took: 1.94613
+Chunk took: 64480 by query timer
+Chunk took: 1.53217
+Chunk took: 65536 by query timer
+Chunk took: 1.54088
+first:
+Chunk took: 74752 by query timer
+Chunk took: 8.88323
+Chunk took: 66592 by query timer
+Chunk took: 1.63003
+Chunk took: 71648 by query timer
+Chunk took: 1.5703
+Chunk took: 66592 by query timer
+Chunk took: 1.53848
+Chunk took: 71680 by query timer
+Chunk took: 1.55348
+Chunk took: 69600 by query timer
+Chunk took: 1.53217
+Chunk took: 75744 by query timer
+Chunk took: 1.54688
+Chunk took: 68640 by query timer
+Chunk took: 1.58741
+Chunk took: 68640 by query timer
+Chunk took: 1.53878
+Chunk took: 73760 by query timer
+Chunk took: 1.69998
+Chunk took: 69664 by query timer
+Chunk took: 1.56789
+Chunk took: 65536 by query timer
+Chunk took: 1.53067
+Chunk took: 64512 by query timer
+Chunk took: 1.54478
+Chunk took: 66528 by query timer
+Chunk took: 1.54328
+Chunk took: 67584 by query timer
+Chunk took: 1.52737
+Chunk took: 66528 by query timer
+Chunk took: 1.54118
+first:
+Chunk took: 74720 by query timer
+Chunk took: 9.6154
+Chunk took: 70656 by query timer
+Chunk took: 1.69758
+Chunk took: 61472 by query timer
+Chunk took: 1.63904
+Chunk took: 70656 by query timer
+Chunk took: 1.87379
+Chunk took: 67552 by query timer
+Chunk took: 1.8933
+Chunk took: 75808 by query timer
+Chunk took: 1.61292
+Chunk took: 71648 by query timer
+Chunk took: 1.60001
+Chunk took: 58400 by query timer
+Chunk took: 1.59341
+Chunk took: 68608 by query timer
+Chunk took: 1.60962
+Chunk took: 67552 by query timer
+Chunk took: 1.69848
+Chunk took: 72704 by query timer
+Chunk took: 1.67596
+Chunk took: 62464 by query timer
+Chunk took: 1.76992
+Chunk took: 65504 by query timer
+Chunk took: 1.63544
+Chunk took: 73760 by query timer
+Chunk took: 1.61532
+Chunk took: 72704 by query timer
+Chunk took: 1.62703
+Chunk took: 62496 by query timer
+Chunk took: 1.60632
+first:
+Chunk took: 74752 by query timer
+Chunk took: 9.39776
+Chunk took: 63488 by query timer
+Chunk took: 1.87199
+Chunk took: 66528 by query timer
+Chunk took: 1.67566
+Chunk took: 66592 by query timer
+Chunk took: 1.60242
+Chunk took: 67584 by query timer
+Chunk took: 1.60152
+Chunk took: 64544 by query timer
+Chunk took: 1.63243
+Chunk took: 68608 by query timer
+Chunk took: 1.65225
+Chunk took: 76832 by query timer
+Chunk took: 1.69938
+Chunk took: 62464 by query timer
+Chunk took: 1.55769
+Chunk took: 62464 by query timer
+Chunk took: 1.5781
+Chunk took: 64480 by query timer
 Chunk took: 1.59581
-Chunk took: 39936 by query timer
-Chunk took: 1.5817
-Chunk took: 41984 by query timer
+Chunk took: 57344 by query timer
+Chunk took: 0.234449
+Chunk took: 64480 by query timer
+Chunk took: 1.81165
+Chunk took: 66592 by query timer
+Chunk took: 2.34749
+Chunk took: 68608 by query timer
+Chunk took: 1.71289
+Chunk took: 68608 by query timer
+Chunk took: 1.66786
+first:
+Chunk took: 76768 by query timer
+Chunk took: 10.3304
+Chunk took: 71648 by query timer
+Chunk took: 1.887
+Chunk took: 59360 by query timer
+Chunk took: 1.64534
+Chunk took: 69632 by query timer
+Chunk took: 1.79064
+Chunk took: 67584 by query timer
+Chunk took: 1.7303
+Chunk took: 66528 by query timer
+Chunk took: 1.67386
+Chunk took: 67584 by query timer
+Chunk took: 1.70118
+Chunk took: 57344 by query timer
+Chunk took: 0.290584
+Chunk took: 64512 by query timer
+Chunk took: 1.71289
+Chunk took: 68640 by query timer
+Chunk took: 1.63754
+Chunk took: 61408 by query timer
+Chunk took: 1.58681
+Chunk took: 67584 by query timer
+Chunk took: 1.60812
+Chunk took: 66592 by query timer
+Chunk took: 1.62193
+Chunk took: 57344 by query timer
+Chunk took: 0.260265
+Chunk took: 54304 by query timer
+Chunk took: 0.275575
+Chunk took: 66528 by query timer
 Chunk took: 1.60992
-Chunk took: 37888 by query timer
-Chunk took: 1.5883
-Chunk took: 45056 by query timer
-Chunk took: 1.5856
-Chunk took: 43008 by query timer
-Chunk took: 1.59581
-Chunk took: 35840 by query timer
-Chunk took: 1.57419
-Chunk took: 38912 by query timer
-Chunk took: 1.60121
+first:
+Chunk took: 63488 by query timer
+Chunk took: 8.63618
+Chunk took: 54240 by query timer
+Chunk took: 0.380041
+Chunk took: 57344 by query timer
+Chunk took: 2.23672
+Chunk took: 62464 by query timer
+Chunk took: 1.77232
+Chunk took: 63488 by query timer
+Chunk took: 1.65345
+Chunk took: 68640 by query timer
+Chunk took: 1.59701
+Chunk took: 58368 by query timer
+Chunk took: 1.5805
+Chunk took: 70688 by query timer
+Chunk took: 1.60001
+Chunk took: 58368 by query timer
+Chunk took: 0.22064
+Chunk took: 59424 by query timer
+Chunk took: 1.62343
+Chunk took: 71648 by query timer
+Chunk took: 1.59341
+Chunk took: 70656 by query timer
+Chunk took: 1.5787
+Chunk took: 70656 by query timer
+Chunk took: 1.58771
+Chunk took: 67584 by query timer
+Chunk took: 1.5784
+Chunk took: 64544 by query timer
+Chunk took: 1.71739
+Chunk took: 66528 by query timer
+Chunk took: 1.74951
+first:
+Chunk took: 67584 by query timer
+Chunk took: 10.4938
+Chunk took: 68576 by query timer
+Chunk took: 1.60031
+Chunk took: 67584 by query timer
+Chunk took: 1.59101
+Chunk took: 68576 by query timer
+Chunk took: 1.61292
+Chunk took: 61472 by query timer
+Chunk took: 1.58591
+Chunk took: 61472 by query timer
+Chunk took: 1.61202
+Chunk took: 68608 by query timer
+Chunk took: 1.5772
+Chunk took: 71680 by query timer
+Chunk took: 1.65885
+Chunk took: 71680 by query timer
+Chunk took: 1.61983
+Chunk took: 73696 by query timer
+Chunk took: 1.60812
+Chunk took: 60416 by query timer
+Chunk took: 1.5832
+Chunk took: 69632 by query timer
+Chunk took: 1.5745
+Chunk took: 69632 by query timer
+Chunk took: 1.59281
+Chunk took: 64512 by query timer
+Chunk took: 1.58621
+Chunk took: 65536 by query timer
+Chunk took: 1.60422
+Chunk took: 67584 by query timer
+Chunk took: 1.85067
 first:
 first:
 first:
@@ -2473,278 +1037,909 @@ first:
 first:
 first:
 first:
-Chunk took: 45056 by query timer
-Chunk took: 1.73479
-Chunk took: 38912 by query timer
-Chunk took: 1.60902
-Chunk took: 47104 by query timer
-Chunk took: 1.77892
-Chunk took: 45056 by query timer
-Chunk took: 1.80714
-Chunk took: 41984 by query timer
-Chunk took: 1.72159
-Chunk took: 43008 by query timer
-Chunk took: 1.70988
-Chunk took: 45056 by query timer
-Chunk took: 1.7432
-Chunk took: 46080 by query timer
-Chunk took: 1.76601
-Chunk took: 36864 by query timer
-Chunk took: 1.68136
-Chunk took: 44032 by query timer
-Chunk took: 1.68526
-Chunk took: 44032 by query timer
-Chunk took: 1.67776
-Chunk took: 44032 by query timer
-Chunk took: 1.67446
-Chunk took: 35840 by query timer
-Chunk took: 1.70688
-Chunk took: 31744 by query timer
-Chunk took: 0.251259
-Chunk took: 37888 by query timer
-Chunk took: 1.69337
-Chunk took: 40960 by query timer
-Chunk took: 1.65705
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.77503
+Chunk took: 55296 by query timer
+Chunk took: 1.62583
+Chunk took: 56320 by query timer
+Chunk took: 1.7423
+Chunk took: 55296 by query timer
+Chunk took: 1.7306
+Chunk took: 58368 by query timer
+Chunk took: 1.70928
+Chunk took: 61440 by query timer
+Chunk took: 1.72609
+Chunk took: 62464 by query timer
+Chunk took: 1.68737
+Chunk took: 58368 by query timer
+Chunk took: 1.7345
+Chunk took: 56320 by query timer
+Chunk took: 1.64804
+Chunk took: 55296 by query timer
+Chunk took: 1.65075
+Chunk took: 61440 by query timer
+Chunk took: 1.63003
+Chunk took: 64512 by query timer
+Chunk took: 1.61683
+Chunk took: 51200 by query timer
+Chunk took: 0.266869
+Chunk took: 58368 by query timer
+Chunk took: 1.66155
+Chunk took: 60416 by query timer
+Chunk took: 1.62883
+Chunk took: 50176 by query timer
+Chunk took: 0.270772
+first:
+Chunk took: 56320 by query timer
+Chunk took: 11.4406
+Chunk took: 67584 by query timer
+Chunk took: 1.97735
+Chunk took: 57344 by query timer
+Chunk took: 1.68707
+Chunk took: 66560 by query timer
+Chunk took: 1.61532
+Chunk took: 50176 by query timer
+Chunk took: 0.269871
+Chunk took: 62464 by query timer
+Chunk took: 1.67176
+Chunk took: 63488 by query timer
+Chunk took: 1.60662
+Chunk took: 60416 by query timer
+Chunk took: 1.62463
+Chunk took: 59392 by query timer
+Chunk took: 1.60452
+Chunk took: 59392 by query timer
+Chunk took: 1.60722
+Chunk took: 51200 by query timer
+Chunk took: 0.266269
+Chunk took: 49152 by query timer
+Chunk took: 1.7333
+Chunk took: 61440 by query timer
+Chunk took: 1.62973
+Chunk took: 59392 by query timer
+Chunk took: 1.59791
+Chunk took: 57344 by query timer
+Chunk took: 1.61833
+Chunk took: 58368 by query timer
+Chunk took: 1.52527
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 59392 by query timer
+Chunk took: 1.77833
+Chunk took: 62464 by query timer
+Chunk took: 1.66666
+Chunk took: 59392 by query timer
+Chunk took: 1.63334
+Chunk took: 62464 by query timer
+Chunk took: 1.62433
+Chunk took: 60416 by query timer
+Chunk took: 1.58561
+Chunk took: 57344 by query timer
+Chunk took: 1.60572
+Chunk took: 64512 by query timer
+Chunk took: 1.59041
+Chunk took: 62464 by query timer
+Chunk took: 1.59611
+Chunk took: 59392 by query timer
+Chunk took: 1.63304
+Chunk took: 61440 by query timer
+Chunk took: 1.585
+Chunk took: 50176 by query timer
+Chunk took: 0.217638
+Chunk took: 57344 by query timer
+Chunk took: 1.62763
+Chunk took: 61440 by query timer
+Chunk took: 1.61652
+Chunk took: 59392 by query timer
+Chunk took: 1.58801
+Chunk took: 55296 by query timer
+Chunk took: 1.59731
+Chunk took: 50176 by query timer
+Chunk took: 0.238051
 first:
 Chunk took: 51200 by query timer
-Chunk took: 10.3989
-Chunk took: 40960 by query timer
-Chunk took: 1.71918
-Chunk took: 34816 by query timer
-Chunk took: 1.66335
-Chunk took: 38912 by query timer
-Chunk took: 1.66995
-Chunk took: 39936 by query timer
-Chunk took: 1.66935
-Chunk took: 46080 by query timer
-Chunk took: 1.67476
-Chunk took: 43008 by query timer
-Chunk took: 1.67206
-Chunk took: 33792 by query timer
-Chunk took: 1.70508
-Chunk took: 38912 by query timer
-Chunk took: 1.7378
-Chunk took: 41984 by query timer
-Chunk took: 1.69967
-Chunk took: 41984 by query timer
-Chunk took: 1.65284
-Chunk took: 35840 by query timer
-Chunk took: 1.66275
-Chunk took: 39936 by query timer
-Chunk took: 1.65795
-Chunk took: 39936 by query timer
-Chunk took: 1.67296
-Chunk took: 38912 by query timer
-Chunk took: 1.66395
-Chunk took: 45056 by query timer
-Chunk took: 1.66635
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 41984 by query timer
-Chunk took: 1.71979
-Chunk took: 39936 by query timer
-Chunk took: 1.60121
-Chunk took: 43008 by query timer
-Chunk took: 1.66845
-Chunk took: 47104 by query timer
-Chunk took: 1.64564
-Chunk took: 37888 by query timer
-Chunk took: 1.65735
-Chunk took: 37888 by query timer
-Chunk took: 1.64023
-Chunk took: 39936 by query timer
-Chunk took: 1.61022
-Chunk took: 44032 by query timer
-Chunk took: 1.61502
-Chunk took: 38912 by query timer
-Chunk took: 1.64624
-Chunk took: 38912 by query timer
-Chunk took: 1.66305
-Chunk took: 36864 by query timer
-Chunk took: 1.64324
-Chunk took: 41984 by query timer
-Chunk took: 1.63183
-Chunk took: 44032 by query timer
-Chunk took: 1.62643
-Chunk took: 47104 by query timer
-Chunk took: 1.62072
-Chunk took: 47104 by query timer
-Chunk took: 1.66005
-Chunk took: 43008 by query timer
-Chunk took: 1.66095
-first:
-Chunk took: 47104 by query timer
-Chunk took: 9.30857
-Chunk took: 44032 by query timer
-Chunk took: 1.60031
-Chunk took: 37888 by query timer
-Chunk took: 1.86177
-Chunk took: 49152 by query timer
-Chunk took: 1.67596
-Chunk took: 50176 by query timer
-Chunk took: 1.68917
-Chunk took: 50176 by query timer
-Chunk took: 1.67506
-Chunk took: 43008 by query timer
-Chunk took: 1.68256
-Chunk took: 46080 by query timer
-Chunk took: 1.68106
-Chunk took: 48128 by query timer
-Chunk took: 1.82125
-Chunk took: 44032 by query timer
-Chunk took: 1.66275
-Chunk took: 46080 by query timer
-Chunk took: 1.59731
-Chunk took: 35840 by query timer
-Chunk took: 1.63993
-Chunk took: 41984 by query timer
-Chunk took: 1.64324
-Chunk took: 50176 by query timer
-Chunk took: 1.76391
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 43008 by query timer
-Chunk took: 1.70327
-Chunk took: 41984 by query timer
-Chunk took: 1.68917
-Chunk took: 39936 by query timer
-Chunk took: 1.69727
-Chunk took: 37888 by query timer
-Chunk took: 1.70027
-Chunk took: 38912 by query timer
-Chunk took: 1.69877
-Chunk took: 34816 by query timer
-Chunk took: 1.69877
-Chunk took: 46080 by query timer
-Chunk took: 1.68616
-Chunk took: 32768 by query timer
-Chunk took: 0.246456
-Chunk took: 41984 by query timer
-Chunk took: 1.7459
-Chunk took: 43008 by query timer
-Chunk took: 1.69547
-Chunk took: 44032 by query timer
-Chunk took: 1.70868
-Chunk took: 40960 by query timer
-Chunk took: 1.70087
-Chunk took: 41984 by query timer
-Chunk took: 1.67446
-Chunk took: 44032 by query timer
-Chunk took: 1.65524
-Chunk took: 44032 by query timer
-Chunk took: 1.64924
-Chunk took: 44032 by query timer
-Chunk took: 1.65344
-first:
-Chunk took: 34816 by query timer
-Chunk took: 10.0353
-Chunk took: 34816 by query timer
-Chunk took: 1.67476
-Chunk took: 38912 by query timer
-Chunk took: 1.67926
-Chunk took: 43008 by query timer
-Chunk took: 1.67386
-Chunk took: 37888 by query timer
-Chunk took: 1.65675
-Chunk took: 45056 by query timer
-Chunk took: 1.65074
-Chunk took: 40960 by query timer
-Chunk took: 1.66215
-Chunk took: 44032 by query timer
-Chunk took: 1.64204
-Chunk took: 43008 by query timer
-Chunk took: 1.64234
-Chunk took: 41984 by query timer
-Chunk took: 1.65224
-Chunk took: 35840 by query timer
-Chunk took: 1.65615
-Chunk took: 44032 by query timer
-Chunk took: 1.64714
-Chunk took: 44032 by query timer
-Chunk took: 1.67506
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 36864 by query timer
-Chunk took: 1.71498
-Chunk took: 39936 by query timer
-Chunk took: 1.61622
-Chunk took: 44032 by query timer
-Chunk took: 1.7498
-Chunk took: 47104 by query timer
-Chunk took: 1.68526
-Chunk took: 49152 by query timer
-Chunk took: 1.67836
-Chunk took: 49152 by query timer
-Chunk took: 1.67746
-Chunk took: 48128 by query timer
-Chunk took: 1.66065
+Chunk took: 11.2932
+Chunk took: 60416 by query timer
+Chunk took: 1.84767
+Chunk took: 56320 by query timer
+Chunk took: 2.58344
+Chunk took: 59392 by query timer
+Chunk took: 1.67356
 Chunk took: 55296 by query timer
-Chunk took: 1.67896
-Chunk took: 38912 by query timer
-Chunk took: 0.271972
-Chunk took: 43008 by query timer
-Chunk took: 1.65104
-Chunk took: 44032 by query timer
-Chunk took: 1.63813
-Chunk took: 39936 by query timer
-Chunk took: 1.65374
-Chunk took: 48128 by query timer
-Chunk took: 1.71318
-Chunk took: 40960 by query timer
-Chunk took: 1.61862
-Chunk took: 35840 by query timer
-Chunk took: 1.64684
-Chunk took: 39936 by query timer
-Chunk took: 1.65344
+Chunk took: 1.56219
+Chunk took: 60416 by query timer
+Chunk took: 1.56129
+Chunk took: 64512 by query timer
+Chunk took: 1.5772
+Chunk took: 58368 by query timer
+Chunk took: 1.54358
+Chunk took: 59392 by query timer
+Chunk took: 1.56069
+Chunk took: 51200 by query timer
+Chunk took: 0.206531
+Chunk took: 50176 by query timer
+Chunk took: 1.5784
+Chunk took: 59392 by query timer
+Chunk took: 1.54088
+Chunk took: 62464 by query timer
+Chunk took: 1.61442
+Chunk took: 54272 by query timer
+Chunk took: 1.56159
+Chunk took: 55296 by query timer
+Chunk took: 1.90171
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 49152 by query timer
+Chunk took: 0.222441
+Chunk took: 55296 by query timer
+Chunk took: 1.82246
+Chunk took: 60416 by query timer
+Chunk took: 1.60452
+Chunk took: 60416 by query timer
+Chunk took: 1.59191
+Chunk took: 60416 by query timer
+Chunk took: 1.62343
+Chunk took: 53248 by query timer
+Chunk took: 1.60572
+Chunk took: 54272 by query timer
+Chunk took: 1.53517
+Chunk took: 57344 by query timer
+Chunk took: 1.55769
+Chunk took: 59392 by query timer
+Chunk took: 1.56909
+Chunk took: 60416 by query timer
+Chunk took: 1.55379
+Chunk took: 49152 by query timer
+Chunk took: 0.227844
+Chunk took: 56320 by query timer
+Chunk took: 1.60392
+Chunk took: 60416 by query timer
+Chunk took: 1.5841
+Chunk took: 57344 by query timer
+Chunk took: 1.56159
+Chunk took: 62464 by query timer
+Chunk took: 1.54358
+Chunk took: 61440 by query timer
+Chunk took: 1.53788
+first:
+Chunk took: 56320 by query timer
+Chunk took: 12.892
+Chunk took: 64512 by query timer
+Chunk took: 1.64865
+Chunk took: 66560 by query timer
+Chunk took: 1.56609
+Chunk took: 58368 by query timer
+Chunk took: 1.75311
+Chunk took: 57344 by query timer
+Chunk took: 1.5775
+Chunk took: 56320 by query timer
+Chunk took: 1.54988
+Chunk took: 57344 by query timer
+Chunk took: 1.53637
+Chunk took: 59392 by query timer
+Chunk took: 1.55168
+Chunk took: 62464 by query timer
+Chunk took: 1.54418
+Chunk took: 53248 by query timer
+Chunk took: 1.54148
+Chunk took: 61440 by query timer
+Chunk took: 1.55739
+Chunk took: 58368 by query timer
+Chunk took: 1.54118
+Chunk took: 58368 by query timer
+Chunk took: 1.54358
+Chunk took: 50176 by query timer
+Chunk took: 0.224843
+Chunk took: 55296 by query timer
+Chunk took: 1.67476
+first:
+first:
+first:
+first:
+first:
+first:
+first:
 first:
 Chunk took: 52224 by query timer
-Chunk took: 10.2866
-Chunk took: 50176 by query timer
-Chunk took: 1.739
-Chunk took: 43008 by query timer
-Chunk took: 1.76361
-Chunk took: 37888 by query timer
-Chunk took: 1.67236
-Chunk took: 46080 by query timer
+Chunk took: 1.74951
+Chunk took: 61440 by query timer
+Chunk took: 1.62523
+Chunk took: 63488 by query timer
+Chunk took: 1.70718
+Chunk took: 62464 by query timer
+Chunk took: 1.66606
+Chunk took: 63488 by query timer
+Chunk took: 1.7378
+Chunk took: 56320 by query timer
+Chunk took: 1.7276
+Chunk took: 56320 by query timer
+Chunk took: 1.72489
+Chunk took: 63488 by query timer
+Chunk took: 1.70898
+Chunk took: 53248 by query timer
+Chunk took: 1.62403
+Chunk took: 52224 by query timer
+Chunk took: 1.62133
+Chunk took: 49152 by query timer
+Chunk took: 0.282779
+Chunk took: 52224 by query timer
+Chunk took: 1.72069
+Chunk took: 61440 by query timer
+Chunk took: 1.68587
+Chunk took: 56320 by query timer
+Chunk took: 1.63604
+Chunk took: 64512 by query timer
+Chunk took: 1.80925
+Chunk took: 56320 by query timer
+Chunk took: 1.64264
+first:
+Chunk took: 66560 by query timer
+Chunk took: 10.1605
+Chunk took: 58368 by query timer
+Chunk took: 1.69037
+Chunk took: 56320 by query timer
+Chunk took: 1.60842
+Chunk took: 57344 by query timer
+Chunk took: 1.55228
+Chunk took: 62464 by query timer
+Chunk took: 1.55979
+Chunk took: 61440 by query timer
 Chunk took: 1.66215
-Chunk took: 34816 by query timer
-Chunk took: 1.76001
-Chunk took: 32768 by query timer
-Chunk took: 0.261465
-Chunk took: 44032 by query timer
-Chunk took: 1.66485
-Chunk took: 36864 by query timer
-Chunk took: 0.25366
-Chunk took: 34816 by query timer
-Chunk took: 1.67476
-Chunk took: 41984 by query timer
-Chunk took: 1.71618
-Chunk took: 49152 by query timer
-Chunk took: 1.66185
-Chunk took: 37888 by query timer
-Chunk took: 1.65945
-Chunk took: 46080 by query timer
-Chunk took: 1.64714
-Chunk took: 41984 by query timer
-Chunk took: 1.66305
+Chunk took: 59392 by query timer
+Chunk took: 1.585
+Chunk took: 60416 by query timer
+Chunk took: 1.55168
+Chunk took: 55296 by query timer
+Chunk took: 1.5727
+Chunk took: 61440 by query timer
+Chunk took: 1.54238
+Chunk took: 60416 by query timer
+Chunk took: 1.5718
+Chunk took: 55296 by query timer
+Chunk took: 1.55919
+Chunk took: 53248 by query timer
+Chunk took: 1.573
+Chunk took: 60416 by query timer
+Chunk took: 1.54238
 first:
 first:
 first:
@@ -2753,657 +1948,1766 @@ first:
 first:
 first:
 first:
-Chunk took: 43008 by query timer
-Chunk took: 1.68706
-Chunk took: 39936 by query timer
-Chunk took: 1.61592
-Chunk took: 45056 by query timer
-Chunk took: 1.69067
-Chunk took: 48128 by query timer
-Chunk took: 1.68226
-Chunk took: 54272 by query timer
-Chunk took: 1.68887
-Chunk took: 32768 by query timer
-Chunk took: 0.187318
-Chunk took: 43008 by query timer
-Chunk took: 1.76151
-Chunk took: 45056 by query timer
-Chunk took: 1.591
-Chunk took: 35840 by query timer
-Chunk took: 1.56999
-Chunk took: 32768 by query timer
-Chunk took: 0.177112
-Chunk took: 43008 by query timer
-Chunk took: 1.61562
-Chunk took: 41984 by query timer
-Chunk took: 1.5778
-Chunk took: 36864 by query timer
-Chunk took: 1.5835
-Chunk took: 43008 by query timer
-Chunk took: 1.5817
-Chunk took: 45056 by query timer
-Chunk took: 1.57569
-Chunk took: 46080 by query timer
-Chunk took: 1.57659
-first:
-Chunk took: 41984 by query timer
-Chunk took: 11.4783
-Chunk took: 44032 by query timer
-Chunk took: 1.60992
-Chunk took: 46080 by query timer
-Chunk took: 1.60121
-Chunk took: 41984 by query timer
-Chunk took: 1.80804
-Chunk took: 32768 by query timer
-Chunk took: 0.180714
-Chunk took: 33792 by query timer
-Chunk took: 1.60751
-Chunk took: 35840 by query timer
-Chunk took: 1.5784
-Chunk took: 45056 by query timer
-Chunk took: 1.5856
-Chunk took: 44032 by query timer
-Chunk took: 1.62222
-Chunk took: 32768 by query timer
-Chunk took: 0.181915
-Chunk took: 37888 by query timer
-Chunk took: 1.69067
-Chunk took: 46080 by query timer
-Chunk took: 1.5895
-Chunk took: 48128 by query timer
-Chunk took: 1.72129
-Chunk took: 40960 by query timer
-Chunk took: 1.86928
-Chunk took: 45056 by query timer
-Chunk took: 1.588
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 47104 by query timer
-Chunk took: 1.70388
-Chunk took: 45056 by query timer
-Chunk took: 1.61172
-Chunk took: 37888 by query timer
-Chunk took: 1.5826
-Chunk took: 44032 by query timer
-Chunk took: 1.5892
-Chunk took: 35840 by query timer
-Chunk took: 1.56399
-Chunk took: 41984 by query timer
-Chunk took: 1.56579
-Chunk took: 41984 by query timer
-Chunk took: 1.5793
-Chunk took: 35840 by query timer
-Chunk took: 1.60091
-Chunk took: 40960 by query timer
-Chunk took: 1.5808
-Chunk took: 49152 by query timer
-Chunk took: 1.5784
-Chunk took: 45056 by query timer
-Chunk took: 1.5817
-Chunk took: 39936 by query timer
-Chunk took: 1.5793
-Chunk took: 45056 by query timer
+Chunk took: 57344 by query timer
+Chunk took: 1.86298
+Chunk took: 68608 by query timer
+Chunk took: 1.72699
+Chunk took: 61440 by query timer
+Chunk took: 1.67326
+Chunk took: 60416 by query timer
+Chunk took: 1.70868
+Chunk took: 63488 by query timer
+Chunk took: 1.7333
+Chunk took: 57344 by query timer
 Chunk took: 1.62853
-Chunk took: 50176 by query timer
-Chunk took: 1.70087
-Chunk took: 49152 by query timer
-Chunk took: 1.67776
-Chunk took: 50176 by query timer
-Chunk took: 1.69187
-first:
-Chunk took: 38912 by query timer
-Chunk took: 10.2638
-Chunk took: 38912 by query timer
-Chunk took: 1.60271
-Chunk took: 38912 by query timer
-Chunk took: 1.56909
-Chunk took: 41984 by query timer
-Chunk took: 1.79243
-Chunk took: 39936 by query timer
-Chunk took: 1.5769
-Chunk took: 40960 by query timer
-Chunk took: 1.57509
-Chunk took: 38912 by query timer
-Chunk took: 1.60781
-Chunk took: 37888 by query timer
-Chunk took: 1.5883
-Chunk took: 44032 by query timer
-Chunk took: 1.66455
-Chunk took: 44032 by query timer
-Chunk took: 1.60181
-Chunk took: 39936 by query timer
-Chunk took: 1.5883
-Chunk took: 36864 by query timer
-Chunk took: 1.57149
-Chunk took: 45056 by query timer
-Chunk took: 1.5841
-Chunk took: 44032 by query timer
-Chunk took: 1.5859
-Chunk took: 45056 by query timer
-Chunk took: 1.63303
-Chunk took: 45056 by query timer
-Chunk took: 1.5814
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 40960 by query timer
-Chunk took: 1.73239
-Chunk took: 39936 by query timer
-Chunk took: 1.61982
-Chunk took: 38912 by query timer
-Chunk took: 1.72579
-Chunk took: 47104 by query timer
-Chunk took: 1.72549
-Chunk took: 38912 by query timer
-Chunk took: 1.67326
-Chunk took: 45056 by query timer
-Chunk took: 1.66335
-Chunk took: 41984 by query timer
-Chunk took: 1.7408
-Chunk took: 39936 by query timer
-Chunk took: 15.9368
-Chunk took: 41984 by query timer
-Chunk took: 1.69847
-Chunk took: 44032 by query timer
-Chunk took: 1.65164
-Chunk took: 46080 by query timer
-Chunk took: 1.64204
-Chunk took: 36864 by query timer
-Chunk took: 1.63573
-Chunk took: 45056 by query timer
-Chunk took: 1.64054
-Chunk took: 43008 by query timer
-Chunk took: 1.65825
-Chunk took: 32768 by query timer
-Chunk took: 0.250358
-Chunk took: 31744 by query timer
-Chunk took: 0.231146
-first:
-Chunk took: 46080 by query timer
-Chunk took: 10.7324
-Chunk took: 44032 by query timer
-Chunk took: 1.62132
-Chunk took: 37888 by query timer
-Chunk took: 1.5865
-Chunk took: 45056 by query timer
-Chunk took: 1.84616
-Chunk took: 40960 by query timer
-Chunk took: 1.5799
-Chunk took: 45056 by query timer
-Chunk took: 1.57419
-Chunk took: 43008 by query timer
-Chunk took: 1.5817
-Chunk took: 41984 by query timer
-Chunk took: 1.5877
-Chunk took: 41984 by query timer
-Chunk took: 1.60781
-Chunk took: 40960 by query timer
-Chunk took: 1.61412
-Chunk took: 45056 by query timer
-Chunk took: 1.66455
-Chunk took: 37888 by query timer
-Chunk took: 1.56279
-Chunk took: 31744 by query timer
-Chunk took: 0.188219
-Chunk took: 31744 by query timer
-Chunk took: 0.260564
-Chunk took: 34816 by query timer
-Chunk took: 1.62553
-Chunk took: 37888 by query timer
-Chunk took: 1.5805
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 40960 by query timer
-Chunk took: 1.78883
-Chunk took: 43008 by query timer
-Chunk took: 1.70748
-Chunk took: 43008 by query timer
-Chunk took: 1.69607
-Chunk took: 35840 by query timer
-Chunk took: 1.68887
-Chunk took: 35840 by query timer
-Chunk took: 1.68706
-Chunk took: 46080 by query timer
-Chunk took: 1.68947
-Chunk took: 41984 by query timer
-Chunk took: 1.67926
-Chunk took: 44032 by query timer
-Chunk took: 1.64714
-Chunk took: 36864 by query timer
-Chunk took: 1.61592
-Chunk took: 32768 by query timer
-Chunk took: 0.214035
-Chunk took: 40960 by query timer
-Chunk took: 1.66395
-Chunk took: 43008 by query timer
-Chunk took: 1.61982
-Chunk took: 40960 by query timer
-Chunk took: 1.61982
-Chunk took: 35840 by query timer
-Chunk took: 1.62282
-Chunk took: 36864 by query timer
-Chunk took: 1.62012
-Chunk took: 32768 by query timer
-Chunk took: 0.212834
-first:
-Chunk took: 40960 by query timer
-Chunk took: 10.379
-Chunk took: 37888 by query timer
-Chunk took: 1.72009
-Chunk took: 36864 by query timer
-Chunk took: 1.70297
-Chunk took: 38912 by query timer
-Chunk took: 1.66245
-Chunk took: 43008 by query timer
-Chunk took: 1.69127
-Chunk took: 43008 by query timer
-Chunk took: 1.73059
-Chunk took: 37888 by query timer
-Chunk took: 1.70027
-Chunk took: 43008 by query timer
-Chunk took: 1.66515
-Chunk took: 45056 by query timer
-Chunk took: 1.69607
-Chunk took: 41984 by query timer
-Chunk took: 1.73119
-Chunk took: 39936 by query timer
-Chunk took: 1.68466
-Chunk took: 38912 by query timer
-Chunk took: 1.70448
-Chunk took: 35840 by query timer
-Chunk took: 1.72339
-Chunk took: 38912 by query timer
-Chunk took: 1.63363
-Chunk took: 44032 by query timer
-Chunk took: 1.63213
-Chunk took: 44032 by query timer
-Chunk took: 1.61802
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 41984 by query timer
-Chunk took: 1.84496
-Chunk took: 37888 by query timer
-Chunk took: 1.67266
-Chunk took: 39936 by query timer
-Chunk took: 1.5919
-Chunk took: 37888 by query timer
-Chunk took: 1.5784
-Chunk took: 36864 by query timer
-Chunk took: 1.5802
-Chunk took: 33792 by query timer
-Chunk took: 1.5778
-Chunk took: 34816 by query timer
-Chunk took: 1.57389
-Chunk took: 39936 by query timer
-Chunk took: 1.588
-Chunk took: 37888 by query timer
-Chunk took: 1.579
-Chunk took: 46080 by query timer
-Chunk took: 1.61862
-Chunk took: 44032 by query timer
-Chunk took: 1.60721
-Chunk took: 40960 by query timer
-Chunk took: 1.5817
-Chunk took: 41984 by query timer
-Chunk took: 1.5832
-Chunk took: 45056 by query timer
-Chunk took: 1.5859
-Chunk took: 45056 by query timer
-Chunk took: 1.5799
-Chunk took: 43008 by query timer
-Chunk took: 1.5799
-first:
-Chunk took: 41984 by query timer
-Chunk took: 10.1917
-Chunk took: 40960 by query timer
-Chunk took: 1.59761
-Chunk took: 39936 by query timer
-Chunk took: 1.5919
-Chunk took: 38912 by query timer
-Chunk took: 1.91371
-Chunk took: 31744 by query timer
-Chunk took: 0.188519
-Chunk took: 37888 by query timer
-Chunk took: 1.63123
-Chunk took: 45056 by query timer
-Chunk took: 1.5874
-Chunk took: 44032 by query timer
-Chunk took: 1.5877
-Chunk took: 38912 by query timer
-Chunk took: 1.5913
-Chunk took: 37888 by query timer
-Chunk took: 1.59881
-Chunk took: 46080 by query timer
-Chunk took: 1.579
-Chunk took: 45056 by query timer
-Chunk took: 1.5814
-Chunk took: 40960 by query timer
-Chunk took: 1.66845
-Chunk took: 45056 by query timer
-Chunk took: 1.60902
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 44032 by query timer
-Chunk took: 1.72009
-Chunk took: 36864 by query timer
-Chunk took: 1.78973
-Chunk took: 39936 by query timer
-Chunk took: 1.77832
-Chunk took: 44032 by query timer
-Chunk took: 1.62312
-Chunk took: 37888 by query timer
-Chunk took: 1.5862
-Chunk took: 44032 by query timer
-Chunk took: 1.5907
-Chunk took: 41984 by query timer
-Chunk took: 1.5907
-Chunk took: 40960 by query timer
-Chunk took: 1.5925
-Chunk took: 35840 by query timer
-Chunk took: 1.71378
-Chunk took: 46080 by query timer
-Chunk took: 1.63723
-Chunk took: 41984 by query timer
-Chunk took: 1.57269
-Chunk took: 38912 by query timer
-Chunk took: 1.60061
-Chunk took: 41984 by query timer
-Chunk took: 1.56879
-Chunk took: 39936 by query timer
-Chunk took: 1.56519
-Chunk took: 39936 by query timer
-Chunk took: 1.5889
-Chunk took: 43008 by query timer
-Chunk took: 1.57509
-first:
-Chunk took: 35840 by query timer
-Chunk took: 10.2818
-Chunk took: 35840 by query timer
-Chunk took: 1.63003
-Chunk took: 41984 by query timer
-Chunk took: 1.79934
-Chunk took: 39936 by query timer
-Chunk took: 1.57509
-Chunk took: 41984 by query timer
-Chunk took: 1.5784
-Chunk took: 37888 by query timer
-Chunk took: 1.5895
-Chunk took: 34816 by query timer
-Chunk took: 1.57419
-Chunk took: 40960 by query timer
-Chunk took: 1.5796
-Chunk took: 45056 by query timer
-Chunk took: 1.5901
-Chunk took: 44032 by query timer
-Chunk took: 1.5859
-Chunk took: 39936 by query timer
-Chunk took: 1.61682
-Chunk took: 38912 by query timer
-Chunk took: 1.60451
-Chunk took: 41984 by query timer
-Chunk took: 1.61202
-Chunk took: 44032 by query timer
-Chunk took: 1.57479
-Chunk took: 44032 by query timer
-Chunk took: 1.579
-Chunk took: 44032 by query timer
-Chunk took: 1.5871
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-Chunk took: 39936 by query timer
-Chunk took: 1.68166
-Chunk took: 38912 by query timer
-Chunk took: 1.62733
-Chunk took: 39936 by query timer
-Chunk took: 1.71258
-Chunk took: 33792 by query timer
-Chunk took: 1.67326
-Chunk took: 46080 by query timer
-Chunk took: 1.68346
-Chunk took: 44032 by query timer
-Chunk took: 1.69667
-Chunk took: 44032 by query timer
-Chunk took: 1.68706
-Chunk took: 32768 by query timer
-Chunk took: 0.254561
-Chunk took: 36864 by query timer
-Chunk took: 1.72369
-Chunk took: 39936 by query timer
-Chunk took: 1.67656
-Chunk took: 46080 by query timer
-Chunk took: 1.67536
-Chunk took: 43008 by query timer
-Chunk took: 1.66155
-Chunk took: 43008 by query timer
-Chunk took: 1.67206
-Chunk took: 32768 by query timer
-Chunk took: 0.207431
-Chunk took: 33792 by query timer
-Chunk took: 1.62823
-Chunk took: 38912 by query timer
-Chunk took: 1.61322
-first:
-Chunk took: 45056 by query timer
-Chunk took: 10.3031
-Chunk took: 43008 by query timer
-Chunk took: 1.62402
-Chunk took: 40960 by query timer
-Chunk took: 1.89329
-Chunk took: 43008 by query timer
-Chunk took: 1.63543
-Chunk took: 41984 by query timer
-Chunk took: 1.61952
-Chunk took: 41984 by query timer
-Chunk took: 1.62312
-Chunk took: 41984 by query timer
-Chunk took: 1.61832
-Chunk took: 45056 by query timer
-Chunk took: 1.64594
-Chunk took: 36864 by query timer
+Chunk took: 58368 by query timer
 Chunk took: 1.60962
-Chunk took: 38912 by query timer
-Chunk took: 1.63633
-Chunk took: 41984 by query timer
-Chunk took: 1.62042
-Chunk took: 40960 by query timer
-Chunk took: 1.67175
-Chunk took: 34816 by query timer
+Chunk took: 56320 by query timer
+Chunk took: 1.5796
+Chunk took: 60416 by query timer
+Chunk took: 1.59401
+Chunk took: 53248 by query timer
+Chunk took: 1.59821
+Chunk took: 57344 by query timer
+Chunk took: 1.60992
+Chunk took: 60416 by query timer
+Chunk took: 1.59251
+Chunk took: 51200 by query timer
+Chunk took: 1.58831
+Chunk took: 61440 by query timer
+Chunk took: 1.61052
+Chunk took: 59392 by query timer
+Chunk took: 1.62433
+Chunk took: 62464 by query timer
+Chunk took: 1.60602
+first:
+Chunk took: 62464 by query timer
+Chunk took: 10.1701
+Chunk took: 64512 by query timer
+Chunk took: 1.81165
+Chunk took: 64512 by query timer
+Chunk took: 1.66486
+Chunk took: 57344 by query timer
+Chunk took: 1.5763
+Chunk took: 65536 by query timer
+Chunk took: 1.5781
+Chunk took: 64512 by query timer
+Chunk took: 1.61893
+Chunk took: 53248 by query timer
+Chunk took: 1.66666
+Chunk took: 62464 by query timer
+Chunk took: 1.66636
+Chunk took: 55296 by query timer
+Chunk took: 1.62883
+Chunk took: 56320 by query timer
+Chunk took: 1.65315
+Chunk took: 51200 by query timer
+Chunk took: 1.65735
+Chunk took: 65536 by query timer
+Chunk took: 1.62373
+Chunk took: 66560 by query timer
+Chunk took: 1.62043
+Chunk took: 58368 by query timer
+Chunk took: 1.65015
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.77052
+Chunk took: 63488 by query timer
+Chunk took: 1.68437
+Chunk took: 62464 by query timer
+Chunk took: 1.63544
+Chunk took: 54272 by query timer
+Chunk took: 1.61322
+Chunk took: 61440 by query timer
+Chunk took: 1.59041
+Chunk took: 64512 by query timer
+Chunk took: 1.61562
+Chunk took: 69632 by query timer
+Chunk took: 1.61022
+Chunk took: 57344 by query timer
+Chunk took: 1.60662
+Chunk took: 59392 by query timer
+Chunk took: 1.59281
+Chunk took: 51200 by query timer
+Chunk took: 0.266569
+Chunk took: 50176 by query timer
+Chunk took: 1.62553
+Chunk took: 64512 by query timer
+Chunk took: 1.62643
+Chunk took: 56320 by query timer
+Chunk took: 1.59401
+Chunk took: 56320 by query timer
+Chunk took: 1.59971
+Chunk took: 62464 by query timer
+Chunk took: 1.58951
+Chunk took: 69632 by query timer
+Chunk took: 1.5832
+first:
+Chunk took: 65536 by query timer
+Chunk took: 10.2476
+Chunk took: 59392 by query timer
+Chunk took: 1.7291
+Chunk took: 63488 by query timer
+Chunk took: 1.69037
+Chunk took: 65536 by query timer
+Chunk took: 1.56729
+Chunk took: 50176 by query timer
+Chunk took: 0.238351
+Chunk took: 50176 by query timer
+Chunk took: 1.58561
+Chunk took: 55296 by query timer
+Chunk took: 1.54418
+Chunk took: 55296 by query timer
+Chunk took: 1.5706
+Chunk took: 59392 by query timer
+Chunk took: 1.55529
+Chunk took: 58368 by query timer
+Chunk took: 1.54838
+Chunk took: 55296 by query timer
+Chunk took: 1.5841
+Chunk took: 55296 by query timer
+Chunk took: 1.58771
+Chunk took: 61440 by query timer
+Chunk took: 1.5736
+Chunk took: 61440 by query timer
+Chunk took: 1.58951
+Chunk took: 67584 by query timer
+Chunk took: 1.69608
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 55296 by query timer
+Chunk took: 1.83266
+Chunk took: 62464 by query timer
+Chunk took: 1.68197
+Chunk took: 59392 by query timer
+Chunk took: 1.74441
+Chunk took: 63488 by query timer
+Chunk took: 1.69698
+Chunk took: 54272 by query timer
+Chunk took: 1.67806
+Chunk took: 61440 by query timer
+Chunk took: 1.65405
+Chunk took: 55296 by query timer
+Chunk took: 1.70028
+Chunk took: 63488 by query timer
+Chunk took: 1.67476
+Chunk took: 59392 by query timer
+Chunk took: 1.66305
+Chunk took: 57344 by query timer
+Chunk took: 1.65975
+Chunk took: 50176 by query timer
+Chunk took: 0.292986
+Chunk took: 50176 by query timer
+Chunk took: 1.65615
+Chunk took: 62464 by query timer
+Chunk took: 1.63934
+Chunk took: 63488 by query timer
+Chunk took: 1.62463
+Chunk took: 50176 by query timer
+Chunk took: 0.259364
+Chunk took: 55296 by query timer
+Chunk took: 1.69157
+first:
+Chunk took: 67584 by query timer
+Chunk took: 10.3271
+Chunk took: 57344 by query timer
+Chunk took: 1.69938
+Chunk took: 58368 by query timer
+Chunk took: 1.66155
+Chunk took: 63488 by query timer
+Chunk took: 1.63213
+Chunk took: 54272 by query timer
+Chunk took: 1.60332
+Chunk took: 57344 by query timer
+Chunk took: 1.62553
+Chunk took: 61440 by query timer
+Chunk took: 1.61683
+Chunk took: 58368 by query timer
+Chunk took: 1.61112
+Chunk took: 56320 by query timer
+Chunk took: 1.60632
+Chunk took: 49152 by query timer
+Chunk took: 0.270171
+Chunk took: 47104 by query timer
+Chunk took: 0.328408
+Chunk took: 59392 by query timer
+Chunk took: 1.67866
+Chunk took: 60416 by query timer
+Chunk took: 1.59941
+Chunk took: 59392 by query timer
+Chunk took: 1.64774
+Chunk took: 59392 by query timer
+Chunk took: 1.60692
+Chunk took: 58368 by query timer
+Chunk took: 1.60212
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 63488 by query timer
+Chunk took: 1.83686
+Chunk took: 58368 by query timer
+Chunk took: 1.64024
+Chunk took: 64512 by query timer
+Chunk took: 1.7375
+Chunk took: 61440 by query timer
+Chunk took: 1.7333
+Chunk took: 52224 by query timer
+Chunk took: 1.70718
+Chunk took: 62464 by query timer
+Chunk took: 1.69608
+Chunk took: 59392 by query timer
+Chunk took: 1.70148
+Chunk took: 61440 by query timer
+Chunk took: 1.69097
+Chunk took: 51200 by query timer
+Chunk took: 0.26837
+Chunk took: 51200 by query timer
+Chunk took: 1.7393
+Chunk took: 52224 by query timer
+Chunk took: 1.63784
+Chunk took: 60416 by query timer
+Chunk took: 1.63904
+Chunk took: 61440 by query timer
+Chunk took: 1.68137
+Chunk took: 60416 by query timer
+Chunk took: 1.62403
+Chunk took: 49152 by query timer
+Chunk took: 0.273473
+Chunk took: 54272 by query timer
+Chunk took: 1.69487
+first:
+Chunk took: 64512 by query timer
+Chunk took: 11.7729
+Chunk took: 71680 by query timer
+Chunk took: 1.74861
+Chunk took: 65536 by query timer
+Chunk took: 1.59581
+Chunk took: 62464 by query timer
+Chunk took: 1.5808
+Chunk took: 63488 by query timer
+Chunk took: 1.60542
+Chunk took: 63488 by query timer
+Chunk took: 1.56609
+Chunk took: 63488 by query timer
+Chunk took: 1.5787
+Chunk took: 64512 by query timer
+Chunk took: 1.56159
+Chunk took: 58368 by query timer
+Chunk took: 1.59521
+Chunk took: 55296 by query timer
+Chunk took: 1.56189
+Chunk took: 53248 by query timer
+Chunk took: 1.56129
+Chunk took: 57344 by query timer
+Chunk took: 1.74321
+Chunk took: 56320 by query timer
+Chunk took: 1.61022
+Chunk took: 52224 by query timer
+Chunk took: 1.56489
+Chunk took: 55296 by query timer
+Chunk took: 1.54478
+Chunk took: 52224 by query timer
+Chunk took: 1.50605
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.76572
+Chunk took: 54272 by query timer
+Chunk took: 1.61562
+Chunk took: 56320 by query timer
+Chunk took: 1.65675
+Chunk took: 58368 by query timer
+Chunk took: 1.66936
+Chunk took: 59392 by query timer
+Chunk took: 1.62553
+Chunk took: 58368 by query timer
+Chunk took: 1.65165
+Chunk took: 63488 by query timer
+Chunk took: 1.64895
+Chunk took: 65536 by query timer
+Chunk took: 1.65495
+Chunk took: 59392 by query timer
+Chunk took: 1.75821
+Chunk took: 60416 by query timer
+Chunk took: 1.86508
+Chunk took: 59392 by query timer
+Chunk took: 1.76212
+Chunk took: 58368 by query timer
+Chunk took: 1.67086
+Chunk took: 56320 by query timer
+Chunk took: 1.62643
+Chunk took: 57344 by query timer
+Chunk took: 1.60031
+Chunk took: 52224 by query timer
+Chunk took: 1.56549
+Chunk took: 61440 by query timer
+Chunk took: 1.60061
+first:
+Chunk took: 57344 by query timer
+Chunk took: 8.61666
+Chunk took: 54272 by query timer
+Chunk took: 1.84497
+Chunk took: 70656 by query timer
+Chunk took: 1.76962
+Chunk took: 58368 by query timer
+Chunk took: 1.60602
+Chunk took: 61440 by query timer
+Chunk took: 1.60632
+Chunk took: 58368 by query timer
+Chunk took: 1.60722
+Chunk took: 61440 by query timer
+Chunk took: 1.60452
+Chunk took: 57344 by query timer
+Chunk took: 1.59101
+Chunk took: 62464 by query timer
+Chunk took: 1.59221
+Chunk took: 64512 by query timer
+Chunk took: 1.5748
+Chunk took: 53248 by query timer
+Chunk took: 1.60212
+Chunk took: 50176 by query timer
+Chunk took: 0.242854
+Chunk took: 50176 by query timer
+Chunk took: 1.61953
+Chunk took: 61440 by query timer
+Chunk took: 1.60031
+Chunk took: 62464 by query timer
+Chunk took: 1.59491
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 55296 by query timer
+Chunk took: 1.77563
+Chunk took: 58368 by query timer
+Chunk took: 1.69097
+Chunk took: 65536 by query timer
+Chunk took: 1.65345
+Chunk took: 57344 by query timer
+Chunk took: 1.74771
+Chunk took: 65536 by query timer
+Chunk took: 1.72699
+Chunk took: 55296 by query timer
+Chunk took: 1.71589
+Chunk took: 58368 by query timer
+Chunk took: 1.68197
+Chunk took: 56320 by query timer
+Chunk took: 1.64594
+Chunk took: 56320 by query timer
+Chunk took: 1.62073
+Chunk took: 58368 by query timer
+Chunk took: 1.61983
+Chunk took: 53248 by query timer
+Chunk took: 1.62643
+Chunk took: 51200 by query timer
+Chunk took: 0.26747
+Chunk took: 52224 by query timer
+Chunk took: 1.66606
+Chunk took: 62464 by query timer
+Chunk took: 1.61232
+Chunk took: 62464 by query timer
+Chunk took: 1.62913
+Chunk took: 60416 by query timer
+Chunk took: 1.62463
+first:
+Chunk took: 61440 by query timer
+Chunk took: 10.1167
+Chunk took: 61440 by query timer
+Chunk took: 1.67026
+Chunk took: 60416 by query timer
+Chunk took: 1.59581
+Chunk took: 66560 by query timer
+Chunk took: 1.64084
+Chunk took: 64512 by query timer
+Chunk took: 1.56759
+Chunk took: 60416 by query timer
+Chunk took: 1.54388
+Chunk took: 58368 by query timer
+Chunk took: 1.58861
+Chunk took: 60416 by query timer
+Chunk took: 1.54808
+Chunk took: 58368 by query timer
+Chunk took: 1.59941
+Chunk took: 55296 by query timer
+Chunk took: 1.55529
+Chunk took: 56320 by query timer
+Chunk took: 1.5736
+Chunk took: 60416 by query timer
+Chunk took: 1.54688
+Chunk took: 58368 by query timer
+Chunk took: 1.5826
+Chunk took: 50176 by query timer
+Chunk took: 0.22094
+Chunk took: 58368 by query timer
+Chunk took: 1.66005
+Chunk took: 61440 by query timer
+Chunk took: 1.5727
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 58368 by query timer
+Chunk took: 1.77262
+Chunk took: 56320 by query timer
+Chunk took: 1.61532
+Chunk took: 61440 by query timer
+Chunk took: 1.67836
+Chunk took: 61440 by query timer
+Chunk took: 1.66936
+Chunk took: 58368 by query timer
+Chunk took: 1.65795
+Chunk took: 61440 by query timer
+Chunk took: 1.67416
+Chunk took: 60416 by query timer
+Chunk took: 1.65555
+Chunk took: 59392 by query timer
+Chunk took: 1.61983
+Chunk took: 52224 by query timer
+Chunk took: 1.62943
+Chunk took: 56320 by query timer
+Chunk took: 1.5739
+Chunk took: 62464 by query timer
+Chunk took: 1.56159
+Chunk took: 59392 by query timer
+Chunk took: 1.60152
+Chunk took: 59392 by query timer
+Chunk took: 1.63724
+Chunk took: 54272 by query timer
+Chunk took: 1.60632
+Chunk took: 62464 by query timer
+Chunk took: 1.62583
+Chunk took: 60416 by query timer
+Chunk took: 1.60632
+first:
+Chunk took: 68608 by query timer
+Chunk took: 10.0912
+Chunk took: 61440 by query timer
+Chunk took: 1.69728
+Chunk took: 65536 by query timer
+Chunk took: 1.63724
+Chunk took: 66560 by query timer
+Chunk took: 1.62253
+Chunk took: 62464 by query timer
+Chunk took: 1.68347
+Chunk took: 59392 by query timer
+Chunk took: 1.60602
+Chunk took: 60416 by query timer
+Chunk took: 1.66966
+Chunk took: 58368 by query timer
+Chunk took: 1.54088
+Chunk took: 59392 by query timer
+Chunk took: 1.55048
+Chunk took: 51200 by query timer
+Chunk took: 1.54568
+Chunk took: 54272 by query timer
+Chunk took: 1.55078
+Chunk took: 53248 by query timer
+Chunk took: 1.55559
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 59392 by query timer
+Chunk took: 1.65945
+Chunk took: 61440 by query timer
+Chunk took: 1.56219
+Chunk took: 55296 by query timer
+Chunk took: 1.56939
+Chunk took: 64512 by query timer
+Chunk took: 1.65645
+Chunk took: 66560 by query timer
+Chunk took: 1.62703
+Chunk took: 60416 by query timer
+Chunk took: 1.64594
+Chunk took: 61440 by query timer
+Chunk took: 1.61412
+Chunk took: 57344 by query timer
+Chunk took: 1.59371
+Chunk took: 57344 by query timer
+Chunk took: 1.61112
+Chunk took: 61440 by query timer
+Chunk took: 1.64174
+Chunk took: 66560 by query timer
+Chunk took: 1.64054
+Chunk took: 58368 by query timer
+Chunk took: 1.67536
+Chunk took: 53248 by query timer
+Chunk took: 1.65945
+Chunk took: 57344 by query timer
+Chunk took: 1.65975
+Chunk took: 62464 by query timer
+Chunk took: 1.65075
+Chunk took: 61440 by query timer
+Chunk took: 1.65795
+first:
+Chunk took: 62464 by query timer
+Chunk took: 10.3683
+Chunk took: 68608 by query timer
+Chunk took: 1.78763
+Chunk took: 55296 by query timer
+Chunk took: 1.69788
+Chunk took: 66560 by query timer
+Chunk took: 1.67866
+Chunk took: 61440 by query timer
+Chunk took: 1.76002
+Chunk took: 57344 by query timer
+Chunk took: 1.61743
+Chunk took: 60416 by query timer
+Chunk took: 1.65825
+Chunk took: 57344 by query timer
+Chunk took: 1.61743
+Chunk took: 55296 by query timer
+Chunk took: 1.60782
+Chunk took: 55296 by query timer
+Chunk took: 1.58681
+Chunk took: 62464 by query timer
+Chunk took: 1.60842
+Chunk took: 62464 by query timer
+Chunk took: 1.54358
+Chunk took: 61440 by query timer
+Chunk took: 1.53547
+Chunk took: 63488 by query timer
+Chunk took: 1.53397
+Chunk took: 58368 by query timer
+Chunk took: 1.63604
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.78433
+Chunk took: 65536 by query timer
+Chunk took: 1.65495
+Chunk took: 53248 by query timer
+Chunk took: 1.65975
+Chunk took: 60416 by query timer
+Chunk took: 1.66305
+Chunk took: 56320 by query timer
+Chunk took: 1.62763
+Chunk took: 63488 by query timer
+Chunk took: 1.65525
+Chunk took: 62464 by query timer
+Chunk took: 1.71409
+Chunk took: 58368 by query timer
+Chunk took: 1.66155
+Chunk took: 61440 by query timer
+Chunk took: 1.65615
+Chunk took: 54272 by query timer
+Chunk took: 1.62853
+Chunk took: 62464 by query timer
+Chunk took: 1.65825
+Chunk took: 59392 by query timer
+Chunk took: 1.5841
+Chunk took: 50176 by query timer
+Chunk took: 0.244955
+Chunk took: 47104 by query timer
+Chunk took: 0.274974
+Chunk took: 47104 by query timer
+Chunk took: 0.271972
+Chunk took: 63488 by query timer
+Chunk took: 1.63844
+first:
+Chunk took: 65536 by query timer
+Chunk took: 12.6491
+Chunk took: 63488 by query timer
+Chunk took: 1.66966
+Chunk took: 54272 by query timer
+Chunk took: 1.573
+Chunk took: 60416 by query timer
+Chunk took: 1.7276
+Chunk took: 59392 by query timer
+Chunk took: 1.59911
+Chunk took: 55296 by query timer
+Chunk took: 1.54718
+Chunk took: 57344 by query timer
+Chunk took: 1.55258
+Chunk took: 57344 by query timer
+Chunk took: 1.55709
+Chunk took: 50176 by query timer
+Chunk took: 0.224542
+Chunk took: 59392 by query timer
+Chunk took: 1.61052
+Chunk took: 61440 by query timer
+Chunk took: 1.579
+Chunk took: 58368 by query timer
+Chunk took: 1.54628
+Chunk took: 60416 by query timer
+Chunk took: 1.54028
+Chunk took: 60416 by query timer
+Chunk took: 1.52136
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 58368 by query timer
+Chunk took: 1.67296
+Chunk took: 54272 by query timer
+Chunk took: 1.53457
+Chunk took: 59392 by query timer
+Chunk took: 1.64054
+Chunk took: 59392 by query timer
+Chunk took: 1.66245
+Chunk took: 58368 by query timer
+Chunk took: 1.61442
+Chunk took: 60416 by query timer
+Chunk took: 1.63454
+Chunk took: 61440 by query timer
+Chunk took: 1.66756
+Chunk took: 60416 by query timer
+Chunk took: 1.66696
+Chunk took: 57344 by query timer
+Chunk took: 1.63063
+Chunk took: 59392 by query timer
+Chunk took: 1.63274
+Chunk took: 56320 by query timer
+Chunk took: 1.5715
+Chunk took: 56320 by query timer
+Chunk took: 1.5748
+Chunk took: 60416 by query timer
+Chunk took: 1.5829
+Chunk took: 55296 by query timer
+Chunk took: 1.53547
+Chunk took: 59392 by query timer
+Chunk took: 1.5706
+Chunk took: 64512 by query timer
+Chunk took: 1.60122
+first:
+Chunk took: 55296 by query timer
+Chunk took: 10.1581
+Chunk took: 61440 by query timer
+Chunk took: 1.72369
+Chunk took: 61440 by query timer
+Chunk took: 1.66005
+Chunk took: 66560 by query timer
+Chunk took: 1.67956
+Chunk took: 63488 by query timer
+Chunk took: 1.573
+Chunk took: 59392 by query timer
+Chunk took: 1.54388
+Chunk took: 63488 by query timer
+Chunk took: 1.55048
+Chunk took: 58368 by query timer
+Chunk took: 1.54088
+Chunk took: 62464 by query timer
+Chunk took: 1.54538
+Chunk took: 52224 by query timer
+Chunk took: 1.52797
+Chunk took: 57344 by query timer
+Chunk took: 1.51806
+Chunk took: 58368 by query timer
+Chunk took: 1.56549
+Chunk took: 49152 by query timer
+Chunk took: 0.223942
+Chunk took: 51200 by query timer
+Chunk took: 1.5823
+Chunk took: 57344 by query timer
+Chunk took: 1.59161
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 58368 by query timer
+Chunk took: 1.66516
+Chunk took: 59392 by query timer
+Chunk took: 1.62103
+Chunk took: 68608 by query timer
+Chunk took: 1.7321
+Chunk took: 61440 by query timer
+Chunk took: 1.67026
+Chunk took: 62464 by query timer
+Chunk took: 1.65585
+Chunk took: 53248 by query timer
+Chunk took: 1.64444
+Chunk took: 55296 by query timer
+Chunk took: 0.286982
+Chunk took: 58368 by query timer
+Chunk took: 1.70808
+Chunk took: 59392 by query timer
+Chunk took: 1.58621
+Chunk took: 66560 by query timer
+Chunk took: 1.74741
+Chunk took: 55296 by query timer
+Chunk took: 0.279477
+Chunk took: 54272 by query timer
+Chunk took: 1.67506
+Chunk took: 62464 by query timer
+Chunk took: 1.74441
+Chunk took: 58368 by query timer
+Chunk took: 1.733
+Chunk took: 62464 by query timer
+Chunk took: 1.72219
+Chunk took: 59392 by query timer
+Chunk took: 1.70628
+first:
+Chunk took: 56320 by query timer
+Chunk took: 10.2509
+Chunk took: 60416 by query timer
+Chunk took: 1.887
+Chunk took: 62464 by query timer
+Chunk took: 1.72099
+Chunk took: 66560 by query timer
+Chunk took: 1.67776
+Chunk took: 58368 by query timer
+Chunk took: 1.66035
+Chunk took: 57344 by query timer
+Chunk took: 1.61262
+Chunk took: 59392 by query timer
+Chunk took: 1.64865
+Chunk took: 57344 by query timer
+Chunk took: 1.61112
+Chunk took: 62464 by query timer
+Chunk took: 1.63003
+Chunk took: 59392 by query timer
+Chunk took: 1.59851
+Chunk took: 52224 by query timer
+Chunk took: 1.69638
+Chunk took: 55296 by query timer
+Chunk took: 1.63634
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 64512 by query timer
+Chunk took: 1.85878
+Chunk took: 57344 by query timer
+Chunk took: 1.71499
+Chunk took: 61440 by query timer
+Chunk took: 1.71319
+Chunk took: 60416 by query timer
+Chunk took: 1.7417
+Chunk took: 62464 by query timer
+Chunk took: 1.71319
+Chunk took: 63488 by query timer
+Chunk took: 1.63784
+Chunk took: 60416 by query timer
+Chunk took: 1.60782
+Chunk took: 59392 by query timer
+Chunk took: 1.5742
+Chunk took: 54272 by query timer
+Chunk took: 1.53968
+Chunk took: 60416 by query timer
+Chunk took: 1.56759
+Chunk took: 59392 by query timer
+Chunk took: 1.55589
+Chunk took: 59392 by query timer
+Chunk took: 1.5721
+Chunk took: 53248 by query timer
+Chunk took: 1.54148
+Chunk took: 49152 by query timer
+Chunk took: 0.231747
+Chunk took: 53248 by query timer
+Chunk took: 1.61893
+Chunk took: 56320 by query timer
+Chunk took: 1.55559
+first:
+Chunk took: 63488 by query timer
+Chunk took: 10.1284
+Chunk took: 66560 by query timer
+Chunk took: 1.742
+Chunk took: 56320 by query timer
+Chunk took: 1.60182
+Chunk took: 57344 by query timer
+Chunk took: 1.5733
+Chunk took: 60416 by query timer
+Chunk took: 1.79964
+Chunk took: 64512 by query timer
+Chunk took: 1.58891
+Chunk took: 64512 by query timer
+Chunk took: 1.56159
+Chunk took: 55296 by query timer
+Chunk took: 1.56819
+Chunk took: 57344 by query timer
+Chunk took: 1.55679
+Chunk took: 58368 by query timer
+Chunk took: 1.59371
+Chunk took: 61440 by query timer
+Chunk took: 1.55679
+Chunk took: 52224 by query timer
+Chunk took: 1.56159
+Chunk took: 57344 by query timer
+Chunk took: 1.54778
+Chunk took: 55296 by query timer
+Chunk took: 1.62853
+Chunk took: 55296 by query timer
+Chunk took: 1.60001
+Chunk took: 62464 by query timer
+Chunk took: 1.54808
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.77412
+Chunk took: 58368 by query timer
+Chunk took: 1.67686
+Chunk took: 62464 by query timer
+Chunk took: 1.67296
+Chunk took: 62464 by query timer
+Chunk took: 1.66666
+Chunk took: 57344 by query timer
+Chunk took: 1.71259
+Chunk took: 57344 by query timer
+Chunk took: 1.68287
+Chunk took: 58368 by query timer
+Chunk took: 1.69668
+Chunk took: 64512 by query timer
+Chunk took: 1.7339
+Chunk took: 56320 by query timer
+Chunk took: 1.72489
+Chunk took: 56320 by query timer
+Chunk took: 1.68437
+Chunk took: 52224 by query timer
+Chunk took: 1.64594
+Chunk took: 58368 by query timer
+Chunk took: 1.66486
+Chunk took: 60416 by query timer
+Chunk took: 1.91672
+Chunk took: 65536 by query timer
+Chunk took: 1.69337
+Chunk took: 65536 by query timer
+Chunk took: 1.58981
+Chunk took: 59392 by query timer
+Chunk took: 1.61052
+first:
+Chunk took: 66560 by query timer
+Chunk took: 10.2509
+Chunk took: 64512 by query timer
+Chunk took: 1.68137
+Chunk took: 56320 by query timer
+Chunk took: 1.59881
+Chunk took: 63488 by query timer
+Chunk took: 1.5841
+Chunk took: 64512 by query timer
+Chunk took: 1.56849
+Chunk took: 65536 by query timer
+Chunk took: 1.54658
+Chunk took: 52224 by query timer
+Chunk took: 1.62583
+Chunk took: 56320 by query timer
+Chunk took: 1.62793
+Chunk took: 59392 by query timer
+Chunk took: 1.62193
+Chunk took: 61440 by query timer
+Chunk took: 1.66726
+Chunk took: 63488 by query timer
+Chunk took: 1.75611
+Chunk took: 52224 by query timer
+Chunk took: 1.61622
+Chunk took: 58368 by query timer
+Chunk took: 1.60512
+Chunk took: 60416 by query timer
+Chunk took: 1.61472
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 63488 by query timer
+Chunk took: 1.79064
+Chunk took: 62464 by query timer
+Chunk took: 1.60242
+Chunk took: 59392 by query timer
+Chunk took: 1.64774
+Chunk took: 56320 by query timer
+Chunk took: 1.65765
+Chunk took: 57344 by query timer
+Chunk took: 1.67386
+Chunk took: 55296 by query timer
+Chunk took: 1.62433
+Chunk took: 62464 by query timer
+Chunk took: 1.69698
+Chunk took: 50176 by query timer
+Chunk took: 0.275575
+Chunk took: 56320 by query timer
+Chunk took: 1.71829
+Chunk took: 58368 by query timer
+Chunk took: 1.67926
+Chunk took: 60416 by query timer
+Chunk took: 1.67056
+Chunk took: 58368 by query timer
+Chunk took: 1.74801
+Chunk took: 57344 by query timer
+Chunk took: 1.64684
+Chunk took: 62464 by query timer
+Chunk took: 1.62403
+Chunk took: 64512 by query timer
+Chunk took: 1.61352
+Chunk took: 65536 by query timer
+Chunk took: 1.60392
+first:
+Chunk took: 61440 by query timer
+Chunk took: 10.2776
+Chunk took: 62464 by query timer
+Chunk took: 1.69908
+Chunk took: 60416 by query timer
+Chunk took: 1.77683
+Chunk took: 62464 by query timer
+Chunk took: 1.65855
+Chunk took: 59392 by query timer
+Chunk took: 1.60182
+Chunk took: 63488 by query timer
+Chunk took: 1.5787
+Chunk took: 58368 by query timer
+Chunk took: 1.57
+Chunk took: 61440 by query timer
+Chunk took: 1.5769
+Chunk took: 59392 by query timer
+Chunk took: 1.54418
+Chunk took: 58368 by query timer
+Chunk took: 1.56159
+Chunk took: 53248 by query timer
+Chunk took: 1.55138
+Chunk took: 59392 by query timer
+Chunk took: 1.5784
+Chunk took: 60416 by query timer
+Chunk took: 1.56609
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 57344 by query timer
+Chunk took: 1.79003
+Chunk took: 57344 by query timer
+Chunk took: 1.61232
+Chunk took: 58368 by query timer
+Chunk took: 1.75882
+Chunk took: 61440 by query timer
+Chunk took: 1.71259
+Chunk took: 64512 by query timer
+Chunk took: 1.7315
+Chunk took: 62464 by query timer
+Chunk took: 1.70658
+Chunk took: 60416 by query timer
+Chunk took: 1.70778
+Chunk took: 59392 by query timer
+Chunk took: 1.68647
+Chunk took: 50176 by query timer
+Chunk took: 0.286382
+Chunk took: 58368 by query timer
+Chunk took: 1.68767
+Chunk took: 60416 by query timer
+Chunk took: 1.64354
+Chunk took: 60416 by query timer
+Chunk took: 1.65855
+Chunk took: 59392 by query timer
+Chunk took: 1.68797
+Chunk took: 58368 by query timer
+Chunk took: 1.62793
+Chunk took: 53248 by query timer
+Chunk took: 1.64054
+Chunk took: 60416 by query timer
+Chunk took: 1.5733
+first:
+Chunk took: 64512 by query timer
+Chunk took: 10.2491
+Chunk took: 62464 by query timer
+Chunk took: 1.90201
+Chunk took: 60416 by query timer
+Chunk took: 1.62043
+Chunk took: 57344 by query timer
+Chunk took: 1.64114
+Chunk took: 64512 by query timer
+Chunk took: 1.67386
+Chunk took: 54272 by query timer
+Chunk took: 1.63334
+Chunk took: 50176 by query timer
+Chunk took: 0.20533
+Chunk took: 58368 by query timer
+Chunk took: 1.67656
+Chunk took: 49152 by query timer
+Chunk took: 0.241353
+Chunk took: 50176 by query timer
+Chunk took: 1.63904
+Chunk took: 57344 by query timer
+Chunk took: 1.65105
+Chunk took: 61440 by query timer
+Chunk took: 1.60091
+Chunk took: 54272 by query timer
+Chunk took: 1.60512
+Chunk took: 61440 by query timer
+Chunk took: 1.59101
+Chunk took: 58368 by query timer
+Chunk took: 1.62073
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.81885
+Chunk took: 55296 by query timer
+Chunk took: 1.62253
+Chunk took: 60416 by query timer
+Chunk took: 1.62463
+Chunk took: 63488 by query timer
+Chunk took: 1.63904
+Chunk took: 64512 by query timer
+Chunk took: 1.5847
+Chunk took: 50176 by query timer
+Chunk took: 0.22124
+Chunk took: 54272 by query timer
+Chunk took: 1.61322
+Chunk took: 65536 by query timer
+Chunk took: 1.59761
+Chunk took: 55296 by query timer
+Chunk took: 1.5823
+Chunk took: 50176 by query timer
+Chunk took: 0.229646
+Chunk took: 57344 by query timer
+Chunk took: 1.62163
+Chunk took: 58368 by query timer
+Chunk took: 1.5832
+Chunk took: 52224 by query timer
+Chunk took: 1.58921
+Chunk took: 59392 by query timer
+Chunk took: 1.5766
+Chunk took: 62464 by query timer
+Chunk took: 1.65855
+Chunk took: 62464 by query timer
+Chunk took: 1.66365
+first:
+Chunk took: 66560 by query timer
+Chunk took: 10.3031
+Chunk took: 63488 by query timer
+Chunk took: 1.66726
+Chunk took: 64512 by query timer
+Chunk took: 1.67026
+Chunk took: 61440 by query timer
+Chunk took: 1.58951
+Chunk took: 50176 by query timer
+Chunk took: 0.231747
+Chunk took: 52224 by query timer
+Chunk took: 1.65915
+Chunk took: 54272 by query timer
+Chunk took: 1.61262
+Chunk took: 62464 by query timer
+Chunk took: 1.65885
+Chunk took: 62464 by query timer
+Chunk took: 1.5844
+Chunk took: 50176 by query timer
+Chunk took: 0.217038
+Chunk took: 55296 by query timer
+Chunk took: 1.64354
+Chunk took: 62464 by query timer
+Chunk took: 1.59491
+Chunk took: 66560 by query timer
+Chunk took: 1.75251
+Chunk took: 57344 by query timer
+Chunk took: 1.94043
+Chunk took: 62464 by query timer
+Chunk took: 1.60662
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 67584 by query timer
+Chunk took: 1.66395
+Chunk took: 71680 by query timer
+Chunk took: 1.68887
+Chunk took: 59392 by query timer
+Chunk took: 1.79904
+Chunk took: 62464 by query timer
+Chunk took: 1.75131
+Chunk took: 54272 by query timer
+Chunk took: 1.75671
+Chunk took: 61440 by query timer
+Chunk took: 1.70418
+Chunk took: 62464 by query timer
+Chunk took: 1.70268
+Chunk took: 55296 by query timer
+Chunk took: 1.76032
+Chunk took: 57344 by query timer
+Chunk took: 1.70208
+Chunk took: 62464 by query timer
+Chunk took: 1.69097
+Chunk took: 62464 by query timer
+Chunk took: 1.67086
+Chunk took: 56320 by query timer
+Chunk took: 1.59881
+Chunk took: 61440 by query timer
+Chunk took: 1.63514
+Chunk took: 62464 by query timer
+Chunk took: 1.66005
+Chunk took: 58368 by query timer
+Chunk took: 1.65405
+Chunk took: 60416 by query timer
+Chunk took: 1.67566
+first:
+Chunk took: 59392 by query timer
+Chunk took: 10.298
+Chunk took: 64512 by query timer
+Chunk took: 1.78133
+Chunk took: 61440 by query timer
+Chunk took: 1.77322
+Chunk took: 60416 by query timer
+Chunk took: 1.69157
+Chunk took: 59392 by query timer
+Chunk took: 1.68377
+Chunk took: 57344 by query timer
+Chunk took: 1.60272
+Chunk took: 59392 by query timer
+Chunk took: 1.61412
+Chunk took: 57344 by query timer
+Chunk took: 1.64024
+Chunk took: 57344 by query timer
+Chunk took: 1.60272
+Chunk took: 58368 by query timer
+Chunk took: 1.60962
+Chunk took: 55296 by query timer
+Chunk took: 1.64354
+Chunk took: 54272 by query timer
+Chunk took: 1.61352
+Chunk took: 62464 by query timer
+Chunk took: 1.61532
+Chunk took: 60416 by query timer
+Chunk took: 1.63454
+Chunk took: 61440 by query timer
+Chunk took: 1.63274
+Chunk took: 62464 by query timer
+Chunk took: 1.63964
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.76122
+Chunk took: 59392 by query timer
+Chunk took: 1.55168
+Chunk took: 62464 by query timer
+Chunk took: 1.58591
+Chunk took: 68608 by query timer
+Chunk took: 1.65465
+Chunk took: 63488 by query timer
+Chunk took: 1.65705
+Chunk took: 64512 by query timer
+Chunk took: 1.68587
+Chunk took: 64512 by query timer
+Chunk took: 1.77503
+Chunk took: 58368 by query timer
+Chunk took: 1.72099
+Chunk took: 58368 by query timer
+Chunk took: 1.75551
+Chunk took: 60416 by query timer
+Chunk took: 1.69217
+Chunk took: 60416 by query timer
+Chunk took: 1.65405
+Chunk took: 52224 by query timer
+Chunk took: 1.63514
+Chunk took: 60416 by query timer
+Chunk took: 1.66546
+Chunk took: 59392 by query timer
+Chunk took: 1.67056
+Chunk took: 49152 by query timer
+Chunk took: 0.297188
+Chunk took: 47104 by query timer
+Chunk took: 0.330209
+first:
+Chunk took: 65536 by query timer
+Chunk took: 10.3797
+Chunk took: 66560 by query timer
+Chunk took: 1.69277
+Chunk took: 58368 by query timer
+Chunk took: 1.69848
+Chunk took: 63488 by query timer
+Chunk took: 1.70088
+Chunk took: 55296 by query timer
+Chunk took: 1.69547
+Chunk took: 61440 by query timer
+Chunk took: 1.65045
+Chunk took: 59392 by query timer
+Chunk took: 1.64174
+Chunk took: 59392 by query timer
+Chunk took: 1.64895
+Chunk took: 58368 by query timer
+Chunk took: 1.67236
+Chunk took: 59392 by query timer
 Chunk took: 1.60932
-Chunk took: 32768 by query timer
-Chunk took: 0.206831
-Chunk took: 30720 by query timer
-Chunk took: 0.250358
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
-first:
+Chunk took: 63488 by query timer
+Chunk took: 1.60992
+Chunk took: 55296 by query timer
+Chunk took: 1.61713
+Chunk took: 49152 by query timer
+Chunk took: 0.250659
+Chunk took: 47104 by query timer
+Chunk took: 0.294787
+Chunk took: 50176 by query timer
+Chunk took: 1.64744
+Chunk took: 53248 by query timer
+Chunk took: 1.64414
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.87139
+Chunk took: 67584 by query timer
+Chunk took: 1.7363
+Chunk took: 65536 by query timer
+Chunk took: 1.61983
+Chunk took: 54272 by query timer
+Chunk took: 1.60782
+Chunk took: 55296 by query timer
+Chunk took: 1.5736
+Chunk took: 64512 by query timer
+Chunk took: 1.5709
+Chunk took: 64512 by query timer
+Chunk took: 1.59281
+Chunk took: 61440 by query timer
+Chunk took: 1.59851
+Chunk took: 53248 by query timer
+Chunk took: 1.58651
+Chunk took: 50176 by query timer
+Chunk took: 0.237751
+Chunk took: 55296 by query timer
+Chunk took: 1.62853
+Chunk took: 60416 by query timer
+Chunk took: 1.5829
+Chunk took: 58368 by query timer
+Chunk took: 1.59191
+Chunk took: 52224 by query timer
+Chunk took: 1.58531
+Chunk took: 53248 by query timer
+Chunk took: 1.5826
+Chunk took: 50176 by query timer
+Chunk took: 0.231747
+first:
+Chunk took: 65536 by query timer
+Chunk took: 10.3157
+Chunk took: 56320 by query timer
+Chunk took: 1.59611
+Chunk took: 56320 by query timer
+Chunk took: 1.65285
+Chunk took: 59392 by query timer
+Chunk took: 1.62343
+Chunk took: 64512 by query timer
+Chunk took: 1.61622
+Chunk took: 63488 by query timer
+Chunk took: 1.61953
+Chunk took: 56320 by query timer
+Chunk took: 1.60392
+Chunk took: 61440 by query timer
+Chunk took: 1.58621
+Chunk took: 63488 by query timer
+Chunk took: 1.60091
+Chunk took: 58368 by query timer
+Chunk took: 1.58891
+Chunk took: 55296 by query timer
+Chunk took: 1.59041
+Chunk took: 56320 by query timer
+Chunk took: 1.63724
+Chunk took: 52224 by query timer
+Chunk took: 1.58921
+Chunk took: 56320 by query timer
+Chunk took: 1.60272
+Chunk took: 59392 by query timer
+Chunk took: 1.54628
+Chunk took: 60416 by query timer
+Chunk took: 1.54298
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 60416 by query timer
+Chunk took: 1.77803
+Chunk took: 56320 by query timer
+Chunk took: 1.61713
+Chunk took: 59392 by query timer
+Chunk took: 1.66516
+Chunk took: 55296 by query timer
+Chunk took: 1.66245
+Chunk took: 58368 by query timer
+Chunk took: 1.62673
+Chunk took: 51200 by query timer
+Chunk took: 1.62103
+Chunk took: 54272 by query timer
+Chunk took: 1.65855
+Chunk took: 58368 by query timer
+Chunk took: 1.64444
+Chunk took: 54272 by query timer
+Chunk took: 1.63093
+Chunk took: 62464 by query timer
+Chunk took: 1.62313
+Chunk took: 60416 by query timer
+Chunk took: 1.59311
+Chunk took: 56320 by query timer
+Chunk took: 1.59971
+Chunk took: 58368 by query timer
+Chunk took: 1.59941
+Chunk took: 62464 by query timer
+Chunk took: 1.63334
+Chunk took: 62464 by query timer
+Chunk took: 1.59971
+Chunk took: 59392 by query timer
+Chunk took: 1.61172
+first:
+Chunk took: 57344 by query timer
+Chunk took: 10.3977
+Chunk took: 65536 by query timer
+Chunk took: 1.7363
+Chunk took: 62464 by query timer
+Chunk took: 1.60722
+Chunk took: 57344 by query timer
+Chunk took: 1.62433
+Chunk took: 50176 by query timer
+Chunk took: 0.234449
+Chunk took: 55296 by query timer
+Chunk took: 1.63153
+Chunk took: 61440 by query timer
+Chunk took: 1.5712
+Chunk took: 61440 by query timer
+Chunk took: 1.59701
+Chunk took: 56320 by query timer
+Chunk took: 1.5805
+Chunk took: 54272 by query timer
+Chunk took: 1.59311
+Chunk took: 62464 by query timer
+Chunk took: 1.5781
+Chunk took: 61440 by query timer
+Chunk took: 1.64714
+Chunk took: 60416 by query timer
+Chunk took: 1.55078
+Chunk took: 61440 by query timer
+Chunk took: 1.5772
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 61440 by query timer
+Chunk took: 1.85608
+Chunk took: 55296 by query timer
+Chunk took: 1.67926
+Chunk took: 61440 by query timer
+Chunk took: 1.76962
+Chunk took: 64512 by query timer
+Chunk took: 1.74321
+Chunk took: 58368 by query timer
+Chunk took: 1.72639
+Chunk took: 62464 by query timer
+Chunk took: 1.64384
+Chunk took: 62464 by query timer
+Chunk took: 1.63364
+Chunk took: 60416 by query timer
+Chunk took: 1.67356
+Chunk took: 53248 by query timer
+Chunk took: 1.67476
+Chunk took: 62464 by query timer
+Chunk took: 1.64534
+Chunk took: 59392 by query timer
+Chunk took: 1.62643
+Chunk took: 55296 by query timer
+Chunk took: 1.65165
+Chunk took: 56320 by query timer
+Chunk took: 1.60152
+Chunk took: 56320 by query timer
+Chunk took: 1.59281
+Chunk took: 56320 by query timer
+Chunk took: 1.62823
+Chunk took: 59392 by query timer
+Chunk took: 1.63364
+first:
+Chunk took: 54272 by query timer
+Chunk took: 10.4472
+Chunk took: 60416 by query timer
+Chunk took: 1.64444
+Chunk took: 61440 by query timer
+Chunk took: 1.60122
+Chunk took: 60416 by query timer
+Chunk took: 1.5739
+Chunk took: 59392 by query timer
+Chunk took: 1.54448
+Chunk took: 58368 by query timer
+Chunk took: 1.5736
+Chunk took: 55296 by query timer
+Chunk took: 1.55048
+Chunk took: 61440 by query timer
+Chunk took: 1.56459
+Chunk took: 60416 by query timer
+Chunk took: 1.55619
+Chunk took: 58368 by query timer
+Chunk took: 1.53187
+Chunk took: 55296 by query timer
+Chunk took: 1.71859
+Chunk took: 56320 by query timer
+Chunk took: 1.57
+Chunk took: 59392 by query timer
+Chunk took: 1.65615
+Chunk took: 59392 by query timer
+Chunk took: 1.5715
+Chunk took: 58368 by query timer
+Chunk took: 1.56489
+Chunk took: 60416 by query timer
+Chunk took: 1.54328
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 60416 by query timer
+Chunk took: 1.88159
+Chunk took: 63488 by query timer
+Chunk took: 1.82966
+Chunk took: 60416 by query timer
+Chunk took: 1.66726
+Chunk took: 51200 by query timer
+Chunk took: 1.64174
+Chunk took: 66560 by query timer
+Chunk took: 1.64804
+Chunk took: 62464 by query timer
+Chunk took: 1.64744
+Chunk took: 61440 by query timer
+Chunk took: 1.63424
+Chunk took: 49152 by query timer
+Chunk took: 0.249458
+Chunk took: 53248 by query timer
+Chunk took: 1.63274
+Chunk took: 56320 by query timer
+Chunk took: 1.60422
+Chunk took: 63488 by query timer
+Chunk took: 1.60722
+Chunk took: 59392 by query timer
+Chunk took: 1.5727
+Chunk took: 61440 by query timer
+Chunk took: 1.63274
+Chunk took: 51200 by query timer
+Chunk took: 0.230846
+Chunk took: 50176 by query timer
+Chunk took: 1.60482
+Chunk took: 59392 by query timer
+Chunk took: 1.59821
+first:
+Chunk took: 69632 by query timer
+Chunk took: 10.3031
+Chunk took: 67584 by query timer
+Chunk took: 1.65315
+Chunk took: 60416 by query timer
+Chunk took: 1.68617
+Chunk took: 62464 by query timer
+Chunk took: 1.5802
+Chunk took: 61440 by query timer
+Chunk took: 1.63454
+Chunk took: 59392 by query timer
+Chunk took: 1.63093
+Chunk took: 59392 by query timer
+Chunk took: 1.60872
+Chunk took: 58368 by query timer
+Chunk took: 1.55469
+Chunk took: 53248 by query timer
+Chunk took: 1.5742
+Chunk took: 54272 by query timer
+Chunk took: 1.53007
+Chunk took: 58368 by query timer
+Chunk took: 1.56309
+Chunk took: 58368 by query timer
+Chunk took: 1.55889
+Chunk took: 51200 by query timer
+Chunk took: 1.54958
+Chunk took: 50176 by query timer
+Chunk took: 0.208632
+Chunk took: 47104 by query timer
+Chunk took: 0.244055
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 64512 by query timer
+Chunk took: 1.76992
+Chunk took: 61440 by query timer
+Chunk took: 1.61052
+Chunk took: 60416 by query timer
+Chunk took: 1.67116
+Chunk took: 55296 by query timer
+Chunk took: 1.66245
+Chunk took: 58368 by query timer
+Chunk took: 1.65225
+Chunk took: 59392 by query timer
+Chunk took: 1.62553
+Chunk took: 55296 by query timer
+Chunk took: 1.62103
+Chunk took: 61440 by query timer
+Chunk took: 1.62673
+Chunk took: 60416 by query timer
+Chunk took: 1.63454
+Chunk took: 59392 by query timer
+Chunk took: 1.62673
+Chunk took: 53248 by query timer
+Chunk took: 1.55559
+Chunk took: 63488 by query timer
+Chunk took: 1.59371
+Chunk took: 59392 by query timer
+Chunk took: 1.5811
+Chunk took: 59392 by query timer
+Chunk took: 1.5832
+Chunk took: 62464 by query timer
+Chunk took: 1.84497
+Chunk took: 56320 by query timer
+Chunk took: 1.75371
+first:
+Chunk took: 61440 by query timer
+Chunk took: 10.28
+Chunk took: 61440 by query timer
+Chunk took: 1.61382
+Chunk took: 58368 by query timer
+Chunk took: 1.62853
+Chunk took: 58368 by query timer
+Chunk took: 1.576
+Chunk took: 55296 by query timer
+Chunk took: 1.50936
+Chunk took: 57344 by query timer
+Chunk took: 1.52587
+Chunk took: 63488 by query timer
+Chunk took: 1.51866
+Chunk took: 59392 by query timer
+Chunk took: 1.50275
+Chunk took: 63488 by query timer
+Chunk took: 1.52827
+Chunk took: 62464 by query timer
+Chunk took: 1.62913
+Chunk took: 60416 by query timer
+Chunk took: 1.53727
+Chunk took: 60416 by query timer
+Chunk took: 1.51386
+Chunk took: 61440 by query timer
+Chunk took: 1.5805
+Chunk took: 63488 by query timer
+Chunk took: 1.55799
+Chunk took: 53248 by query timer
+Chunk took: 1.81315
+Chunk took: 50176 by query timer
+Chunk took: 0.217638
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 55296 by query timer
+Chunk took: 1.79334
+Chunk took: 64512 by query timer
+Chunk took: 1.60602
+Chunk took: 58368 by query timer
+Chunk took: 1.58831
+Chunk took: 57344 by query timer
+Chunk took: 1.61502
+Chunk took: 62464 by query timer
+Chunk took: 1.56849
+Chunk took: 62464 by query timer
+Chunk took: 1.56669
+Chunk took: 52224 by query timer
+Chunk took: 1.61562
+Chunk took: 64512 by query timer
+Chunk took: 1.59131
+Chunk took: 61440 by query timer
+Chunk took: 1.58831
+Chunk took: 59392 by query timer
+Chunk took: 1.55739
+Chunk took: 50176 by query timer
+Chunk took: 0.200227
+Chunk took: 59392 by query timer
+Chunk took: 1.5754
+Chunk took: 63488 by query timer
+Chunk took: 1.53367
+Chunk took: 57344 by query timer
+Chunk took: 1.56039
+Chunk took: 61440 by query timer
+Chunk took: 1.54088
+Chunk took: 56320 by query timer
+Chunk took: 1.53998
+first:
+Chunk took: 66560 by query timer
+Chunk took: 12.3258
+Chunk took: 63488 by query timer
+Chunk took: 1.63784
+Chunk took: 56320 by query timer
+Chunk took: 1.53848
+Chunk took: 58368 by query timer
+Chunk took: 1.736
+Chunk took: 61440 by query timer
+Chunk took: 1.52947
+Chunk took: 62464 by query timer
+Chunk took: 1.52677
+Chunk took: 55296 by query timer
+Chunk took: 1.52136
+Chunk took: 59392 by query timer
+Chunk took: 1.53697
+Chunk took: 60416 by query timer
+Chunk took: 1.61893
+Chunk took: 53248 by query timer
+Chunk took: 1.51686
+Chunk took: 61440 by query timer
+Chunk took: 1.52647
+Chunk took: 62464 by query timer
+Chunk took: 1.53217
+Chunk took: 53248 by query timer
+Chunk took: 1.50726
+Chunk took: 54272 by query timer
+Chunk took: 1.50876
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+first:
+Chunk took: 59392 by query timer
+Chunk took: 1.85518
+Chunk took: 64512 by query timer
+Chunk took: 1.7351
+Chunk took: 62464 by query timer
+Chunk took: 1.64654
+Chunk took: 57344 by query timer
+Chunk took: 1.65555
+Chunk took: 58368 by query timer
+Chunk took: 1.64264
+Chunk took: 63488 by query timer
+Chunk took: 1.70058
+Chunk took: 59392 by query timer
+Chunk took: 1.64264
+Chunk took: 62464 by query timer
+Chunk took: 1.59611
+Chunk took: 54272 by query timer
+Chunk took: 1.585
+Chunk took: 61440 by query timer
+Chunk took: 1.60302
+Chunk took: 61440 by query timer
+Chunk took: 1.5841
+Chunk took: 61440 by query timer
+Chunk took: 1.61743
+Chunk took: 60416 by query timer
+Chunk took: 1.59281
+Chunk took: 54272 by query timer
+Chunk took: 1.56669
+Chunk took: 58368 by query timer
+Chunk took: 1.59161
+Chunk took: 57344 by query timer
+Chunk took: 1.76962
+first:
+Chunk took: 58368 by query timer
+Chunk took: 11.0923
+Chunk took: 58368 by query timer
+Chunk took: 1.7309
+Chunk took: 56320 by query timer
+Chunk took: 1.62433
+Chunk took: 53248 by query timer
+Chunk took: 1.71709
+Chunk took: 56320 by query timer
+Chunk took: 1.66756
+Chunk took: 59392 by query timer
+Chunk took: 1.66936
+Chunk took: 61440 by query timer
+Chunk took: 2.77316
+Chunk took: 60416 by query timer
+Chunk took: 1.79424
+Chunk took: 61440 by query timer
+Chunk took: 1.62823
+Chunk took: 59392 by query timer
+Chunk took: 1.59761
+Chunk took: 60416 by query timer
+Chunk took: 1.5811
+Chunk took: 60416 by query timer
+Chunk took: 1.65405
+Chunk took: 57344 by query timer
+Chunk took: 1.56219
+Chunk took: 56320 by query timer
+Chunk took: 1.55649
+Chunk took: 57344 by query timer
+Chunk took: 1.53908
 first:
 first:
 first:
