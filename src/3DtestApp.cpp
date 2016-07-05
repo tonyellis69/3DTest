@@ -55,6 +55,7 @@ void C3DtestApp::onStart() {
 	terrain2.EXTregisterChunkModel.Set(&Engine,&CEngine::storeModel);
 	terrain2.EXTfreeChunkModel.Set(&Engine,&CEngine::freeModel);
 	terrain2.EXTcreateChunkData.Set(this,&C3DtestApp::createChunkData);
+	terrain2.EXTregisterIndexedModel.Set(this,&C3DtestApp::registerIndexedModel);
 
 	
 	initChunkShell();
@@ -666,6 +667,10 @@ void C3DtestApp::initChunkShell() {
 	Engine.storeModel(&chunkShell,shell);
 	delete[] shell;
 
+}
+
+void C3DtestApp::registerIndexedModel(CModel* model, vec4* verts, unsigned short* index) {
+	Engine.storeIndexedModel(model,verts,index);
 }
 
 

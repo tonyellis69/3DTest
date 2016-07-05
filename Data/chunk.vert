@@ -9,8 +9,14 @@ uniform vec3 samplePos; //position of bottom nwcorner of this chunk in sample sp
 uniform float hFactor; //Vertical adjustment.
 
 out VertexData {
-    vec4 corner[8];
-	float cornerSample[8];
+   // vec4 corner[8];
+	//float cornerSample[8];
+	
+	vec4 vert;
+	float sample;
+	
+	vec4 opVert;
+	float opSample;
 } outData;
 
 out vec4 vColour;
@@ -42,9 +48,17 @@ float getSample(vec4 cornerOffset) {
 
 void main()
 {
-	//gl_Position = mvpMatrix  * (position * cubeScale) ;
+	
 	vColour = inColour;
 	
+	outData.vert = position * cubeScale;
+	outData.opVert = outData.vert + vec4(0,0,cubeScale.z,0);
+	
+	outData.sample = getSample(vec4(0,0,0,0));
+	outData.opSample = getSample(vec4(0,0,1,0));
+	
+	
+	/*
 	outData.corner[0] =  ((position + vec4(-0.5,-0.5,-0.5,0)) * cubeScale) ;
 	outData.corner[1] =  ((position + vec4(0.5,-0.5,-0.5,0)) * cubeScale) ;
 	outData.corner[5] =  ((position + vec4(0.5,-0.5,0.5,0)) * cubeScale) ;
@@ -66,6 +80,6 @@ void main()
 	outData.cornerSample[2] =  getSample(vec4(0.5,0.5,-0.5,0));
 	outData.cornerSample[6] =  getSample(vec4(0.5,0.5,0.5,0));
 	outData.cornerSample[7] =  getSample(vec4(-0.5,0.5,0.5,0));
-	
+	*/
 	
 }

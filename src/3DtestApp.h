@@ -31,6 +31,7 @@ public:
 	void createChunkData(Chunk& chunk, glm::vec3& samplePos);
 	bool chunkExists(glm::vec3& sampleCorner);
 	void initChunkShell();
+	void registerIndexedModel(CModel* model, glm::vec4* verts, unsigned short* index);
 
 	string dataPath; ///<Filepath to the Data folder
 	

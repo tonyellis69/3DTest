@@ -6,13 +6,19 @@
 #extension GL_EXT_gpu_shader4 : enable 
  
 
- layout(points) in;
+ layout(lines_adjacency) in;
  layout(triangle_strip, max_vertices = 16) out;
 
 in VertexData
 {
-    vec4 corner[8];
-	float cornerSample[8];
+ //   vec4 corner[8];
+//	float cornerSample[8];
+	
+	vec4 vert;
+	float sample;
+	
+	vec4 opVert;
+	float opSample;
 } vert[];
 
 in vec4 vColour[];
@@ -46,23 +52,19 @@ int triTableValue(int i, int j){
 	
 
 		int iFlagIndex = 0;
-		/*for(int iVertexTest = 0; iVertexTest < 8; iVertexTest++){
-			if(vert[0].cornerSample[iVertexTest] <= iVertexTest) 
-				iFlagIndex++;//|= 1<<iVertexTest;
-		}*/
-		
-		
+
+			
 		
 	//Determine the index into the edge table which 
 	//tells us which vertices are inside of the surface 
-	iFlagIndex = int(vert[0].cornerSample[0] < iVertTest); 
-	iFlagIndex += int(vert[0].cornerSample[1] < iVertTest)*2; 
-	iFlagIndex += int(vert[0].cornerSample[2] < iVertTest)*4; 
-	iFlagIndex += int(vert[0].cornerSample[3] < iVertTest)*8; 
-	iFlagIndex += int(vert[0].cornerSample[4] < iVertTest)*16; 
-	iFlagIndex += int(vert[0].cornerSample[5] < iVertTest)*32; 
-	iFlagIndex += int(vert[0].cornerSample[6] < iVertTest)*64; 
-	iFlagIndex += int(vert[0].cornerSample[7] < iVertTest)*128; 
+	iFlagIndex = int(vert[0].sample < iVertTest); 
+	iFlagIndex += int(vert[1].sample < iVertTest)*2; 
+	iFlagIndex += int(vert[2].sample < iVertTest)*4; 
+	iFlagIndex += int(vert[3].sample < iVertTest)*8; 
+	iFlagIndex += int(vert[0].opSample < iVertTest)*16; 
+	iFlagIndex += int(vert[1].opSample < iVertTest)*32; 
+	iFlagIndex += int(vert[2].opSample < iVertTest)*64; 
+	iFlagIndex += int(vert[3].opSample < iVertTest)*128; 
 	 
 	 
 	//Cube is entirely in/out of the surface 
@@ -77,18 +79,18 @@ int triTableValue(int i, int j){
 	vec4 vertlist[12]; 
 	 
 	//Find the vertices where the surface intersects the cube 
-	vertlist[0] = vertexInterp(iVertTest, vert[0].corner[0], vert[0].cornerSample[0], vert[0].corner[1], vert[0].cornerSample[1]); 
-	vertlist[1] = vertexInterp(iVertTest, vert[0].corner[1], vert[0].cornerSample[1], vert[0].corner[2], vert[0].cornerSample[2]); 
-	vertlist[2] = vertexInterp(iVertTest, vert[0].corner[2], vert[0].cornerSample[2], vert[0].corner[3], vert[0].cornerSample[3]); 
-	vertlist[3] = vertexInterp(iVertTest, vert[0].corner[3], vert[0].cornerSample[3], vert[0].corner[0], vert[0].cornerSample[0]); 
-	vertlist[4] = vertexInterp(iVertTest, vert[0].corner[4], vert[0].cornerSample[4], vert[0].corner[5], vert[0].cornerSample[5]); 
-	vertlist[5] = vertexInterp(iVertTest, vert[0].corner[5], vert[0].cornerSample[5], vert[0].corner[6], vert[0].cornerSample[6]); 
-	vertlist[6] = vertexInterp(iVertTest, vert[0].corner[6], vert[0].cornerSample[6], vert[0].corner[7], vert[0].cornerSample[7]); 
-	vertlist[7] = vertexInterp(iVertTest, vert[0].corner[7], vert[0].cornerSample[7], vert[0].corner[4], vert[0].cornerSample[4]); 
-	vertlist[8] = vertexInterp(iVertTest, vert[0].corner[0], vert[0].cornerSample[0], vert[0].corner[4], vert[0].cornerSample[4]); 
-	vertlist[9] = vertexInterp(iVertTest, vert[0].corner[1], vert[0].cornerSample[1], vert[0].corner[5], vert[0].cornerSample[5]); 
-	vertlist[10] = vertexInterp(iVertTest, vert[0].corner[2], vert[0].cornerSample[2], vert[0].corner[6], vert[0].cornerSample[6]); 
-	vertlist[11] = vertexInterp(iVertTest, vert[0].corner[3], vert[0].cornerSample[3], vert[0].corner[7], vert[0].cornerSample[7]); 
+	vertlist[0] = vertexInterp(iVertTest, vert[0].vert, vert[0].sample, vert[1].vert, vert[1].sample); 
+	vertlist[1] = vertexInterp(iVertTest, vert[1].vert, vert[1].sample, vert[2].vert, vert[2].sample); 
+	vertlist[2] = vertexInterp(iVertTest, vert[2].vert, vert[2].sample, vert[3].vert, vert[3].sample); 
+	vertlist[3] = vertexInterp(iVertTest, vert[3].vert, vert[3].sample, vert[0].vert, vert[0].sample); 
+	vertlist[4] = vertexInterp(iVertTest, vert[0].opVert, vert[0].opSample, vert[1].opVert, vert[1].opSample); 
+	vertlist[5] = vertexInterp(iVertTest, vert[1].opVert, vert[1].opSample, vert[2].opVert, vert[2].opSample); 
+	vertlist[6] = vertexInterp(iVertTest, vert[2].opVert, vert[2].opSample, vert[3].opVert, vert[3].opSample); 
+	vertlist[7] = vertexInterp(iVertTest, vert[3].opVert, vert[3].opSample, vert[0].opVert, vert[0].opSample); 
+	vertlist[8] = vertexInterp(iVertTest, vert[0].vert, vert[0].sample, vert[0].opVert, vert[0].opSample); 
+	vertlist[9] = vertexInterp(iVertTest, vert[1].vert, vert[1].sample, vert[1].opVert, vert[1].opSample); 
+	vertlist[10] = vertexInterp(iVertTest, vert[2].vert, vert[2].sample, vert[2].opVert, vert[2].opSample); 
+	vertlist[11] = vertexInterp(iVertTest, vert[3].vert, vert[3].sample, vert[3].opVert, vert[3].opSample); 
 	
 	
 	
@@ -99,8 +101,8 @@ int triTableValue(int i, int j){
 		
 	
 	while(true){ 
-		if (i>15)
-			break;
+		//if (i>15)
+		//	break;
 		if(triTableValue(iFlagIndex, i)!=-1){ 
 			
 			tri[2] = vec4(vertlist[triTableValue(iFlagIndex, i)]); 
@@ -112,16 +114,7 @@ int triTableValue(int i, int j){
 								
 	
 								
-			//normal.x = texelFetch(triTableTex, ivec2(0,0),0).a;//triTableValue(2, 0);
-			//normal.y = texelFetch(triTableTex, ivec2(1,0),0).a;//triTableValue(2, 0);
-			//normal.z = texelFetch(triTableTex, ivec2(2,0),0).a;//triTableValue(2, 0);
-			//normal.w = iFlagIndex;
-			
-		//	normal.x = tri[0].x;
-		//	normal.y = tri[1].x;
-		//	normal.z = tri[2].x;
-			
-		//	normal.x = triTableValue(0, 0);
+	
 		
 			gl_Position = tri[0];	
 			EmitVertex();
