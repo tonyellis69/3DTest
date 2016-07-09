@@ -1,21 +1,19 @@
 #version 330
 
-layout(location = 0) in vec4 position;
+layout(location = 0) in vec3 position;
 
 
-uniform vec4 cubeScale;
+uniform float cubeSize;
 uniform vec4 inColour;
 uniform vec3 samplePos; //position of bottom nwcorner of this chunk in sample space.
-uniform float hFactor; //Vertical adjustment.
+
 
 out VertexData {
-   // vec4 corner[8];
-	//float cornerSample[8];
-	
-	vec4 vert;
+
+	vec3 vert;
 	float sample;
 	
-	vec4 opVert;
+	vec3 opVert;
 	float opSample;
 } outData;
 
@@ -23,8 +21,8 @@ out vec4 vColour;
 
 #include noise.lib
 
-float getSample(vec4 cornerOffset) {
-	vec4 sampleCorner = vec4(samplePos,1) + position + cornerOffset ;
+float getSample(vec3 cornerOffset) {
+	vec3 sampleCorner = vec3(samplePos) + position + cornerOffset ;
 	sampleCorner.y += 16;
 	
 	//1. get the surface height at the 2D position of this corner.
@@ -46,16 +44,15 @@ float getSample(vec4 cornerOffset) {
 
 
 
-void main()
-{
+void main() {
 	
 	vColour = inColour;
 	
-	outData.vert = position * cubeScale;
-	outData.opVert = outData.vert + vec4(0,0,cubeScale.z,0);
+	outData.vert = position * vec3(cubeSize,cubeSize,cubeSize);
+	outData.opVert = outData.vert + vec3(0,0,cubeSize);
 	
-	outData.sample = getSample(vec4(0,0,0,0));
-	outData.opSample = getSample(vec4(0,0,1,0));
+	outData.sample = getSample(vec3(0,0,0));
+	outData.opSample = getSample(vec3(0,0,1));
 	
 	
 	/*

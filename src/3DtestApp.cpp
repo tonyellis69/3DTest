@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/perpendicular.hpp>
+#include <glm/gtx/common.hpp>
 
 #include "watch.h"
 
@@ -21,7 +22,7 @@ C3DtestApp::C3DtestApp() {
 void C3DtestApp::onStart() {
 	dataPath = homeDir + "Data\\";
 	lastMousePos = glm::vec2(0,0);
-	count = 0;
+
 	//test objects, temporary
 	cube = Engine.createCube(vec3(-3,0,-3),1.0f);
 	Engine.createCube(vec3(3,0,-3),1.0f);
@@ -30,56 +31,33 @@ void C3DtestApp::onStart() {
 	//position the default camera
 	Engine.currentCamera->setPos(glm::vec3(0,3,6));
 	Engine.currentCamera->lookAt(vec3(0,-1,-3));
-	
-	//load terrain shader
-	Engine.loadShader(vertex,dataPath + "noise.vert");
-	Engine.loadShader(frag,dataPath + "noise.frag");
-	hTerrainProg =  Engine.linkShaders();
 
-	//get terrain shader data handles
-	Engine.setCurrentShader(hTerrainProg);
-	hWorldPosVec = Engine.getShaderDataHandle("worldPos");
-	hTerrainNoCubesInt = Engine.getShaderDataHandle("noCubes");
+	//Position FPS camera
+	fpsCam.setPos(vec3(0,-140,0));
+	fpsCam.lookAt(vec3(0,-1,-3));
+	fpsOn = false;
+	selectChk = i32vec3(0,0,0);	
+	mouseLook = false;
 
-	//create a buffer to store blocks of terrain data
-	int nChunkVerts = (nChunkCubes+1) *(nChunkCubes+1)* (nChunkCubes+1);
-	terrainDataBuf = new float [nChunkVerts ];
+	terrain.EXTchunkExists.Set(this,&C3DtestApp::chunkExists);
+	terrain.EXTregisterChunkModel.Set(&Engine,&CEngine::storeModel);
+	terrain.EXTfreeChunkModel.Set(&Engine,&CEngine::freeModel);
+	terrain.EXTcreateChunkMesh.Set(this,&C3DtestApp::createChunkMesh);
+	terrain.EXTregisterIndexedModel.Set(this,&C3DtestApp::registerIndexedModel);
 
-	chunkCheckBuf = new int [(nChunkCubes+1) *(nChunkCubes+1)];
-
-	chunkDataTmp = new vec4[nChunkCubes * nChunkCubes * nChunkCubes * 16 * 3];
-
-
-	terrain2.EXTgetSampleData.Set(this,&C3DtestApp::getTerrainData);
-	terrain2.EXTchunkExists.Set(this,&C3DtestApp::chunkExists);
-	terrain2.EXTregisterChunkModel.Set(&Engine,&CEngine::storeModel);
-	terrain2.EXTfreeChunkModel.Set(&Engine,&CEngine::freeModel);
-	terrain2.EXTcreateChunkData.Set(this,&C3DtestApp::createChunkData);
-	terrain2.EXTregisterIndexedModel.Set(this,&C3DtestApp::registerIndexedModel);
-
-	
 	initChunkShell();
+
 	//load chunkCheck shader
-	Engine.loadShader(vertex,dataPath + "chunkCheck2.vert");
-	Engine.loadShader(geometry,dataPath + "chunkCheck2.geom");
-	hChunkCheckProg = Engine.attachShaders();
-
-	const GLchar* feedbackVaryings2[1];
-	feedbackVaryings2[0] = "feedBack"; 
-	//glTransformFeedbackVaryings(hChunkCheckProg, 1, feedbackVaryings2, GL_INTERLEAVED_ATTRIBS);
-	Engine.linkShaders(hChunkCheckProg);
-
-	//get chunkCheck shader data handles
+	Engine.loadShader(vertex,dataPath + "chunkCheck.vert");
+	Engine.loadShader(geometry,dataPath + "chunkCheck.geom");
+	hChunkCheckProg = Engine.linkShaders();
 	Engine.setCurrentShader(hChunkCheckProg);
 	hCCsamplePosVec = Engine.getShaderDataHandle("nwSamplePos");
 
-
 	double t = Engine.Time.milliseconds();
 
-	int chunksPerTerrainEdge = 8;
-	terrain2.setSizes(chunksPerTerrainEdge,nChunkCubes,cubeSize);
-
-	terrain2.createChunks();
+	terrain.setSizes(chunksPerSuperChunkEdge,cubesPerChunkEdge,cubeSize);
+	terrain.create();
 
 	t = Engine.Time.milliseconds() - t;
 	cerr << "\n time " << t;
@@ -91,63 +69,48 @@ void C3DtestApp::onStart() {
 
 	//get wireframe shader data handles
 	Engine.setCurrentShader(hWireProg);
-	hMVPmatrix  = Engine.getShaderDataHandle("mvpMatrix");
-	hScale = Engine.getShaderDataHandle("scale");
+	hWireMVPmatrix  = Engine.getShaderDataHandle("mvpMatrix");
+	hWireScale = Engine.getShaderDataHandle("scale");
 	hWireColour = Engine.getShaderDataHandle("colour");
 
 	createBB();
 
-
 	//load chunk shader
 	Engine.loadShader(vertex,dataPath + "chunk.vert");
 	Engine.loadShader(geometry,dataPath + "chunk.geom");
-//	Engine.loadShader(frag,dataPath + "chunk.frag");
 	hChunkProg = Engine.attachShaders();
-	const GLchar* feedbackVaryings[3];
+	const char* feedbackVaryings[3];
 	feedbackVaryings[0] = "gl_Position"; 
 	feedbackVaryings[1] = "outColour";
 	feedbackVaryings[2] = "normal";
-
-	glTransformFeedbackVaryings(hChunkProg, 3, feedbackVaryings, GL_INTERLEAVED_ATTRIBS);
+	Engine.setFeedbackData(hChunkProg, 3, feedbackVaryings);
 	Engine.linkShaders(hChunkProg);
 
 	//get chunk shader data handles
 	Engine.setCurrentShader(hChunkProg);
-	hChunkCubeScale = Engine.getShaderDataHandle("cubeScale");
+	hChunkCubeSize = Engine.getShaderDataHandle("cubeSize");
 	hChunkColour = Engine.getShaderDataHandle("inColour");
 	hChunkSamplePos = Engine.getShaderDataHandle("samplePos");
-	hChunkHfactor = Engine.getShaderDataHandle("hFactor");
-	hChunkTriTable = Engine.getShaderDataHandle("triTableTex");
+	hChunkTriTable = Engine.getShaderDataHandle("hTriTableTex");
 
-	triTableTex = Engine.createDataTexture(intTex,16,256,&triTable);
-	Engine.uploadDataTexture(hChunkTriTable,triTableTex);
+	//Upload data texture for chunk shader
+	hTriTableTex = Engine.createDataTexture(intTex,16,256,&triTable);
+	Engine.uploadDataTexture(hChunkTriTable,hTriTableTex);
 
-		oldTime = Engine.Time.milliseconds();
-		lastPress = 0;
-
-	mouseLook = false;
-
-	//FPS camera
-	fpsCam.setPos(vec3(0,-140,0));
-	fpsCam.lookAt(vec3(0,-1,-3));
-
-	fpsOn = false;
-	selectChk = i32vec3(0,0,0);
-
-	
+	oldTime = Engine.Time.milliseconds();
 }
 
 /** Create a wireframe bounding box.*/
 void C3DtestApp::createBB() {
 	chunkBB.drawMode = GL_LINES;
-	vec4 boxV[8]  = {	vec4(0,0,0,1),
-							vec4(1,0,0,1),
-							vec4(1,1,0,1),
-							vec4(0,1,0,1),
-							vec4(0,0,1,1),
-							vec4(1,0,1,1),
-							vec4(1,1,1,1),
-							vec4(0,1,1,1)};
+	vec3 boxV[8]  = {	vec3(0,0,0),
+							vec3(1,0,0),
+							vec3(1,1,0),
+							vec3(0,1,0),
+							vec3(0,0,1),
+							vec3(1,0,1),
+							vec3(1,1,1),
+							vec3(0,1,1)};
 	unsigned short index[12 * 2] = {0,1,1,2,2,3,3,0,
 									4,5,5,6,6,7,7,4,
 									6,2,7,3,5,1,4,0};
@@ -157,89 +120,24 @@ void C3DtestApp::createBB() {
 	Engine.storeIndexedModel(&chunkBB,boxV,index);
 }
 
-/** Return a pointer to a 3D block of terrain data with the given NW bottom corner.*/
-float* C3DtestApp::getTerrainData(vec3& corner) {
-	//switch to noise shader
-	Engine.setCurrentShader(hTerrainProg);
 
-	//set noise shader parameters
-	Engine.setShaderValue(hWorldPosVec,corner);
-	Engine.setShaderValue(hTerrainNoCubesInt,nChunkCubes);
-
-	//render to 3D buffer
-	vec3 terrainDataBufDimensions(nChunkCubes+1,nChunkCubes+1,nChunkCubes+1);
-	Engine.renderTo3DTexture(terrainDataBufDimensions,terrainDataBuf);
-	Engine.setCurrentShader(Engine.defaultProgram);
-//	for (int i=0;i<4913;i++)
-//		cerr << "\npoint: " << terrainDataBuf[i];
-
-	return terrainDataBuf;
-}
-
-void C3DtestApp::createChunkData(Chunk& chunk, vec3& samplePos) {
-
-	unsigned int hFeedBack;
-	int nVertOut = 4096 * 16;
-	float hFactor = 4;
+/*  Create a mesh for this chunk, and register it with the renderer.  */
+void C3DtestApp::createChunkMesh(Chunk& chunk) {
 	Engine.setCurrentShader(hChunkProg);
-
-	vec4 cubeScale((float)cubeSize,(float)cubeSize,(float)cubeSize,1);
-	Engine.setShaderValue(hChunkCubeScale,cubeScale);
+	Engine.setShaderValue(hChunkCubeSize,cubeSize);
 	Engine.setShaderValue(hChunkColour,chunk.colour);
-	Engine.setShaderValue(hChunkSamplePos,samplePos);
-	Engine.setShaderValue(hChunkHfactor,hFactor);
+	Engine.setShaderValue(hChunkSamplePos,chunk.samplePos);
+	Engine.setDataTexture(hTriTableTex);
 
-	
-	Engine.setDataTexture(triTableTex);
-	unsigned int noTris = Engine.getGeometryFeedback(terrain2.shaderChunkGrid,sizeof(vec4)*nVertOut*chunk.nAttribs ,(char*)chunkDataTmp,hFeedBack);
-				
-	if (noTris == 0)
-		return;
-	//register buffer data in the name of our model
-	chunk.noVerts = noTris*3;// nVertOut; //sizeof(data);
-	chunk.drawMode = GL_TRIANGLES;
-	//Engine.storeModel((CModel*)&chunk,chunkDataTmp);
-	chunk.hBuffer = hFeedBack;
-	Engine.Renderer.storeVertexLayout(chunk.hVAO,hFeedBack,0,chunk.nAttribs);
+	unsigned int hFeedBackBuf; 
+	int vertsPerPrimitive = 3 * chunk.nAttribs;
+	int nVertsOut = cubesPerChunkEdge * cubesPerChunkEdge * cubesPerChunkEdge * maxMCverts;
 
-	
-
+	Engine.getFeedbackModel(terrain.shaderChunkGrid,sizeof(vec4)*nVertsOut*chunk.nAttribs,vertsPerPrimitive,chunk);			
 }
 
 /** Return false if no side of this potential chunk is penetratedby the isosurface.*/
-/*
-bool C3DtestApp::chunkExists(vec3& corner) {
-	//return true;
-	//switch to chunk check shader
-	Engine.setCurrentShader(hChunkCheckProg);
-
-	//set chunk check shader parameters
-	Engine.setShaderValue(hCCworldPosVec,corner);
-	Engine.setShaderValue(hCCnoCubesInt,nChunkCubes);
-
-	//pick a side to check
-	
-	//render to buffer
-	vec2 terrainDataSize(nChunkCubes+1,nChunkCubes+1);
-	int sliceSize = (nChunkCubes+1) *(nChunkCubes+1);
-
-	for (int face=0;face < 6;face++) {
-		int chk = 0;
-		Engine.setShaderValue(hCCfaceInt,face);
-		Engine.renderTo2DTexture(terrainDataSize,chunkCheckBuf);
-		for (int c=0;c < sliceSize; c++ ) 
-			chk += chunkCheckBuf[c];
-		if ((chk != 0) &&(chk < sliceSize))
-			return true;
-
-	}
-	//Engine.setCurrentShader(0); //TO DO: scrap!
-	//return true;
-	return false;
-}
-*/
 bool C3DtestApp::chunkExists(vec3& sampleCorner) {
-	//return true;
 	//change to chunk test shader
 	Engine.setCurrentShader(hChunkCheckProg);
 
@@ -267,27 +165,21 @@ bool C3DtestApp::chunkExists(vec3& sampleCorner) {
 
 void C3DtestApp::keyCheck() {
 	
-	//player.moving = rNone;
-	//player.upDownKey = none;
-	//if ((Time - LastKeyCheck) < 20) //Prevent over-responsive controls
-	//	return;
 	float moveInc = dT * 0.5f;
 	
-//	if (KeyDown['A'] ) { 
 	if (keyNow('A')) {
 		Engine.currentCamera->track(-moveInc);
 	}
 
-	if (KeyDown['D'] ) { 
+	if (keyNow('D') ) { 
 		Engine.currentCamera->track(moveInc);
 	}
-
-	//if (KeyDown['W'] ) { 
+ 
 	if (keyNow('W')) {
 		Engine.currentCamera->dolly(moveInc);
 	}
 
-	if (KeyDown['S'] ) { 
+	if (keyNow('S') ) { 
 		Engine.currentCamera->dolly(-moveInc);
 	}
 	if (KeyDown[VK_SPACE] ) { 
@@ -314,11 +206,7 @@ void C3DtestApp::keyCheck() {
 		cube->rotate(rot,glm::vec3(0,0,1));
 	}
 
-//	if (Time - lastPress > 300) {
 
-
-		lastPress = Time;
-	//}
 
 	if (mouseKey == MK_LBUTTON)
 	{	
@@ -336,7 +224,7 @@ void C3DtestApp::keyCheck() {
 			glm::vec2 mousePos((mouseX - (viewWidth/2)), ((viewHeight/2) - mouseY)  );
 			if (mousePos.x == 0 && mousePos.y == 0)
 				return;
-			float angle = (2 * length(mousePos) ) ;
+			float angle = (0.1f * length(mousePos) ) ;
 
 			//move camera
 			vec3 perp = normalize(vec3(mousePos.y,-mousePos.x,0));
@@ -414,14 +302,13 @@ void C3DtestApp::keyCheck() {
 		}
 
 		if (KeyDown['F']) {
-			//int i = terrain.getIndex(selectChk.x,selectChk.y,selectChk.z);
-			terrain2.recalc(selectChk);
+			terrain.recalc(selectChk);
 		}
 
 		
 		if (KeyDown['Z']) {
-			terrain2.scroll(north);
-			terrain2.scroll(west);
+			terrain.scroll(north);
+			terrain.scroll(west);
 			EatKeys();
 		}
 
@@ -454,70 +341,36 @@ void C3DtestApp::draw() {
 
 	//draw chunk
 	Engine.setStandard3dShader();
-	glm::mat3 normMatrix(terrain2.worldMatrix); 
+	glm::mat3 normMatrix(terrain.worldMatrix); 
 	Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,normMatrix);
 	mat4 relativePos, mvp; 
 	ChunkNode* node;
-	for (int s=0;s<terrain2.superChunk.size();s++) {
-		terrain2.superChunk[s].initNodeWalk();
-		while (node = terrain2.superChunk[s].nextNode3()) {
+	for (int s=0;s<terrain.superChunk.size();s++) {
+		terrain.superChunk[s].initNodeWalk();
+		while (node = terrain.superChunk[s].nextNode3()) {
 			if ((node->pChunk != NULL) && (node->pChunk->live)) {
-				relativePos = node->pChunk->worldMatrix *   terrain2.worldMatrix;
+				relativePos = node->pChunk->worldMatrix *   terrain.worldMatrix;
 				mvp = Engine.currentCamera->clipMatrix * relativePos; 
 				Engine.setShaderValue(Engine.rMVPmatrix,mvp);
 				Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(relativePos));
 				if (node->pChunk->hBuffer > 0)
-				Engine.drawModel(*node->pChunk);
+					Engine.drawModel(*node->pChunk);
 			}
 		}
 	}
-
-/*
-	//chunk shader drawing
-	//load shader
-	Engine.setCurrentShader(hTmpProg);
-//	vec4 cubeScale((float)cubeSize,(float)cubeSize,(float)cubeSize,1);
-//	Engine.setShaderValue(hChunkCubeScale,cubeScale);
-
-	for (int s=0;s<terrain2.superChunk.size();s++) {
-		terrain2.superChunk[s].initNodeWalk();
-		while (node = terrain2.superChunk[s].nextNode3()) {
-			if (node->pChunk) {
-				//terrain2.shaderChunkGrid.setPos(node->pChunk->getPos());
-			//	relativePos = terrain2.shaderChunkGrid.worldMatrix *   terrain2.worldMatrix;
-			//	Engine.setShaderValue(hChunkMVPmatrix,Engine.currentCamera->clipMatrix * relativePos);					
-				//Engine.drawModel(terrain2.shaderChunkGrid);
-				relativePos = node->pChunk->worldMatrix *   terrain2.worldMatrix;
-				mvp = Engine.currentCamera->clipMatrix * relativePos; 
-				Engine.setShaderValue(hTmpMatrix,mvp);
-			//	Engine.drawModel(*node->pChunk);
-				
-			}
-		}
-	}
-*/
-
 
 
 
 	//wireframe drawing:
 	Engine.setCurrentShader(hWireProg);
-	float chunkRealSize = terrain2.superChunk[0].cubesPerChunkEdge * terrain2.superChunk[0].cubeSize;
-	Engine.setShaderValue(hScale,vec3(chunkRealSize,chunkRealSize,chunkRealSize));
+	float chunkRealSize = terrain.superChunk[0].cubesPerChunkEdge * terrain.superChunk[0].cubeSize;
+	Engine.setShaderValue(hWireScale,vec3(chunkRealSize,chunkRealSize,chunkRealSize));
 	Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
-	float half = terrain2.superChunk[0].chunkSize * terrain2.superChunk[0].sizeInChunks.x/2;
-	vec3 offset(half);
-	vec3 nwCorner;
-	vec3 rowStartPos;
-	vec3 layerStartPos;
 
-	
-
-	
 	//draw bounding boxes
-	for (int s=0;s<terrain2.superChunk.size();s++) {
-		terrain2.superChunk[s].initNodeWalk();
-		while (node = terrain2.superChunk[s].nextNode3()) {
+	for (int s=0;s<terrain.superChunk.size();s++) {
+		terrain.superChunk[s].initNodeWalk();
+		while (node = terrain.superChunk[s].nextNode3()) {
 			if (node->pChunk) {
 				chunkBB.setPos(node->pChunk->getPos());
 				Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
@@ -525,7 +378,7 @@ void C3DtestApp::draw() {
 						Engine.setShaderValue(hWireColour,vec4(1,1,0,1));
 				else if (node->boundary & 128)
 						Engine.setShaderValue(hWireColour,vec4(0,0,1,1));
-				else if (node == terrain2.superChunk[s].nwRoot)
+				else if (node == terrain.superChunk[s].nwRoot)
 						Engine.setShaderValue(hWireColour,vec4(1,0,1,1));
 						
 				drawChunkBB(chunkBB);
@@ -540,12 +393,8 @@ void C3DtestApp::draw() {
 }
 
 void C3DtestApp::drawChunkBB(CModel& model) {
-	mat4 relativePos = model.worldMatrix *   terrain2.worldMatrix;
-
-	Engine.setShaderValue(hMVPmatrix,Engine.currentCamera->clipMatrix * relativePos);
-
-
-	//call engine drawWireFrame func
+	mat4 relativePos = model.worldMatrix *   terrain.worldMatrix;
+	Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * relativePos);
 	Engine.drawModel(model);
 }
 
@@ -562,59 +411,55 @@ void C3DtestApp::scroll(Tdirection direction) {
 						break;
 	}
 
-	vec3 movement = dir * float(10.0f);
+	//Move terrain in given direction
+	vec3 movement = dir * float(10.0f); 
+	terrain.translate(movement);
+	vec3 pos = terrain.getPos();
 
-	int chunkDist = nChunkCubes * cubeSize;
 
-	terrain2.translate(movement);
+	int chunkDist = cubesPerChunkEdge * cubeSize; //span of a chunk in world space
+	bvec3 outsideChunkBoundary = glm::greaterThan(glm::abs(pos),vec3(chunkDist,chunkDist,chunkDist));
 
-	vec3 pos = terrain2.getPos();
-	bvec3 insideChunkBoundary = glm::greaterThan(glm::abs(pos),vec3(chunkDist,chunkDist,chunkDist));
-
-	if (glm::any(insideChunkBoundary)) {
+	//If terrain has moved by the length of a chunk
+	if (glm::any(outsideChunkBoundary)) {
 		vec3 posMod;
-	//	posMod = glm::mod(pos,vec3(chunkDist,chunkDist,chunkDist));
-		//glm::mod seems to turn negative remainders positive
+		posMod = glm::mod(pos,vec3(chunkDist,chunkDist,chunkDist)); //glm::mod seems to turn negative remainders positive
 		posMod.x = fmod(pos.x,chunkDist);
 		posMod.y = fmod(pos.y,chunkDist);
 		posMod.z = fmod(pos.z,chunkDist);
-		terrain2.setPos(posMod );
-		terrain2.scroll(direction);
-		//return;
+		terrain.setPos(posMod ); //secretly move terrain back before scrolling to ensure it scrolls on the spot
+		terrain.scroll(direction); //
 	}
-	
-
-	terrain2.translate(movement);
 }
 
+/** Called every frame. Mainly use this to scroll terrain if we're moving in first-person mode*/
 void C3DtestApp::Update() {
 	
-	terrain2.update();
+	terrain.update();
 
 	if (fpsOn) {
 		Tdirection direction = none;
 
-		int chunkDist = nChunkCubes * cubeSize;
+		int chunkDist = cubesPerChunkEdge * cubeSize;
 
 		vec3 pos = fpsCam.getPos();
 		bvec3 outsideChunkBoundary = glm::greaterThan(glm::abs(pos),vec3(chunkDist,chunkDist,chunkDist));
 
+		//has viewpoint moved beyond the length of one chunk?
 		if (outsideChunkBoundary.x || outsideChunkBoundary.z) {
 			vec3 posMod;
 			posMod.x = fmod(pos.x,chunkDist);
-			//posMod.y = fmod(pos.y,chunkDist);
 			posMod.y = pos.y;
 			posMod.z = fmod(pos.z,chunkDist);
-			fpsCam.setPos(posMod );
+			fpsCam.setPos(posMod ); //secretly reposition viewpoint prior to scrolling terrain
 
-			//work out direction
+			//work out direction to scroll-in new terrain from
 			if (outsideChunkBoundary.x) {
 				if (pos.x > 0)
 					direction = west;
 				else
 					direction = east;
-				terrain2.scroll(direction);
-				//return;
+				terrain.scroll(direction);
 			}
 			
 			if (outsideChunkBoundary.z) {
@@ -622,43 +467,36 @@ void C3DtestApp::Update() {
 					direction = south;
 				else
 					direction = north;
-				terrain2.scroll(direction);
-				//return;
+				terrain.scroll(direction);
 			}
-
-			
-		//return;
-		}
-	
-		
+		}	
 	}
 }
 
+/** Prepare a hollow shell of vertices to use in checks for empty chunks. */
 void C3DtestApp::initChunkShell() {
-	float vertsPerEdge = nChunkCubes+1;
+	float vertsPerEdge = cubesPerChunkEdge+1;
 	shellTotalVerts = std::pow(vertsPerEdge,3) - std::pow(vertsPerEdge-2,3);
-	vec4* shell = new vec4[shellTotalVerts];
+	vec3* shell = new vec3[shellTotalVerts];
 	int v=0;
 	for(int y=0;y<vertsPerEdge;y++) {
 		for(int x=0;x<vertsPerEdge;x++) {
-			shell[v++] = vec4(x,y,0,1);
-			shell[v++] = vec4(x,y,nChunkCubes,1);
+			shell[v++] = vec3(x,y,0);
+			shell[v++] = vec3(x,y,cubesPerChunkEdge);
 		}
-		for(int z=1;z<nChunkCubes;z++) {
-			shell[v++] = vec4(0,z,y,1);
-			shell[v++] = vec4(nChunkCubes,z,y,1);
+		for(int z=1;z<cubesPerChunkEdge;z++) {
+			shell[v++] = vec3(0,z,y);
+			shell[v++] = vec3(cubesPerChunkEdge,z,y);
 		}
 	}
 		
-	for(int x=1;x<nChunkCubes;x++) {
-		for(int z=1;z<nChunkCubes;z++) {
-			shell[v++] = vec4(x,z,0,1);
-			shell[v++] = vec4(x,z,nChunkCubes,1);
+	for(int x=1;x<cubesPerChunkEdge;x++) {
+		for(int z=1;z<cubesPerChunkEdge;z++) {
+			shell[v++] = vec3(x,z,0);
+			shell[v++] = vec3(x,z,cubesPerChunkEdge);
 		}
 	}
 
-//	for (int p=0;p<shellTotalVerts;p++)
-	//	cerr << "\n" << shell[p].x << " " << shell[p].y << " " << shell[p].z;
 	
 	chunkShell.noVerts = shellTotalVerts;
 	chunkShell.nAttribs = 1;
@@ -669,15 +507,14 @@ void C3DtestApp::initChunkShell() {
 
 }
 
-void C3DtestApp::registerIndexedModel(CModel* model, vec4* verts, unsigned short* index) {
+void C3DtestApp::registerIndexedModel(CModel* model, vec3* verts, unsigned short* index) {
 	Engine.storeIndexedModel(model,verts,index);
 }
 
 
 C3DtestApp::~C3DtestApp() {
-	delete terrainDataBuf;
-	delete chunkCheckBuf;
-	delete chunkDataTmp;
+
+	
 }
 
 

@@ -1,8 +1,8 @@
 #version 330
 
-layout(location = 0) in vec4 position;
+layout(location = 0) in vec3 position;
 layout(location = 1) in vec4 color;
-layout(location = 2) in vec4 normal;
+layout(location = 2) in vec3 normal;
 
 
 smooth out vec4 theColor;
@@ -16,7 +16,7 @@ uniform vec4 ambientLight;
 
 void main()
 {
-	gl_Position = mvpMatrix * position;
+	gl_Position = mvpMatrix * vec4(position,1);
 	
 	vec3 normCamSpace = normalize(normalModelToCameraMatrix * vec3(normal));
 	

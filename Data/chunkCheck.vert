@@ -1,32 +1,38 @@
 #version 330
 
-layout(location = 0) in vec4 position;
 
-uniform int face;
-smooth out vec3 v_texCoord3D;
+//A vertex somewhere on the outer layer of a chunk
+layout(location = 0) in vec3 vertPos;
+
+//The position in sample space of the bottom nw corner of the chunk we're checking 
+uniform vec3 nwSamplePos;
+
+out VertexData {
+	float vertSample; //The sample value at this vertex, passed on to the geometry shader.
+} outData;
 
 
+#include noise.lib
 
+void main () {
+	//find the position in sample space of this vertex
+	vec3 vertSamplePos = nwSamplePos + vertPos;
 
-void main(  ) {
-	gl_Position = position;// Just passes on the given vertex coordinate to OGL.
-	vec2 normPosition = (position.xy + vec2(1,1))  * 0.5; //convert vertex position to the range 0-1
-	if (face == 0) //base of cube
-		v_texCoord3D = vec3(normPosition.x,0,normPosition.y); //passes position to frag shader as a 3D texture coordinate on the xz plane.
+	vertSamplePos.y += 31; 
 	
-	else if (face == 1) //top of cube
-		v_texCoord3D = vec3(normPosition.x,1,normPosition.y); //passes position to frag shader as a 3D texture coordinate on the xz plane.
+	//get a height value at this point
+	float surfaceHeight = octave_noise_2d(6,0.2,0.02,vertSamplePos.x,vertSamplePos.z);
+	surfaceHeight = (surfaceHeight * 0.5) + 0.5;  //convert to 0 - 1.
+
+	//scale down our vertical position in sample space to be 16:1 proportional to noise space.
+	vertSamplePos.y  = vertSamplePos.y / 32;
+
+	//clip the surface height against our sampling height, output the result to the geometry shader
+	float vertSample = vertSamplePos.y - surfaceHeight;
+
 	
-	else if (face == 2) //south face
-		v_texCoord3D = vec3(normPosition.x,normPosition.y,1); //passes position to frag shader as a 3D texture coordinate on the xy plane.
-		
-		
-	else if (face == 3) //east face
-		v_texCoord3D = vec3(1,normPosition.y,normPosition.x); //passes position to frag shader as a 3D texture coordinate on the yz plane.
-		
-	else if (face == 4) //north face
-		v_texCoord3D = vec3(normPosition.x,normPosition.y,0); //passes position to frag shader as a 3D texture coordinate on the xy plane.
-		
-	else if (face == 5) //west face
-		v_texCoord3D = vec3(0,normPosition.y,normPosition.x); //passes position to frag shader as a 3D texture coordinate on the yz plane.
+	vertSample = abs(vertSample);
+	vertSample = clamp(vertSample,0,1);
+	outData.vertSample = vertSample;
+
 }

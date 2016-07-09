@@ -20,18 +20,16 @@ public:
 	void keyCheck();
 	void mouseMove(int x, int y, int key);
 	void OnKeyDown(unsigned int wParam, long lParam);
-
 	void onResize(int width, int height);
 	void draw();
 	void drawChunkBB(CModel& model);
 	void scroll(Tdirection direction);
 	void Update();
 	
-	float* getTerrainData(glm::vec3& corner);
-	void createChunkData(Chunk& chunk, glm::vec3& samplePos);
+	void createChunkMesh(Chunk& chunk);
 	bool chunkExists(glm::vec3& sampleCorner);
 	void initChunkShell();
-	void registerIndexedModel(CModel* model, glm::vec4* verts, unsigned short* index);
+	void registerIndexedModel(CModel* model, glm::vec3* verts, unsigned short* index);
 
 	string dataPath; ///<Filepath to the Data folder
 	
@@ -39,40 +37,28 @@ public:
 	
 	glm::vec2 lastMousePos; ///<Used to track current mouse movement
 
-	int hTerrainProg; ///<Handle for noise-generating shader.
 	int hWireProg; ///<Handle for wireframe shader.
-	int hMVPmatrix;
-	int hScale;
+	int hWireMVPmatrix;
+	int hWireScale;
 	int hWireColour;
-	int hChunkCheckProg;
-	int hCCworldPosVec;
-	int hCCfaceInt;
-	int hCCnoCubesInt;
-	int hTerrainNoCubesInt;
-	
+
+	int hChunkCheckProg; ///<Handle for chunk existence check shader
 	int hCCsamplePosVec;
 
-	int hChunkProg;
-	int hChunkCubeScale;
+	int hChunkProg; ///<Handle for chunk geometry creating shader
+	int hChunkCubeSize;
 	int hChunkColour;
 	int hChunkSamplePos;
-	int hChunkHfactor;
 	int hChunkTriTable;
+	int hTriTableTex; ///<A data texture of triangle arrangements for Marching Cubes.
 
-	int hTmpProg,hTmpMatrix;
 
-
-	CTerrain terrain2;
-	float* terrainDataBuf; ///<Points to buffer for noise data.
-	int hWorldPosVec; ///<Handle for position vector in noise shader.
-	int hChunkSampleSize; ///<Handle for size of sample in noise shader.
-
+	CTerrain terrain;
+	
 	CModel chunkBB; ///<Wireframe bounding box for chunks.
 
-	int* chunkCheckBuf; ///<Points to buffer for chunk check data.
-
+	
 	double oldTime;
-	double lastPress;
 
 	bool mouseLook; ///<True if mouselook mode on.
 	glm::vec2 oldMousePos;
@@ -83,16 +69,16 @@ public:
 
 	glm::i32vec3 selectChk; ///<Index of the chunk we're selecting
 
-	glm::vec4* chunkDataTmp; ///<Reusable tmp store for genenerated chunk data.
-	CModel chunkShell; ///<An array of verts to represent the outer layer of a chunk.
+	CModel chunkShell; ///<A model to represent the outer layer of a potentianl chunk.
 	int shellTotalVerts; ///<Total vertices that make up the shell.
-	int count;
-	GLuint triTableTex;
 };
 
 const float yawAng = 0.22f;
-const int nChunkCubes = 16; ///<Number of cubes along a chunk edge
-const int cubeSize = 5; ///<Size of cubes in pixels.
+const int cubesPerChunkEdge = 16; ///<Number of cubes along a chunk edge
+const float cubeSize = 5; ///<Size of cubes in worldspace.
+const int chunksPerSuperChunkEdge = 8;
+
+const int maxMCverts = 16; ///<The maximum vertices needed for a MC cube.
 
 static const int edgeTable[256]=
 {

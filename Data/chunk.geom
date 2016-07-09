@@ -11,21 +11,20 @@
 
 in VertexData
 {
- //   vec4 corner[8];
-//	float cornerSample[8];
+
 	
-	vec4 vert;
+	vec3 vert;
 	float sample;
 	
-	vec4 opVert;
+	vec3 opVert;
 	float opSample;
 } vert[];
 
 in vec4 vColour[];
 
-out vec4 gl_Position;
+out vec3 gl_Position;
 out	vec4 outColour;
-out	vec4 normal;
+out	vec3 normal;
 
 //uniform isampler2D edgeTableTex; 
 //Triangles table texture 
@@ -34,7 +33,7 @@ uniform isampler2D triTableTex;
 uniform float iVertTest = 0.5; 
 
 //Compute interpolated vertex along an edge 
-vec4 vertexInterp(float isolevel, vec4 v0, float l0, vec4 v1, float l1){ 
+vec3 vertexInterp(float isolevel, vec3 v0, float l0, vec3 v1, float l1){ 
 	return mix(v0, v1, (isolevel-l0)/(l1-l0)); 
 }
 
@@ -76,7 +75,7 @@ int triTableValue(int i, int j){
 		
 		
 		
-	vec4 vertlist[12]; 
+	vec3 vertlist[12]; 
 	 
 	//Find the vertices where the surface intersects the cube 
 	vertlist[0] = vertexInterp(iVertTest, vert[0].vert, vert[0].sample, vert[1].vert, vert[1].sample); 
@@ -94,23 +93,23 @@ int triTableValue(int i, int j){
 	
 	
 	
-		vec4 tri[3];
+		vec3 tri[3];
 		int i = 0;
 		
-	//for (i=0; triTableValue(iFlagIndex, i)!=-1; i+=3) { //Strange bug with this way, uncomment to test 
+	for (i=0; triTableValue(iFlagIndex, i)!=-1; i+=3) { //Strange bug with this way, uncomment to test 
 		
 	
-	while(true){ 
+	//while(true){ 
 		//if (i>15)
 		//	break;
-		if(triTableValue(iFlagIndex, i)!=-1){ 
+	//	if(triTableValue(iFlagIndex, i)!=-1){ 
 			
-			tri[2] = vec4(vertlist[triTableValue(iFlagIndex, i)]); 
-			tri[1] = vec4(vertlist[triTableValue(iFlagIndex, i+1)]); 
-			tri[0] = vec4(vertlist[triTableValue(iFlagIndex, i+2)]); 
+			tri[2] = vec3(vertlist[triTableValue(iFlagIndex, i)]); 
+			tri[1] = vec3(vertlist[triTableValue(iFlagIndex, i+1)]); 
+			tri[0] = vec3(vertlist[triTableValue(iFlagIndex, i+2)]); 
 		
-			normal = vec4(normalize(cross(vec3(tri[2] - tri[0] ),
-								vec3(tri[2] - tri[1] ))),0);
+			normal = vec3(normalize(cross(vec3(tri[2] - tri[0] ),
+								vec3(tri[2] - tri[1] ))));
 								
 	
 								
@@ -125,11 +124,11 @@ int triTableValue(int i, int j){
 		
 			//End triangle strip at firts triangle 
 			EndPrimitive(); 
-		}else{ 
-			break; 
-		} 
+	//	}else{ 
+		//	break; 
+	//	} 
  
-		i=i+3; //Comment it to test the strange bug 
+	//	i=i+3; //Comment it to test the strange bug 
 	//	break;
 	} 
 		
