@@ -18,7 +18,7 @@ void main () {
 	//find the position in sample space of this vertex
 	vec3 vertSamplePos = nwSamplePos + vertPos;
 
-	vertSamplePos.y += 31; 
+	vertSamplePos.y += 31; //fudge to position the surface at the bottom of our terrain block.
 	
 	//get a height value at this point
 	float surfaceHeight = octave_noise_2d(6,0.2,0.02,vertSamplePos.x,vertSamplePos.z);
@@ -27,12 +27,11 @@ void main () {
 	//scale down our vertical position in sample space to be 16:1 proportional to noise space.
 	vertSamplePos.y  = vertSamplePos.y / 32;
 
-	//clip the surface height against our sampling height, output the result to the geometry shader
+	//clip the surface height against our sampling height
 	float vertSample = vertSamplePos.y - surfaceHeight;
 
-	
-	vertSample = abs(vertSample);
-	vertSample = clamp(vertSample,0,1);
-	outData.vertSample = vertSample;
+//	vertSample = abs(vertSample);
+//	vertSample = clamp(vertSample,0,1);
+	outData.vertSample = vertSample; // output the result to the geometry shader
 
 }
