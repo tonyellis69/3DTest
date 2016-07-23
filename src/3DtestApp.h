@@ -29,7 +29,7 @@ public:
 	void createChunkMesh(Chunk& chunk);
 	bool chunkExists(glm::vec3& sampleCorner);
 	void initChunkShell();
-	void registerIndexedModel(CModel* model, glm::vec3* verts, unsigned short* index);
+	void initChunkGrid(int cubesPerChunkEdge);
 
 	string dataPath; ///<Filepath to the Data folder
 	
@@ -71,6 +71,8 @@ public:
 
 	CModel chunkShell; ///<A model to represent the outer layer of a potentianl chunk.
 	int shellTotalVerts; ///<Total vertices that make up the shell.
+	CModel shaderChunkGrid; ///<3D grid of verts modelling the cubes of a chunk, used in terrain creation.
+
 };
 
 const float yawAng = 0.22f;
