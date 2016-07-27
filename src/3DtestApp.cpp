@@ -20,6 +20,7 @@ C3DtestApp::C3DtestApp() {
 }
 
 void C3DtestApp::onStart() {
+
 	dataPath = homeDir + "Data\\";
 	lastMousePos = glm::vec2(0,0);
 
@@ -98,6 +99,8 @@ void C3DtestApp::onStart() {
 	Engine.uploadDataTexture(hChunkTriTable,hTriTableTex);
 
 	oldTime = Engine.Time.milliseconds();
+
+	supWire = false;
 }
 
 /** Create a wireframe bounding box.*/
@@ -133,7 +136,8 @@ void C3DtestApp::createChunkMesh(Chunk& chunk) {
 	int vertsPerPrimitive = 3 * chunk.nAttribs;
 	int nVertsOut = cubesPerChunkEdge * cubesPerChunkEdge * cubesPerChunkEdge * maxMCverts;
 
-	Engine.getFeedbackModel(shaderChunkGrid,sizeof(vec4)*nVertsOut*chunk.nAttribs,vertsPerPrimitive,chunk);			
+	chunk.nTris = Engine.getFeedbackModel(shaderChunkGrid,sizeof(vec4)*nVertsOut*chunk.nAttribs,vertsPerPrimitive,chunk);	
+	terrain.totalTris += chunk.nTris;
 }
 
 /** Return false if no side of this potential chunk is penetratedby the isosurface.*/
@@ -239,21 +243,21 @@ void C3DtestApp::keyCheck() {
 
 	}
 	
-	if (KeyDown['8']) {
+	if (keyNow('8')) {
 			scroll(north);
-			EatKeys();
+		//	EatKeys();
 		}
-		if (KeyDown['2']) {
+		if (keyNow('2') ) {
 			scroll(south);
-			EatKeys();
+			//EatKeys();
 		}
-		if (KeyDown['6']) {
+		if (keyNow('6') ) {
 			scroll(east);
-			EatKeys();
+			//EatKeys();
 		}
-		if (KeyDown['4']) {
+		if (keyNow('4')) {
 			scroll(west);
-			EatKeys();
+			//EatKeys();
 		}
 		if (KeyDown['5']) {
 			scroll(up);
@@ -304,6 +308,12 @@ void C3DtestApp::keyCheck() {
 			EatKeys();
 		}
 
+		//if (keyNow('U') )
+		if (KeyDown['U']) {
+			supWire = !supWire;
+			EatKeys();
+		}
+
 
 		selectChk = glm::mod(vec3(selectChk),vec3(15,5,15));
 			
@@ -334,24 +344,24 @@ void C3DtestApp::draw() {
 	//draw chunk
 	Engine.setStandard3dShader();
 	glm::mat3 normMatrix(terrain.worldMatrix); 
-	Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,normMatrix);
-	mat4 relativePos, mvp; 
-	ChunkNode* node;
-	for (int s=0;s<terrain.superChunks.size();s++) {
-		terrain.superChunks[s]->initNodeWalk();
-		while (node = terrain.superChunks[s]->nextNode()) {
-			if ((node->pChunk != NULL) && (node->pChunk->live)) {
-				relativePos = node->pChunk->worldMatrix *   terrain.worldMatrix;
-				mvp = Engine.currentCamera->clipMatrix * relativePos; 
+	//Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,normMatrix);
+	mat4 mvp; 
+
+
+	size_t nChunks = terrain.allChunks.size(); Chunk* chunk;
+	for (int s=0;s<nChunks;s++) {
+		chunk = terrain.allChunks[s];
+			if (chunk->live) {
+				mvp = Engine.currentCamera->clipMatrix * chunk->worldMatrix; 
 				Engine.setShaderValue(Engine.rMVPmatrix,mvp);
-				Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(relativePos));
-				if (node->pChunk->hBuffer > 0)
-					Engine.drawModel(*node->pChunk);
+				Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(chunk->worldMatrix));
+				if (chunk->hBuffer > 0)
+					Engine.drawModel(*chunk);
 			}
-		}
 	}
 
 
+	
 
 	//wireframe drawing:
 	Engine.setCurrentShader(hWireProg);
@@ -360,7 +370,7 @@ void C3DtestApp::draw() {
 	Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
 
 	//draw bounding boxes
-	for (int s=0;s<terrain.superChunks.size();s++) {
+/*	for (int s=0;s<terrain.superChunks.size();s++) {
 		terrain.superChunks[s]->initNodeWalk();
 		while (node = terrain.superChunks[s]->nextNode()) {
 			if (node->pChunk) {
@@ -373,23 +383,23 @@ void C3DtestApp::draw() {
 				else if (node == terrain.superChunks[s]->nwRoot)
 						Engine.setShaderValue(hWireColour,vec4(1,0,1,1));
 						
-				drawChunkBB(chunkBB);
+			drawChunkBB(chunkBB);
 			}
 		}
 	}
 
-	//draw superchunk
-	float siz = cubeSize * cubesPerChunkEdge * chunksPerSuperChunkEdge;
-	
-	Engine.setShaderValue(hWireScale,vec3(siz));
-	for (int s=0;s<terrain.superChunks.size();s++) {
-		
-		chunkBB.setPos(terrain.superChunks[s]->nwWorldPos);
-		Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
-		Engine.drawModel(chunkBB);
+	*/
 
+	if (supWire) {
+		//draw superchunk
+		float siz = cubeSize * cubesPerChunkEdge * chunksPerSuperChunkEdge;
+		Engine.setShaderValue(hWireScale,vec3(siz));
+		for (int s=0;s<terrain.superChunks.size();s++) {
+			chunkBB.setPos(terrain.superChunks[s]->nwWorldPos);
+			Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
+			Engine.drawModel(chunkBB);
+		}
 	}
-
 
 
 }

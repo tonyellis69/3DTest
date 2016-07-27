@@ -73,12 +73,14 @@ public:
 	int shellTotalVerts; ///<Total vertices that make up the shell.
 	CModel shaderChunkGrid; ///<3D grid of verts modelling the cubes of a chunk, used in terrain creation.
 
+	bool supWire; ///<True when superchunk wireframe is on.
+
 };
 
 const float yawAng = 0.22f;
 const int cubesPerChunkEdge = 16; ///<Number of cubes along a chunk edge
-const float cubeSize = 5; ///<Size of cubes in worldspace.
-const int chunksPerSuperChunkEdge = 8;
+const float cubeSize = 5;//10; ///<Size of cubes in worldspace.
+const int chunksPerSuperChunkEdge = 8;//8;
 
 const int maxMCverts = 16; ///<The maximum vertices needed for a MC cube.
 
