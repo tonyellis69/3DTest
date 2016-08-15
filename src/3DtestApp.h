@@ -27,7 +27,7 @@ public:
 	void Update();
 	
 	void createChunkMesh(Chunk& chunk);
-	bool chunkExists(glm::vec3& sampleCorner);
+	bool chunkExists(glm::vec3& sampleCorner, float LoD);
 	void initChunkShell();
 	void initChunkGrid(int cubesPerChunkEdge);
 
@@ -44,9 +44,12 @@ public:
 
 	int hChunkCheckProg; ///<Handle for chunk existence check shader
 	int hCCsamplePosVec;
+	int hCCloDscale;
+
 
 	int hChunkProg; ///<Handle for chunk geometry creating shader
 	int hChunkCubeSize;
+	int hChunkLoDscale;
 	int hChunkColour;
 	int hChunkSamplePos;
 	int hChunkTriTable;
@@ -78,8 +81,8 @@ public:
 };
 
 const float yawAng = 0.22f;
-const int cubesPerChunkEdge = 16; ///<Number of cubes along a chunk edge
-const float cubeSize = 5;//10; ///<Size of cubes in worldspace.
+const int cubesPerChunkEdge = 8; ///<Number of cubes along a chunk edge
+const float cubeSize = 2.5;//10; ///<Size of cubes in worldspace.
 const int chunksPerSuperChunkEdge = 8;//8;
 
 const int maxMCverts = 16; ///<The maximum vertices needed for a MC cube.

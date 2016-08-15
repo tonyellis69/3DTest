@@ -52,13 +52,14 @@ void C3DtestApp::onStart() {
 	hChunkCheckProg = Engine.linkShaders();
 	Engine.setCurrentShader(hChunkCheckProg);
 	hCCsamplePosVec = Engine.getShaderDataHandle("nwSamplePos");
+	hCCloDscale = Engine.getShaderDataHandle("LoDscale");
 
 	double t = Engine.Time.milliseconds();
 
 	initChunkGrid(cubesPerChunkEdge);
 
 	terrain.setSizes(chunksPerSuperChunkEdge,cubesPerChunkEdge,cubeSize);
-	terrain.createLayers(2);
+	terrain.createLayers(4,1);
 
 	t = Engine.Time.milliseconds() - t;
 	cerr << "\n time " << t;
@@ -90,6 +91,7 @@ void C3DtestApp::onStart() {
 	//get chunk shader data handles
 	Engine.setCurrentShader(hChunkProg);
 	hChunkCubeSize = Engine.getShaderDataHandle("cubeSize");
+	hChunkLoDscale = Engine.getShaderDataHandle("LoDscale");
 	hChunkColour = Engine.getShaderDataHandle("inColour");
 	hChunkSamplePos = Engine.getShaderDataHandle("samplePos");
 	hChunkTriTable = Engine.getShaderDataHandle("hTriTableTex");
@@ -127,28 +129,35 @@ void C3DtestApp::createBB() {
 /*  Create a mesh for this chunk, and register it with the renderer.  */
 void C3DtestApp::createChunkMesh(Chunk& chunk) {
 	Engine.setCurrentShader(hChunkProg);
-	Engine.setShaderValue(hChunkCubeSize,cubeSize);
+	Engine.setShaderValue(hChunkCubeSize,chunk.cubeSize);
+
+	//float LoDscale = 4;//chunk.LoD;
+	float LoDscale = 1 << (int)chunk.LoD-1;
+	Engine.setShaderValue(hChunkLoDscale,LoDscale);
 	Engine.setShaderValue(hChunkColour,chunk.colour);
 	Engine.setShaderValue(hChunkSamplePos,chunk.samplePos);
 	Engine.setDataTexture(hTriTableTex);
+
+	cerr <<"\nchunk mesh LoD " << LoDscale << " cubeSize " << chunk.cubeSize << " samplePos ";
+	cerr << chunk.samplePos.x << " " << chunk.samplePos.y << " " << chunk.samplePos.z;
 
 	unsigned int hFeedBackBuf; 
 	int vertsPerPrimitive = 3 * chunk.nAttribs;
 	int nVertsOut = cubesPerChunkEdge * cubesPerChunkEdge * cubesPerChunkEdge * maxMCverts;
 
-	chunk.nTris = Engine.getFeedbackModel(shaderChunkGrid,sizeof(vec4)*nVertsOut*chunk.nAttribs,vertsPerPrimitive,chunk);	
+	chunk.nTris = Engine.acquireFeedbackModel(shaderChunkGrid,sizeof(vec4)*nVertsOut*chunk.nAttribs,vertsPerPrimitive,chunk);	
 	terrain.totalTris += chunk.nTris;
 }
 
 /** Return false if no side of this potential chunk is penetratedby the isosurface.*/
-bool C3DtestApp::chunkExists(vec3& sampleCorner) {
+bool C3DtestApp::chunkExists(vec3& sampleCorner, float LoD) {
 	//return true;
 	//change to chunk test shader
 	Engine.setCurrentShader(hChunkCheckProg);
-
+	float LoDscale = LoD;
 	//load shader values
 	Engine.setShaderValue(hCCsamplePosVec,sampleCorner);
-
+	Engine.setShaderValue(hCCloDscale,LoDscale);
 	
 
 	//Draw check grid 
@@ -365,39 +374,56 @@ void C3DtestApp::draw() {
 
 	//wireframe drawing:
 	Engine.setCurrentShader(hWireProg);
-	float chunkRealSize = terrain.superChunks[0]->cubesPerChunkEdge * terrain.superChunks[0]->cubeSize;
+	float chunkRealSize = terrain.layers[0].superChunks[0]->cubesPerChunkEdge * terrain.layers[0].superChunks[0]->cubeSize;
 	Engine.setShaderValue(hWireScale,vec3(chunkRealSize,chunkRealSize,chunkRealSize));
 	Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
 
 	//draw bounding boxes
-/*	for (int s=0;s<terrain.superChunks.size();s++) {
-		terrain.superChunks[s]->initNodeWalk();
-		while (node = terrain.superChunks[s]->nextNode()) {
-			if (node->pChunk) {
-				chunkBB.setPos(node->pChunk->getPos());
-				Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
-				if (node->boundary & 64)
+	/*
+	ChunkNode* node;
+	for (int l=0;l<terrain.layers.size();l++) {
+		for (int s=0;s<terrain.layers[l].superChunks.size();s++) {
+			terrain.layers[l].superChunks[s]->initNodeWalk();
+			while (node = terrain.layers[l].superChunks[s]->nextNode()) {
+				if (node->pChunk) {
+					chunkBB.setPos(node->pChunk->getPos());
+					Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
+					if (node->boundary & 64)
 						Engine.setShaderValue(hWireColour,vec4(1,1,0,1));
-				else if (node->boundary & 128)
+					else if (node->boundary & 128)
 						Engine.setShaderValue(hWireColour,vec4(0,0,1,1));
-				else if (node == terrain.superChunks[s]->nwRoot)
-						Engine.setShaderValue(hWireColour,vec4(1,0,1,1));
-						
-			drawChunkBB(chunkBB);
+					drawChunkBB(chunkBB);
+				}
+
 			}
 		}
 	}
-
 	*/
+	/*
+	Engine.setShaderValue(hWireColour,vec4(1,0,0,1));
+	for (int l=0;l<terrain.layers.size();l++) {
+		for (int s=0;s<terrain.layers[l].superChunks.size();s++) {
+			chunkBB.setPos(terrain.layers[l].superChunks[s]->nwWorldPos);
+			drawChunkBB(chunkBB);
+		}
+	} */
+
+
+	
 
 	if (supWire) {
 		//draw superchunk
-		float siz = cubeSize * cubesPerChunkEdge * chunksPerSuperChunkEdge;
-		Engine.setShaderValue(hWireScale,vec3(siz));
-		for (int s=0;s<terrain.superChunks.size();s++) {
-			chunkBB.setPos(terrain.superChunks[s]->nwWorldPos);
-			Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
-			Engine.drawModel(chunkBB);
+		float siz; 
+	
+		for (int l=0;l<terrain.layers.size();l++) {
+			siz = terrain.layers[l].cubeSize * cubesPerChunkEdge * chunksPerSuperChunkEdge;
+			Engine.setShaderValue(hWireScale,vec3(siz));
+			for (int s=0;s<terrain.layers[l].superChunks.size();s++) {
+				chunkBB.setPos(terrain.layers[l].superChunks[s]->nwWorldPos);
+				Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
+				//if (terrain.layers[l].superChunks[s]->LoD == 1)
+					Engine.drawModel(chunkBB);
+			}
 		}
 	}
 

@@ -39,7 +39,6 @@ vec3 vertexInterp(float isolevel, vec3 v0, float l0, vec3 v1, float l1){
 
 //Get triangle table value 
 int triTableValue(int i, int j){ 
-	//return texelFetch2D(triTableTex, ivec2(j, i), 0).a; 
 	return texelFetch(triTableTex, ivec2(j,i),0).r;
 } 
 
@@ -139,53 +138,4 @@ int triTableValue(int i, int j){
 		
 		
 		
-		
-		
-	/*
-		
-		
-		normal = vec4(normalize(cross(vec3(vert[0].corner[3] - vert[0].corner[2] ),
-								vec3(vert[0].corner[3] - vert[0].corner[7] ))),0);
-		
-		 gl_Position =  vert[0].corner[3];
-		 EmitVertex();
-		 
-		  gl_Position =  vert[0].corner[2];
-		 EmitVertex();
-		  gl_Position =  vert[0].corner[7];
-		 EmitVertex();
-		 EndPrimitive();
-		 
-		 normal = vec4(normalize(cross(vec3(vert[0].corner[6] - vert[0].corner[7] ),
-								vec3(vert[0].corner[6] - vert[0].corner[2] ))),0);
-		  gl_Position =  vert[0].corner[6];
-		 EmitVertex();
-		  gl_Position =  vert[0].corner[7];
-		 EmitVertex();
-		 gl_Position =  vert[0].corner[2];
-		 EmitVertex();
-        EndPrimitive();
-		
-		
-		normal = vec4(normalize(cross(vec3(vert[0].corner[7] - vert[0].corner[6] ),
-								vec3(vert[0].corner[7] - vert[0].corner[4] ))),0);
-		 gl_Position =  vert[0].corner[7];
-		 EmitVertex();
-		  gl_Position =  vert[0].corner[6];
-		 EmitVertex();
-		  gl_Position =  vert[0].corner[4];
-		 EmitVertex();
-		 EndPrimitive();
-		 
-		 normal = vec4(normalize(cross(vec3(vert[0].corner[5] - vert[0].corner[4] ),
-								vec3(vert[0].corner[5] - vert[0].corner[6] ))),0);
-		  gl_Position =  vert[0].corner[5];
-		 EmitVertex();
-		  gl_Position =  vert[0].corner[4];
-		 EmitVertex();
-		 gl_Position =  vert[0].corner[6];
-		 EmitVertex();
-        EndPrimitive();
-		
-		*/
  }

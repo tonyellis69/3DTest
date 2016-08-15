@@ -6,6 +6,7 @@ layout(location = 0) in vec3 vertPos;
 
 //The position in sample space of the bottom nw corner of the chunk we're checking 
 uniform vec3 nwSamplePos;
+uniform float LoDscale;
 
 out VertexData {
 	float vertSample; //The sample value at this vertex, passed on to the geometry shader.
@@ -16,10 +17,9 @@ out VertexData {
 
 void main () {
 	//find the position in sample space of this vertex
-	vec3 vertSamplePos = nwSamplePos + vertPos;
+	vec3 vertSamplePos = nwSamplePos + (vertPos * LoDscale);
 
-	//vertSamplePos.y += 5;//31; //fudge to position the surface at the bottom of our terrain block.
-	
+		
 	//get a height value at this point
 	float surfaceHeight = octave_noise_2d(6,0.2,0.02,vertSamplePos.x,vertSamplePos.z);
 	surfaceHeight = (surfaceHeight * 0.5) + 0.5;  //convert to 0 - 1.
