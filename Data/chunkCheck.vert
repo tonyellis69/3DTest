@@ -25,7 +25,7 @@ void main () {
 	surfaceHeight = (surfaceHeight * 0.5) + 0.5;  //convert to 0 - 1.
 
 	//scale down our vertical position in sample space to be 16:1 proportional to noise space.
-	vertSamplePos.y  = vertSamplePos.y / 16;  //32;
+	vertSamplePos.y  = vertSamplePos.y / 32;// 16;  //32;
 
 	//clip the surface height against our sampling height
 	float vertSample = vertSamplePos.y - surfaceHeight;

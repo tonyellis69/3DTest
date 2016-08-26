@@ -40,6 +40,7 @@ void C3DtestApp::onStart() {
 	selectChk = i32vec3(0,0,0);	
 	mouseLook = false;
 
+	terrain.EXTsuperChunkIsEmpty.Set(this,&C3DtestApp::superChunkIsEmpty);
 	terrain.EXTchunkExists.Set(this,&C3DtestApp::chunkExists);
 	terrain.EXTfreeChunkModel.Set(&Engine,&CEngine::freeModel);
 	terrain.EXTcreateChunkMesh.Set(this,&C3DtestApp::createChunkMesh);
@@ -59,7 +60,9 @@ void C3DtestApp::onStart() {
 	initChunkGrid(cubesPerChunkEdge);
 
 	terrain.setSizes(chunksPerSuperChunkEdge,cubesPerChunkEdge,cubeSize);
-	terrain.createLayers(4,1);
+	terrain.createLayers(4,3,1);
+	terrain.createAllChunks(); //nearly 4/5 of time spent here!
+	//goes down massively with chunks per superchunk, so it's definitel a number-of-calls issue
 
 	t = Engine.Time.milliseconds() - t;
 	cerr << "\n time " << t;
@@ -138,16 +141,30 @@ void C3DtestApp::createChunkMesh(Chunk& chunk) {
 	Engine.setShaderValue(hChunkSamplePos,chunk.samplePos);
 	Engine.setDataTexture(hTriTableTex);
 
-	cerr <<"\nchunk mesh LoD " << LoDscale << " cubeSize " << chunk.cubeSize << " samplePos ";
-	cerr << chunk.samplePos.x << " " << chunk.samplePos.y << " " << chunk.samplePos.z;
-
 	unsigned int hFeedBackBuf; 
 	int vertsPerPrimitive = 3 * chunk.nAttribs;
+	int maxMCverts = 16; //The maximum vertices needed for a surface inside one MC cube.
 	int nVertsOut = cubesPerChunkEdge * cubesPerChunkEdge * cubesPerChunkEdge * maxMCverts;
 
 	chunk.nTris = Engine.acquireFeedbackModel(shaderChunkGrid,sizeof(vec4)*nVertsOut*chunk.nAttribs,vertsPerPrimitive,chunk);	
 	terrain.totalTris += chunk.nTris;
 }
+
+
+bool C3DtestApp::superChunkIsEmpty(vec3& sampleCorner, float LoD) {
+	//return false;
+	Engine.setCurrentShader(hChunkCheckProg);
+	float LoDscale = LoD * chunksPerSuperChunkEdge;
+	Engine.setShaderValue(hCCsamplePosVec,sampleCorner);
+	Engine.setShaderValue(hCCloDscale,LoDscale);
+
+	unsigned int primitives = Engine.drawModelCount(chunkShell);
+	//TO DO: chunkshell is coarse, create a SCshell with more points
+	if ((primitives == 0) || (primitives == shellTotalVerts*3))
+		return true; //outside surface
+	return false;
+}
+
 
 /** Return false if no side of this potential chunk is penetratedby the isosurface.*/
 bool C3DtestApp::chunkExists(vec3& sampleCorner, float LoD) {

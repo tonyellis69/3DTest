@@ -27,6 +27,7 @@ public:
 	void Update();
 	
 	void createChunkMesh(Chunk& chunk);
+	bool superChunkIsEmpty(glm::vec3& sampleCorner, float LoD);
 	bool chunkExists(glm::vec3& sampleCorner, float LoD);
 	void initChunkShell();
 	void initChunkGrid(int cubesPerChunkEdge);
@@ -81,11 +82,10 @@ public:
 };
 
 const float yawAng = 0.22f;
-const int cubesPerChunkEdge = 8; ///<Number of cubes along a chunk edge
+const int cubesPerChunkEdge = 16; //8 ///<Number of cubes along a chunk edge
 const float cubeSize = 2.5;//10; ///<Size of cubes in worldspace.
-const int chunksPerSuperChunkEdge = 8;//8;
+const int chunksPerSuperChunkEdge = 4;//8;
 
-const int maxMCverts = 16; ///<The maximum vertices needed for a MC cube.
 
 static const int edgeTable[256]=
 {

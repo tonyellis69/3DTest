@@ -24,7 +24,7 @@ out vec4 vColour;
 
 float getSample(vec3 cornerOffset) {
 		vec3 sampleCorner = vec3(samplePos) + ((position + cornerOffset) * LoDscale) ;
-		sampleCorner.y += 16;
+		//sampleCorner.y += 16;
 		//TO DO: SCRAP THIS!!!
 	
 	
@@ -36,7 +36,7 @@ float getSample(vec3 cornerOffset) {
 		
 	//2. scale current position down to noise space.
 	
-		sampleCorner.y = sampleCorner.y / 32;
+		sampleCorner.y = sampleCorner.y /  32;
 	
 	//3. clip the surface height against the height of this corner. Values outside 1 mean the surface doesn't intersect this point.
 	float sampleVal = sampleCorner.y - surfaceHeight;
