@@ -23,7 +23,7 @@ public:
 	void onResize(int width, int height);
 	void draw();
 	void drawChunkBB(CModel& model);
-	void scroll(Tdirection direction);
+	void advance(Tdirection direction);
 	void Update();
 	
 	void createChunkMesh(Chunk& chunk);

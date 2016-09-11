@@ -60,7 +60,7 @@ void C3DtestApp::onStart() {
 	initChunkGrid(cubesPerChunkEdge);
 
 	terrain.setSizes(chunksPerSuperChunkEdge,cubesPerChunkEdge,cubeSize);
-	terrain.createLayers(4,3,1);
+	terrain.createLayers(4,2,1);
 	terrain.createAllChunks(); //nearly 4/5 of time spent here!
 	//goes down massively with chunks per superchunk, so it's definitel a number-of-calls issue
 
@@ -270,23 +270,23 @@ void C3DtestApp::keyCheck() {
 	}
 	
 	if (keyNow('8')) {
-			scroll(north);
+			advance(north);
 		//	EatKeys();
 		}
 		if (keyNow('2') ) {
-			scroll(south);
+			advance(south);
 			//EatKeys();
 		}
 		if (keyNow('6') ) {
-			scroll(east);
+			advance(east);
 			//EatKeys();
 		}
 		if (keyNow('4')) {
-			scroll(west);
+			advance(west);
 			//EatKeys();
 		}
 		if (KeyDown['5']) {
-			scroll(up);
+			advance(up);
 		}
 
 		if (KeyDown['1']) {
@@ -329,8 +329,8 @@ void C3DtestApp::keyCheck() {
 
 		
 		if (KeyDown['Z']) {
-			terrain.scroll(north);
-			terrain.scroll(west);
+			terrain.advance(north);
+			terrain.advance(west);
 			EatKeys();
 		}
 
@@ -453,7 +453,7 @@ void C3DtestApp::drawChunkBB(CModel& model) {
 	Engine.drawModel(model);
 }
 
-void C3DtestApp::scroll(Tdirection direction) {
+void C3DtestApp::advance(Tdirection direction) {
 	vec3 dir;
 	switch (direction) {
 		case north :	dir = vec3(0,0,1); 
@@ -483,7 +483,7 @@ void C3DtestApp::scroll(Tdirection direction) {
 		posMod.y = fmod(pos.y,chunkDist);
 		posMod.z = fmod(pos.z,chunkDist);
 		terrain.setPos(posMod ); //secretly move terrain back before scrolling to ensure it scrolls on the spot
-		terrain.scroll(direction); //
+		terrain.advance(direction); //
 	}
 }
 
@@ -514,7 +514,7 @@ void C3DtestApp::Update() {
 					direction = west;
 				else
 					direction = east;
-				terrain.scroll(direction);
+				terrain.advance(direction);
 			}
 			
 			if (outsideChunkBoundary.z) {
@@ -522,7 +522,7 @@ void C3DtestApp::Update() {
 					direction = south;
 				else
 					direction = north;
-				terrain.scroll(direction);
+				terrain.advance(direction);
 			}
 		}	
 	}
