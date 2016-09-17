@@ -431,15 +431,25 @@ void C3DtestApp::draw() {
 	if (supWire) {
 		//draw superchunk
 		float siz; 
-	
+		
 		for (int l=0;l<terrain.layers.size();l++) {
+			Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
 			siz = terrain.layers[l].cubeSize * cubesPerChunkEdge * chunksPerSuperChunkEdge;
 			Engine.setShaderValue(hWireScale,vec3(siz));
 			for (int s=0;s<terrain.layers[l].superChunks.size();s++) {
 				chunkBB.setPos(terrain.layers[l].superChunks[s]->nwWorldPos);
 				Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
 				//if (terrain.layers[l].superChunks[s]->LoD == 1)
+				//	Engine.drawModel(chunkBB);
+				
+			}
+			Engine.setShaderValue(hWireColour,vec4(1,0,0,0.4f));
+			for (int ex=0;ex<6;ex++) {
+				for (int s=0;s<terrain.layers[l].extension[ex].size();s++) {
+					chunkBB.setPos(terrain.layers[l].extension[ex][s]->nwWorldPos);
+					Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
 					Engine.drawModel(chunkBB);
+				}
 			}
 		}
 	}
