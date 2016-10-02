@@ -15,6 +15,8 @@ using namespace watch;
 
 using namespace glm;
 
+ int tmpCounter;
+
 C3DtestApp::C3DtestApp() {
 
 }
@@ -61,6 +63,7 @@ void C3DtestApp::onStart() {
 
 	terrain.setSizes(chunksPerSuperChunkEdge,cubesPerChunkEdge,cubeSize);
 	terrain.createLayers(4,2,1);
+	tmpCounter = 1000;
 	terrain.createAllChunks(); //nearly 4/5 of time spent here!
 	//goes down massively with chunks per superchunk, so it's definitel a number-of-calls issue
 
@@ -396,7 +399,7 @@ void C3DtestApp::draw() {
 	Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
 
 	//draw bounding boxes
-	/*
+	
 	ChunkNode* node;
 	for (int l=0;l<terrain.layers.size();l++) {
 		for (int s=0;s<terrain.layers[l].superChunks.size();s++) {
@@ -405,17 +408,18 @@ void C3DtestApp::draw() {
 				if (node->pChunk) {
 					chunkBB.setPos(node->pChunk->getPos());
 					Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
-					if (node->boundary & 64)
-						Engine.setShaderValue(hWireColour,vec4(1,1,0,1));
-					else if (node->boundary & 128)
-						Engine.setShaderValue(hWireColour,vec4(0,0,1,1));
-					drawChunkBB(chunkBB);
+					//if (node->boundary & 64)
+					//	Engine.setShaderValue(hWireColour,vec4(1,1,0,1));
+				//	else if (node->boundary & 128)
+					//	Engine.setShaderValue(hWireColour,vec4(0,0,1,1));
+					if ((node->pChunk->first == 66 ))
+						drawChunkBB(chunkBB);
 				}
 
 			}
 		}
 	}
-	*/
+	
 	/*
 	Engine.setShaderValue(hWireColour,vec4(1,0,0,1));
 	for (int l=0;l<terrain.layers.size();l++) {
@@ -440,7 +444,7 @@ void C3DtestApp::draw() {
 				chunkBB.setPos(terrain.layers[l].superChunks[s]->nwWorldPos);
 				Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
 				//if (terrain.layers[l].superChunks[s]->LoD == 1)
-				//	Engine.drawModel(chunkBB);
+					Engine.drawModel(chunkBB);
 				
 			}
 			Engine.setShaderValue(hWireColour,vec4(1,0,0,0.4f));
@@ -448,7 +452,7 @@ void C3DtestApp::draw() {
 				for (int s=0;s<terrain.layers[l].extension[ex].size();s++) {
 					chunkBB.setPos(terrain.layers[l].extension[ex][s]->nwWorldPos);
 					Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
-					Engine.drawModel(chunkBB);
+					//Engine.drawModel(chunkBB);
 				}
 			}
 		}
@@ -464,15 +468,17 @@ void C3DtestApp::drawChunkBB(CModel& model) {
 }
 
 void C3DtestApp::advance(Tdirection direction) {
+	//NB direction is the direction new terrain is scrolling *in* from
+	//dir is the vector that moves the terrain *away* from that direction, to make space for new terrain 
 	vec3 dir;
 	switch (direction) {
-		case north :	dir = vec3(0,0,1); 
+		case north :	dir = vec3(0,0,1); //z=1 = out of the screen
 						break;
 		case south :	dir = vec3(0,0,-1); 
 						break;
-		case east :		dir = vec3(1,0,0); 
+		case east :		dir = vec3(-1,0,0); 
 						break;
-		case west :		dir = vec3(-1,0,0); 
+		case west :		dir = vec3(1,0,0); 
 						break;
 	}
 
