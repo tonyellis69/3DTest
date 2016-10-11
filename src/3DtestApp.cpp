@@ -15,7 +15,6 @@ using namespace watch;
 
 using namespace glm;
 
- int tmpCounter;
 
 C3DtestApp::C3DtestApp() {
 
@@ -63,7 +62,6 @@ void C3DtestApp::onStart() {
 
 	terrain.setSizes(chunksPerSuperChunkEdge,cubesPerChunkEdge,cubeSize);
 	terrain.createLayers(4,2,1);
-	tmpCounter = 1000;
 	terrain.createAllChunks(); //nearly 4/5 of time spent here!
 	//goes down massively with chunks per superchunk, so it's definitel a number-of-calls issue
 
@@ -376,8 +374,8 @@ void C3DtestApp::draw() {
 	//Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,normMatrix);
 	mat4 mvp; 
 
-
-	size_t nChunks = terrain.allChunks.size(); Chunk* chunk;
+	Chunk* chunk;
+/*	size_t nChunks = terrain.allChunks.size(); 
 	for (int s=0;s<nChunks;s++) {
 		chunk = terrain.allChunks[s];
 			if (chunk->live) {
@@ -387,8 +385,34 @@ void C3DtestApp::draw() {
 				if (chunk->hBuffer > 0)
 					Engine.drawModel(*chunk);
 			}
-	}
+	}*/
 
+	for (int layer=0;layer<terrain.layers.size();layer++) {
+		for (int sc=0;sc<terrain.layers[layer].superChunks.size();sc++) {
+			for (int c=0;c<terrain.layers[layer].superChunks[sc]->chunkList.size();c++) {
+				chunk = terrain.layers[layer].superChunks[sc]->chunkList[c];
+				mvp = Engine.currentCamera->clipMatrix * chunk->worldMatrix; 
+				Engine.setShaderValue(Engine.rMVPmatrix,mvp);
+				Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(chunk->worldMatrix));
+				if ((chunk->hBuffer > 0) && (chunk->live))
+					Engine.drawModel(*chunk);
+			}
+		}
+		for (int ex=0;ex<6;ex++) {
+			for (int sc=0;sc<terrain.layers[layer].extension[ex].size();sc++) {
+				for (int c=0;c<terrain.layers[layer].extension[ex][sc]->chunkList.size();c++) {
+
+					chunk = terrain.layers[layer].extension[ex][sc]->chunkList[c];
+					mvp = Engine.currentCamera->clipMatrix * chunk->worldMatrix; 
+					Engine.setShaderValue(Engine.rMVPmatrix,mvp);
+					Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(chunk->worldMatrix));
+					if ((chunk->hBuffer > 0) && (chunk->live))
+						Engine.drawModel(*chunk);
+				}
+			}
+
+		}
+	}
 
 	
 
@@ -412,8 +436,6 @@ void C3DtestApp::draw() {
 					//	Engine.setShaderValue(hWireColour,vec4(1,1,0,1));
 				//	else if (node->boundary & 128)
 					//	Engine.setShaderValue(hWireColour,vec4(0,0,1,1));
-					if ((node->pChunk->first == 66 ))
-						drawChunkBB(chunkBB);
 				}
 
 			}
