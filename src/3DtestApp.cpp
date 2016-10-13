@@ -136,7 +136,7 @@ void C3DtestApp::createChunkMesh(Chunk& chunk) {
 	Engine.setShaderValue(hChunkCubeSize,chunk.cubeSize);
 
 	//float LoDscale = 4;//chunk.LoD;
-	float LoDscale = 1 << (int)chunk.LoD-1;
+	float LoDscale = float(1 << chunk.LoD-1);
 	Engine.setShaderValue(hChunkLoDscale,LoDscale);
 	Engine.setShaderValue(hChunkColour,chunk.colour);
 	Engine.setShaderValue(hChunkSamplePos,chunk.samplePos);
@@ -152,7 +152,7 @@ void C3DtestApp::createChunkMesh(Chunk& chunk) {
 }
 
 
-bool C3DtestApp::superChunkIsEmpty(vec3& sampleCorner, float LoD) {
+bool C3DtestApp::superChunkIsEmpty(vec3& sampleCorner, int LoD) {
 	//return false;
 	Engine.setCurrentShader(hChunkCheckProg);
 	float LoDscale = LoD * chunksPerSuperChunkEdge;
@@ -168,7 +168,7 @@ bool C3DtestApp::superChunkIsEmpty(vec3& sampleCorner, float LoD) {
 
 
 /** Return false if no side of this potential chunk is penetratedby the isosurface.*/
-bool C3DtestApp::chunkExists(vec3& sampleCorner, float LoD) {
+bool C3DtestApp::chunkExists(vec3& sampleCorner, int LoD) {
 	//return true;
 	//change to chunk test shader
 	Engine.setCurrentShader(hChunkCheckProg);
@@ -424,13 +424,13 @@ void C3DtestApp::draw() {
 
 	//draw bounding boxes
 	
-	ChunkNode* node;
-	for (int l=0;l<terrain.layers.size();l++) {
-		for (int s=0;s<terrain.layers[l].superChunks.size();s++) {
-			terrain.layers[l].superChunks[s]->initNodeWalk();
-			while (node = terrain.layers[l].superChunks[s]->nextNode()) {
-				if (node->pChunk) {
-					chunkBB.setPos(node->pChunk->getPos());
+
+	for (int layer=0;layer<terrain.layers.size();layer++) {
+		for (int sc=0;sc<terrain.layers[layer].superChunks.size();sc++) {
+			for (int c=0;c<terrain.layers[layer].superChunks[sc]->chunkList.size();c++) {
+				chunk = terrain.layers[layer].superChunks[sc]->chunkList[c];
+				if (chunk) {
+					chunkBB.setPos(chunk->getPos());
 					Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
 					//if (node->boundary & 64)
 					//	Engine.setShaderValue(hWireColour,vec4(1,1,0,1));

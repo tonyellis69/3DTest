@@ -3,6 +3,7 @@
 #include "BaseApp.h"
 #include "superChunk.h" //TO replace with terrain.h
 #include "terrain.h"
+#include "direction.h"
 #include <glew.h>
 
 #include <glm/glm.hpp>
@@ -27,8 +28,8 @@ public:
 	void Update();
 	
 	void createChunkMesh(Chunk& chunk);
-	bool superChunkIsEmpty(glm::vec3& sampleCorner, float LoD);
-	bool chunkExists(glm::vec3& sampleCorner, float LoD);
+	bool superChunkIsEmpty(glm::vec3& sampleCorner, int LoD);
+	bool chunkExists(glm::vec3& sampleCorner, int LoD);
 	void initChunkShell();
 	void initChunkGrid(int cubesPerChunkEdge);
 
