@@ -397,7 +397,7 @@ void C3DtestApp::draw() {
 				if ((chunk->hBuffer > 0) && (chunk->live))
 					Engine.drawModel(*chunk);
 			}
-		}
+		} 
 		for (int ex=0;ex<6;ex++) {
 			for (int sc=0;sc<terrain.layers[layer].extension[ex].size();sc++) {
 				for (int c=0;c<terrain.layers[layer].extension[ex][sc]->chunkList.size();c++) {
