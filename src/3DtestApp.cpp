@@ -62,6 +62,7 @@ void C3DtestApp::onStart() {
 
 	terrain.setSizes(chunksPerSuperChunkEdge,cubesPerChunkEdge,cubeSize);
 	terrain.createLayers(4,2,1);
+
 	terrain.createAllChunks(); //nearly 4/5 of time spent here!
 	//goes down massively with chunks per superchunk, so it's definitel a number-of-calls issue
 
@@ -398,20 +399,7 @@ void C3DtestApp::draw() {
 					Engine.drawModel(*chunk);
 			}
 		} 
-		for (int ex=0;ex<6;ex++) {
-			for (int sc=0;sc<terrain.layers[layer].extension[ex].size();sc++) {
-				for (int c=0;c<terrain.layers[layer].extension[ex][sc]->chunkList.size();c++) {
-
-					chunk = terrain.layers[layer].extension[ex][sc]->chunkList[c];
-					mvp = Engine.currentCamera->clipMatrix * chunk->worldMatrix; 
-					Engine.setShaderValue(Engine.rMVPmatrix,mvp);
-					Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(chunk->worldMatrix));
-					if ((chunk->hBuffer > 0) && (chunk->live))
-						Engine.drawModel(*chunk);
-				}
-			}
-
-		}
+		
 	}
 
 	
@@ -469,14 +457,7 @@ void C3DtestApp::draw() {
 					Engine.drawModel(chunkBB);
 				
 			}
-			Engine.setShaderValue(hWireColour,vec4(1,0,0,0.4f));
-			for (int ex=0;ex<6;ex++) {
-				for (int s=0;s<terrain.layers[l].extension[ex].size();s++) {
-					chunkBB.setPos(terrain.layers[l].extension[ex][s]->nwWorldPos);
-					Engine.setShaderValue(hWireMVPmatrix,Engine.currentCamera->clipMatrix * chunkBB.worldMatrix);
-					//Engine.drawModel(chunkBB);
-				}
-			}
+		
 		}
 	}
 

@@ -2,7 +2,7 @@
 BaseApp constructor.
 Status: Using GLEW 1.12.0
 
-OpenGL version: 4.5.0 NVIDIA 375.57.
+OpenGL version: 4.5.0 NVIDIA 375.70.
 Has NPOT
 
- time 176.728
+ time 173.176
