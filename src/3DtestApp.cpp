@@ -376,17 +376,8 @@ void C3DtestApp::draw() {
 	mat4 mvp; 
 
 	Chunk* chunk;
-/*	size_t nChunks = terrain.allChunks.size(); 
-	for (int s=0;s<nChunks;s++) {
-		chunk = terrain.allChunks[s];
-			if (chunk->live) {
-				mvp = Engine.currentCamera->clipMatrix * chunk->worldMatrix; 
-				Engine.setShaderValue(Engine.rMVPmatrix,mvp);
-				Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(chunk->worldMatrix));
-				if (chunk->hBuffer > 0)
-					Engine.drawModel(*chunk);
-			}
-	}*/
+
+	int draw =0;
 
 	for (int layer=0;layer<terrain.layers.size();layer++) {
 		for (int sc=0;sc<terrain.layers[layer].superChunks.size();sc++) {
@@ -395,8 +386,16 @@ void C3DtestApp::draw() {
 				mvp = Engine.currentCamera->clipMatrix * chunk->worldMatrix; 
 				Engine.setShaderValue(Engine.rMVPmatrix,mvp);
 				Engine.setShaderValue(Engine.rNormalModelToCameraMatrix,mat3(chunk->worldMatrix));
-				if ((chunk->hBuffer > 0) && (chunk->live))
-					Engine.drawModel(*chunk);
+				if ((chunk->hBuffer > 0) && (chunk->live)) {
+						Engine.drawModel(*chunk);
+					draw++;
+				}
+				if (chunk->tag == 131) {
+					vec3 pos = chunk->getPos();
+					watch::watch2 << pos.x << " " << pos.y <<" " << pos.z;
+
+
+				}
 			}
 		} 
 		
@@ -411,36 +410,8 @@ void C3DtestApp::draw() {
 	Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
 
 	//draw bounding boxes
-	
 
-	for (int layer=0;layer<terrain.layers.size();layer++) {
-		for (int sc=0;sc<terrain.layers[layer].superChunks.size();sc++) {
-			for (int c=0;c<terrain.layers[layer].superChunks[sc]->chunkList.size();c++) {
-				chunk = terrain.layers[layer].superChunks[sc]->chunkList[c];
-				if (chunk) {
-					chunkBB.setPos(chunk->getPos());
-					Engine.setShaderValue(hWireColour,vec4(0,1,0,0.4f));
-					//if (node->boundary & 64)
-					//	Engine.setShaderValue(hWireColour,vec4(1,1,0,1));
-				//	else if (node->boundary & 128)
-					//	Engine.setShaderValue(hWireColour,vec4(0,0,1,1));
-				}
-
-			}
-		}
-	}
-	
-	/*
-	Engine.setShaderValue(hWireColour,vec4(1,0,0,1));
-	for (int l=0;l<terrain.layers.size();l++) {
-		for (int s=0;s<terrain.layers[l].superChunks.size();s++) {
-			chunkBB.setPos(terrain.layers[l].superChunks[s]->nwWorldPos);
-			drawChunkBB(chunkBB);
-		}
-	} */
-
-
-	
+		
 
 	if (supWire) {
 		//draw superchunk
@@ -530,9 +501,9 @@ void C3DtestApp::Update() {
 			//work out direction to scroll-in new terrain from
 			if (outsideChunkBoundary.x) {
 				if (pos.x > 0)
-					direction = west;
-				else
 					direction = east;
+				else
+					direction = west;
 				terrain.advance(direction);
 			}
 			

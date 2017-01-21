@@ -5,4 +5,15 @@ Status: Using GLEW 1.12.0
 OpenGL version: 4.5.0 NVIDIA 375.70.
 Has NPOT
 
- time 173.176
+ time 184.807
+
+Advance
+
+
+
+Advance
+
+
+
+Advance
+
